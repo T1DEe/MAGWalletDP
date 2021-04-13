@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Send View Controller-->
+        <scene sceneID="Pma-IR-nVP">
+            <objects>
+                <viewController storyboardIdentifier="SendViewController" id="vBE-aY-R9g" customClass="SendViewController" customModule="LTCModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tim-cX-DPF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9t-bo-em8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-xz-TmF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="566.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="send_title" translatesAutoresizingMaskIntoConstraints="NO" id="S11-bV-Zl1">
+                                                <rect key="frame" x="20" y="60" width="28" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="28" id="7eL-hV-0gb"/>
+                                                    <constraint firstAttribute="height" constant="28" id="Rco-Qw-eEP"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyz-ru-jO2" userLabel="TitleLabel">
+                                                <rect key="frame" x="56" y="64" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-6K-olS" userLabel="Balance Value Label">
+                                                <rect key="frame" x="20" y="100.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rt-ZO-DFK">
+                                                <rect key="frame" x="20" y="100.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-2O-gXC">
+                                                <rect key="frame" x="20" y="122.5" width="374" height="348"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8Z-e8-VmV" userLabel="Address Text Field" customClass="TextField" customModule="SharedUIModule">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="72" id="Np8-ua-PAb"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyq-TF-Qxo" userLabel="Amount Text Field" customClass="TextField" customModule="SharedUIModule">
+                                                        <rect key="frame" x="0.0" y="92" width="374" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-ys-Ccz" userLabel="Send All Button">
+                                                                <rect key="frame" x="323" y="-6" width="51" height="29"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                                <state key="normal" title="Send all">
+                                                                    <color key="titleColor" name="blue"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="actionSendAll:" destination="vBE-aY-R9g" eventType="touchUpInside" id="ZTE-br-2JF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="nJq-ys-Ccz" secondAttribute="trailing" id="GrF-a7-vT7"/>
+                                                            <constraint firstItem="nJq-ys-Ccz" firstAttribute="top" secondItem="iyq-TF-Qxo" secondAttribute="top" constant="-6" id="RJw-LK-XCW"/>
+                                                            <constraint firstAttribute="height" constant="72" id="lw6-eN-OHi"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npk-Zi-hfd" userLabel="Currency Text Field" customClass="TextField" customModule="SharedUIModule">
+                                                        <rect key="frame" x="0.0" y="184" width="374" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrV-sZ-6mO" userLabel="Send All Button">
+                                                                <rect key="frame" x="323" y="-6" width="51" height="29"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                                <state key="normal" title="Send all">
+                                                                    <color key="titleColor" name="blue"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="actionSendAllCurrency:" destination="vBE-aY-R9g" eventType="touchUpInside" id="TDP-E0-IJo"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="XrV-sZ-6mO" secondAttribute="trailing" id="Au1-yk-cIz"/>
+                                                            <constraint firstItem="XrV-sZ-6mO" firstAttribute="top" secondItem="Npk-Zi-hfd" secondAttribute="top" constant="-6" id="aJT-pW-J2d"/>
+                                                            <constraint firstAttribute="height" constant="72" id="jpS-n5-wxt"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-6T-aCx" userLabel="Fee Text Field" customClass="TextField" customModule="SharedUIModule">
+                                                        <rect key="frame" x="0.0" y="276" width="374" height="72"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="72" id="pTk-VH-B1E"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2rt-ZO-DFK" firstAttribute="top" secondItem="Rof-6K-olS" secondAttribute="bottom" id="B5h-Oc-Hs7"/>
+                                            <constraint firstItem="S11-bV-Zl1" firstAttribute="leading" secondItem="N0D-xz-TmF" secondAttribute="leading" constant="20" id="Hm3-Cu-eZD"/>
+                                            <constraint firstItem="e3s-2O-gXC" firstAttribute="leading" secondItem="N0D-xz-TmF" secondAttribute="leading" constant="20" id="Vbh-dZ-ERM"/>
+                                            <constraint firstItem="2rt-ZO-DFK" firstAttribute="leading" secondItem="N0D-xz-TmF" secondAttribute="leading" constant="20" id="auf-AV-bK0"/>
+                                            <constraint firstItem="S11-bV-Zl1" firstAttribute="top" secondItem="N0D-xz-TmF" secondAttribute="top" constant="60" id="beZ-uu-F0Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="e3s-2O-gXC" secondAttribute="trailing" constant="20" id="fvh-Sx-3i2"/>
+                                            <constraint firstItem="e3s-2O-gXC" firstAttribute="top" secondItem="2rt-ZO-DFK" secondAttribute="bottom" constant="22" id="mmD-Bt-C6P"/>
+                                            <constraint firstItem="tyz-ru-jO2" firstAttribute="leading" secondItem="S11-bV-Zl1" secondAttribute="trailing" constant="8" id="pDV-aB-4i9"/>
+                                            <constraint firstItem="tyz-ru-jO2" firstAttribute="centerY" secondItem="S11-bV-Zl1" secondAttribute="centerY" id="qsB-vg-5K3"/>
+                                            <constraint firstItem="Rof-6K-olS" firstAttribute="leading" secondItem="N0D-xz-TmF" secondAttribute="leading" constant="20" id="sOz-en-BNJ"/>
+                                            <constraint firstItem="Rof-6K-olS" firstAttribute="top" secondItem="tyz-ru-jO2" secondAttribute="bottom" constant="16" id="sbF-7E-8nZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="e3s-2O-gXC" secondAttribute="bottom" constant="96" id="zpy-4h-B2S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N0D-xz-TmF" firstAttribute="trailing" secondItem="lO2-pL-Ce1" secondAttribute="trailing" id="LYx-6f-nW5"/>
+                                    <constraint firstItem="N0D-xz-TmF" firstAttribute="leading" secondItem="lO2-pL-Ce1" secondAttribute="leading" id="XoY-o8-2fr"/>
+                                    <constraint firstItem="N0D-xz-TmF" firstAttribute="top" secondItem="lO2-pL-Ce1" secondAttribute="top" id="eHd-y6-0c8"/>
+                                    <constraint firstItem="N0D-xz-TmF" firstAttribute="bottom" secondItem="lO2-pL-Ce1" secondAttribute="bottom" id="exf-cQ-Tms"/>
+                                    <constraint firstItem="N0D-xz-TmF" firstAttribute="width" secondItem="snE-i6-gyO" secondAttribute="width" id="w5F-QO-wXn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lO2-pL-Ce1"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="snE-i6-gyO"/>
+                            </scrollView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFz-MY-Xmv">
+                                <rect key="frame" x="0.0" y="766" width="414" height="96"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="cze-dA-OO7"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDF-Wl-hIz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="UfP-jw-Fdo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agK-7e-ZLG" userLabel="Back Button" customClass="ImageButton" customModule="SharedUIModule">
+                                <rect key="frame" x="2" y="49" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="EVi-lB-gal"/>
+                                    <constraint firstAttribute="height" constant="40" id="pDt-tE-dUf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-T7-5dH" userLabel="Qrcode Button" customClass="ImageButton" customModule="SharedUIModule">
+                                <rect key="frame" x="361" y="49" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fFP-ME-nWo"/>
+                                    <constraint firstAttribute="width" constant="40" id="h69-2W-hsX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DG-SE-xSM" userLabel="Send Button" customClass="TextButton" customModule="SharedUIModule">
+                                <rect key="frame" x="66" y="798" width="282" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oKx-dZ-Ile"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="32F-62-VXF" firstAttribute="bottom" secondItem="0DG-SE-xSM" secondAttribute="bottom" constant="20" id="27u-VS-0V0"/>
+                            <constraint firstItem="eAt-T7-5dH" firstAttribute="top" secondItem="tim-cX-DPF" secondAttribute="topMargin" constant="5" id="363-oV-rDI"/>
+                            <constraint firstItem="agK-7e-ZLG" firstAttribute="leading" secondItem="tim-cX-DPF" secondAttribute="leading" constant="2" id="3Hq-vW-Ikc"/>
+                            <constraint firstItem="32F-62-VXF" firstAttribute="bottom" secondItem="dFz-MY-Xmv" secondAttribute="bottom" id="3qD-mc-aXp"/>
+                            <constraint firstItem="wDF-Wl-hIz" firstAttribute="top" secondItem="32F-62-VXF" secondAttribute="top" id="6cZ-YV-hVk"/>
+                            <constraint firstItem="N9t-bo-em8" firstAttribute="bottom" secondItem="32F-62-VXF" secondAttribute="bottom" id="AHp-h2-jv2"/>
+                            <constraint firstItem="agK-7e-ZLG" firstAttribute="top" secondItem="32F-62-VXF" secondAttribute="top" constant="5" id="DOp-nb-vUA"/>
+                            <constraint firstItem="N9t-bo-em8" firstAttribute="top" secondItem="32F-62-VXF" secondAttribute="top" id="Fdh-Kg-F6o"/>
+                            <constraint firstItem="32F-62-VXF" firstAttribute="trailing" secondItem="dFz-MY-Xmv" secondAttribute="trailing" id="HnB-Pc-tR4"/>
+                            <constraint firstItem="0DG-SE-xSM" firstAttribute="centerX" secondItem="tim-cX-DPF" secondAttribute="centerX" id="MsY-5N-cPw"/>
+                            <constraint firstItem="wDF-Wl-hIz" firstAttribute="trailing" secondItem="32F-62-VXF" secondAttribute="trailing" id="Rzq-Jz-SHm"/>
+                            <constraint firstAttribute="trailing" secondItem="eAt-T7-5dH" secondAttribute="trailing" constant="13" id="eBD-T7-Jfx"/>
+                            <constraint firstItem="dFz-MY-Xmv" firstAttribute="leading" secondItem="32F-62-VXF" secondAttribute="leading" id="icF-I8-Btw"/>
+                            <constraint firstItem="N9t-bo-em8" firstAttribute="trailing" secondItem="32F-62-VXF" secondAttribute="trailing" id="mci-pp-XMx"/>
+                            <constraint firstItem="N9t-bo-em8" firstAttribute="leading" secondItem="32F-62-VXF" secondAttribute="leading" id="qoI-gR-Z8s"/>
+                            <constraint firstItem="wDF-Wl-hIz" firstAttribute="leading" secondItem="32F-62-VXF" secondAttribute="leading" id="sgh-5z-3PY"/>
+                            <constraint firstItem="32F-62-VXF" firstAttribute="trailing" secondItem="0DG-SE-xSM" secondAttribute="trailing" constant="66" id="srM-r2-FoH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="32F-62-VXF"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="39M-vU-8XT" appends="YES" id="xgr-vD-f0T"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="R8Z-e8-VmV" id="vHk-MZ-4th"/>
+                        <outlet property="amountTextField" destination="iyq-TF-Qxo" id="BON-DO-HUk"/>
+                        <outlet property="backButton" destination="agK-7e-ZLG" id="bYY-Bn-bZo"/>
+                        <outlet property="balanceValueLabel" destination="Rof-6K-olS" id="mQh-t7-ohf"/>
+                        <outlet property="bottomGradientView" destination="dFz-MY-Xmv" id="qXa-i3-rDd"/>
+                        <outlet property="contentViewBottomConstraint" destination="zpy-4h-B2S" id="hci-Kt-Nx3"/>
+                        <outlet property="currencyAmountTextField" destination="Npk-Zi-hfd" id="uNk-5l-Hda"/>
+                        <outlet property="feeTextField" destination="dfq-6T-aCx" id="zo2-XX-LC7"/>
+                        <outlet property="qrcodeButton" destination="eAt-T7-5dH" id="EqT-bC-Pqi"/>
+                        <outlet property="rateLabel" destination="2rt-ZO-DFK" id="N0r-ir-PfA"/>
+                        <outlet property="scrollView" destination="N9t-bo-em8" id="DeR-MY-x6Q"/>
+                        <outlet property="scrollViewBottomConstraint" destination="AHp-h2-jv2" id="HDx-9o-EkN"/>
+                        <outlet property="sendAllButton" destination="nJq-ys-Ccz" id="ktv-ft-dmE"/>
+                        <outlet property="sendAllCurrencyButton" destination="XrV-sZ-6mO" id="CjB-L2-3D8"/>
+                        <outlet property="sendButton" destination="0DG-SE-xSM" id="Ljp-81-M5i"/>
+                        <outlet property="titleLabel" destination="tyz-ru-jO2" id="X0X-Fm-lNM"/>
+                        <outlet property="topGradientView" destination="wDF-Wl-hIz" id="gGc-Ym-JjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeG-rF-dsY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="39M-vU-8XT">
+                    <connections>
+                        <action selector="actionVoidTap:" destination="vBE-aY-R9g" id="ldu-U2-jkP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="send_title" width="28" height="28"/>
+        <namedColor name="blue">
+            <color red="0.44705882352941179" green="0.5725490196078431" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

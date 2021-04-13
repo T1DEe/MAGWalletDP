@@ -1,0 +1,45 @@
+//
+//  ETHTokenTransfersResponseModel.swift
+//  CryptoAPI
+//
+//  Created by Artemy Markovsky on 08/04/2021.
+//  Copyright © 2021. All rights reserved.
+//
+
+public struct ETHTokenTransfersResponseModel: Codable {
+    public let addresses: [String]
+    public let skip: Int
+    public let limit: Int
+    public let items: [ETHTokenTransferResponseModel]
+    public let count: Int
+}
+
+public struct ETHTokenTransferResponseModel {
+    public let type: String
+    public let executeAddress: String
+    public let from: String
+    public let to: String
+    public let value: String
+    public let address: String
+    public let blockNumber: Int
+    public let transactionHash: String
+    public let transactionIndex: Int
+    public let logIndex: Int
+    public let utc: String
+}
+
+extension ETHTokenTransferResponseModel: Codable {
+    enum CodingKeys: String, CodingKey {
+        case type
+        case executeAddress = "execute_address"
+        case from
+        case to
+        case value
+        case address
+        case blockNumber = "block_number"
+        case transactionHash = "transaction_hash"
+        case transactionIndex = "transaction_index"
+        case logIndex = "log_index"
+        case utc
+    }
+}

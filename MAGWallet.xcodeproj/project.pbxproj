@@ -1,0 +1,3110 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07618804FE27C5F35D6118B1 /* ForgotPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282360B964D79E2DE5022E6 /* ForgotPinPresenter.swift */; };
+		0B3FDF3FA5E4F4C46A767274 /* AllCurrenciesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBCC523B906781F234A668A /* AllCurrenciesProtocols.swift */; };
+		0E0081ADE8EB1082C0E477E8 /* ForgotPinConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A40D3E5E00930465641B1 /* ForgotPinConfigurator.swift */; };
+		14FCCFADC171FE7C48896E72 /* ForgotPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34760D114B4BCD23D639B2F9 /* ForgotPinViewController.swift */; };
+		24B2C1C035122A6499B417E3 /* MultiAccountsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE18CE2E51AD5878FB046A4 /* MultiAccountsPresenter.swift */; };
+		26EA8E2D2504D0FF579EB413 /* AllCurrenciesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF1AFA028EBA9AED6E9325 /* AllCurrenciesConfigurator.swift */; };
+		2C76C296F2ED6FA0D76E040A /* ButtonSnackBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32DF7373E69AAD28AFE13A /* ButtonSnackBarAssembler.swift */; };
+		365FB3B7D4F4517F1EC137C8 /* Pods_MAGWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D45D29979450A85EBCAE2B2 /* Pods_MAGWallet.framework */; };
+		3BA3EBCD23F4525DC391EF3A /* ButtonSnackBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB151BAA7DBE71C46AC7A6 /* ButtonSnackBarInteractor.swift */; };
+		3C3EF31BB0D2BDCA089C3C46 /* MainRoutingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79E2F0BC4A0D2D0D6B190E /* MainRoutingPresenter.swift */; };
+		429AE78C708B59C13E184224 /* MultiAccountsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F72469835EEF446AD5E400 /* MultiAccountsProtocols.swift */; };
+		43C795F27668C81247243F38 /* MainRoutingAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D752336E03688AB1B216C62 /* MainRoutingAssembler.swift */; };
+		4457829E7831036472DBD032 /* Pods_MAGWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9F7A9345B601480B102C25 /* Pods_MAGWalletTests.framework */; };
+		471FB360432E065E5D66D278 /* MultiAccountsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82949EAB6B659D17BB1898B6 /* MultiAccountsConfigurator.swift */; };
+		4B020F146655EFC753ACB695 /* ButtonSnackBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88737F429944895429038E4A /* ButtonSnackBarRouter.swift */; };
+		4CA492EE45B91F2169CA64D7 /* AllCurrenciesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D8D1CC87C0AF1AB95D67C /* AllCurrenciesInteractor.swift */; };
+		4F39A1635B5DE3B5C39B14BC /* MultiAccountsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A3F4E4D2B88699A2C23282 /* MultiAccountsAssembler.swift */; };
+		5A6576C9069C2515D6855767 /* ButtonSnackBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D8181BCF94FAD021C95F2 /* ButtonSnackBarConfigurator.swift */; };
+		5B7F5BE17B603EA698CE8FA5 /* AllCurrenciesAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433903FE74BA30C59D468F20 /* AllCurrenciesAssembler.swift */; };
+		60A2243CB81AA91B6A50DE24 /* MainRoutingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879FF49A712B8E5F557FDA9 /* MainRoutingInteractor.swift */; };
+		645E58D80C55E1D949320C0B /* MainRoutingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C222932F9076AE9D4C60CF3 /* MainRoutingProtocols.swift */; };
+		70F9235948D2C68A51ACF3F7 /* AllCurrenciesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B51D19760548D02526ACD /* AllCurrenciesPresenter.swift */; };
+		76FFA02BDB3A0DAC7849C4B2 /* MultiAccountsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE36942306B6EE78930480 /* MultiAccountsInteractor.swift */; };
+		773108FE4E319CF1D71D631C /* ForgotPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525CC02A0812E72742CFF3F4 /* ForgotPinInteractor.swift */; };
+		7BB5DDB92A75C199B0AD8475 /* ButtonSnackBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B145E68321D45147F65B21D /* ButtonSnackBarViewController.swift */; };
+		98F3E6D54DD40510C97999C7 /* MultiAccountsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD87C72561928EA9FAE80 /* MultiAccountsRouter.swift */; };
+		9AC2FF197F5B19D8C52B59DE /* MainRoutingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2D335329D9E1534D10CF /* MainRoutingConfigurator.swift */; };
+		9D1749771AB71D9D9E374E5B /* AllCurrenciesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF6EC9F747403C9215AEA8 /* AllCurrenciesRouter.swift */; };
+		9DA1BA22A4102F7A75C8E13C /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671CFECA27BA3759B51FE77 /* Pods_NotificationServiceExtension.framework */; };
+		A758D90F161DF0B98F17AF6A /* MainRoutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB6211CE747EA116D973792 /* MainRoutingViewController.swift */; };
+		B30153382327C7810004AAD9 /* AuthEventProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30153372327C7810004AAD9 /* AuthEventProxy.swift */; };
+		B301533A2327C7880004AAD9 /* AuthEventProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30153392327C7880004AAD9 /* AuthEventProxyImp.swift */; };
+		B3015344232916AD0004AAD9 /* CryptoCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015343232916AD0004AAD9 /* CryptoCoreComponent.swift */; };
+		B3015346232916BB0004AAD9 /* CryptoCoreComponentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015345232916BB0004AAD9 /* CryptoCoreComponentImp.swift */; };
+		B301534C232943DF0004AAD9 /* MainRouting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B301534B232943DF0004AAD9 /* MainRouting.storyboard */; };
+		B301535C232A303A0004AAD9 /* ChangePinAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301534F232A30390004AAD9 /* ChangePinAssembler.swift */; };
+		B301535D232A303A0004AAD9 /* ChangePinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015351232A30390004AAD9 /* ChangePinPresenter.swift */; };
+		B301535E232A303A0004AAD9 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015353232A30390004AAD9 /* ChangePinViewController.swift */; };
+		B301535F232A303A0004AAD9 /* ChangePinConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015355232A30390004AAD9 /* ChangePinConfigurator.swift */; };
+		B3015360232A303A0004AAD9 /* ChangePinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015357232A30390004AAD9 /* ChangePinProtocols.swift */; };
+		B3015361232A303A0004AAD9 /* ChangePinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3015359232A30390004AAD9 /* ChangePinInteractor.swift */; };
+		B3015362232A303A0004AAD9 /* ChangePinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301535B232A30390004AAD9 /* ChangePinRouter.swift */; };
+		B33550EE235504FF00995D9F /* ETHModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33550E4235502DA00995D9F /* ETHModule.framework */; };
+		B33550EF235504FF00995D9F /* ETHModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B33550E4235502DA00995D9F /* ETHModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B33AE56921ECAD210016966A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE52521ECAD210016966A /* Constants.swift */; };
+		B33AE56A21ECAD210016966A /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE52821ECAD210016966A /* Presentable.swift */; };
+		B33AE56B21ECAD210016966A /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52C21ECAD210016966A /* Localization.strings */; };
+		B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52E21ECAD210016966A /* Assets.xcassets */; };
+		B33AE56D21ECAD210016966A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53021ECAD210016966A /* R.generated.swift */; };
+		B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54121ECAD210016966A /* ServicesAssembly.swift */; };
+		B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */; };
+		B33AE57421ECAD210016966A /* ProxyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54321ECAD210016966A /* ProxyAssembly.swift */; };
+		B33AE57521ECAD210016966A /* BusinessLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54421ECAD210016966A /* BusinessLayerAssembly.swift */; };
+		B33AE57621ECAD210016966A /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54D21ECAD210016966A /* ConfiguratorProtocol.swift */; };
+		B33AE57721ECAD210016966A /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54E21ECAD210016966A /* ApplicationConfigurator.swift */; };
+		B33AE57821ECAD210016966A /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54F21ECAD210016966A /* AppearanceConfigurator.swift */; };
+		B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55121ECAD210016966A /* ApplicationAssembler.swift */; };
+		B33AE57A21ECAD210016966A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55221ECAD210016966A /* AppDelegate.swift */; };
+		B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55521ECAD210016966A /* ModuleAssembly.swift */; };
+		B33AE57C21ECAD210016966A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33AE55621ECAD210016966A /* LaunchScreen.storyboard */; };
+		B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55B21ECAD210016966A /* RootAssembler.swift */; };
+		B33AE57E21ECAD210016966A /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55D21ECAD210016966A /* RootPresenter.swift */; };
+		B33AE57F21ECAD210016966A /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33AE55E21ECAD210016966A /* Root.storyboard */; };
+		B33AE58021ECAD210016966A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56021ECAD210016966A /* RootViewController.swift */; };
+		B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56221ECAD210016966A /* RootConfigurator.swift */; };
+		B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56421ECAD210016966A /* RootProtocols.swift */; };
+		B33AE58321ECAD210016966A /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56621ECAD210016966A /* RootInteractor.swift */; };
+		B33AE58421ECAD210016966A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56821ECAD210016966A /* RootRouter.swift */; };
+		B344F3A1235DA67D00D8F214 /* SharedUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BCCE5B235CD982005EED3D /* SharedUIModule.framework */; };
+		B344F3A6235DA6CC00D8F214 /* SharedFilesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B344F3A5235DA6CC00D8F214 /* SharedFilesModule.framework */; };
+		B344F3A7235DA6CC00D8F214 /* SharedFilesModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B344F3A5235DA6CC00D8F214 /* SharedFilesModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B346D0D02327AA0700559245 /* SplashAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0C22327AA0700559245 /* SplashAssembler.swift */; };
+		B346D0D12327AA0700559245 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0C42327AA0700559245 /* SplashPresenter.swift */; };
+		B346D0D22327AA0700559245 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B346D0C52327AA0700559245 /* Splash.storyboard */; };
+		B346D0D32327AA0700559245 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0C72327AA0700559245 /* SplashViewController.swift */; };
+		B346D0D42327AA0700559245 /* SplashConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0C92327AA0700559245 /* SplashConfigurator.swift */; };
+		B346D0D52327AA0700559245 /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0CB2327AA0700559245 /* SplashProtocols.swift */; };
+		B346D0D62327AA0700559245 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0CD2327AA0700559245 /* SplashInteractor.swift */; };
+		B346D0D72327AA0700559245 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0CF2327AA0700559245 /* SplashRouter.swift */; };
+		B346D12C2327AAA900559245 /* Pin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B346D0E82327AAA800559245 /* Pin.storyboard */; };
+		B346D12D2327AAA900559245 /* CreatePinAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0EB2327AAA800559245 /* CreatePinAssembler.swift */; };
+		B346D12E2327AAA900559245 /* CreatePinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0ED2327AAA800559245 /* CreatePinPresenter.swift */; };
+		B346D12F2327AAA900559245 /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0EF2327AAA800559245 /* CreatePinViewController.swift */; };
+		B346D1302327AAA900559245 /* CreatePinConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0F12327AAA800559245 /* CreatePinConfigurator.swift */; };
+		B346D1312327AAA900559245 /* CreatePinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0F32327AAA800559245 /* CreatePinProtocols.swift */; };
+		B346D1322327AAA900559245 /* CreatePinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0F52327AAA800559245 /* CreatePinInteractor.swift */; };
+		B346D1332327AAA900559245 /* CreatePinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D0F72327AAA800559245 /* CreatePinRouter.swift */; };
+		B346D13B2327AAA900559245 /* PinVerificationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1092327AAA900559245 /* PinVerificationAssembler.swift */; };
+		B346D13C2327AAA900559245 /* PinVerificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D10B2327AAA900559245 /* PinVerificationPresenter.swift */; };
+		B346D13D2327AAA900559245 /* PinVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D10D2327AAA900559245 /* PinVerificationViewController.swift */; };
+		B346D13E2327AAA900559245 /* PinVerificationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D10F2327AAA900559245 /* PinVerificationConfigurator.swift */; };
+		B346D13F2327AAA900559245 /* PinVerificationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1112327AAA900559245 /* PinVerificationProtocols.swift */; };
+		B346D1402327AAA900559245 /* PinVerificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1132327AAA900559245 /* PinVerificationInteractor.swift */; };
+		B346D1412327AAA900559245 /* PinVerificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1152327AAA900559245 /* PinVerificationRouter.swift */; };
+		B346D1422327AAA900559245 /* PasswordFillingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B346D1182327AAA900559245 /* PasswordFillingCollectionCell.xib */; };
+		B346D1432327AAA900559245 /* PasswordFillingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1192327AAA900559245 /* PasswordFillingCollectionCell.swift */; };
+		B346D1442327AAA900559245 /* PasswordKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D11C2327AAA900559245 /* PasswordKeyboardCell.swift */; };
+		B346D1452327AAA900559245 /* PasswordKeyboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B346D11D2327AAA900559245 /* PasswordKeyboardCell.xib */; };
+		B346D1462327AAA900559245 /* PasswordKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D11E2327AAA900559245 /* PasswordKeyboardView.swift */; };
+		B346D1472327AAA900559245 /* PasswordKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B346D11F2327AAA900559245 /* PasswordKeyboardView.xib */; };
+		B346D1482327AAA900559245 /* BasePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1212327AAA900559245 /* BasePasswordViewController.swift */; };
+		B346D1492327AAA900559245 /* PasswordFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1232327AAA900559245 /* PasswordFillView.swift */; };
+		B346D14A2327AAA900559245 /* PasswordFillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B346D1242327AAA900559245 /* PasswordFillView.xib */; };
+		B346D14C2327AB1400559245 /* AuthFacadeImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D14B2327AB1400559245 /* AuthFacadeImp.swift */; };
+		B346D14E2327AB1D00559245 /* AuthFacadeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D14D2327AB1D00559245 /* AuthFacadeService.swift */; };
+		B346D1512327B06C00559245 /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346D1502327B06C00559245 /* HighlightButton.swift */; };
+		B3542F2E2371467D00F914C6 /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F1C2371467D00F914C6 /* SettingsAssembler.swift */; };
+		B3542F2F2371467D00F914C6 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F1E2371467D00F914C6 /* SettingsPresenter.swift */; };
+		B3542F302371467D00F914C6 /* SidebarScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F212371467D00F914C6 /* SidebarScreenButton.swift */; };
+		B3542F312371467D00F914C6 /* SettingsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F232371467D00F914C6 /* SettingsEntity.swift */; };
+		B3542F322371467D00F914C6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F242371467D00F914C6 /* SettingsViewController.swift */; };
+		B3542F332371467D00F914C6 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F262371467D00F914C6 /* SettingsConfigurator.swift */; };
+		B3542F352371467D00F914C6 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F292371467D00F914C6 /* SettingsProtocols.swift */; };
+		B3542F362371467D00F914C6 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F2B2371467D00F914C6 /* SettingsInteractor.swift */; };
+		B3542F372371467D00F914C6 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F2D2371467D00F914C6 /* SettingsRouter.swift */; };
+		B3542F59237146D600F914C6 /* LogoutAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F3A237146D600F914C6 /* LogoutAssembler.swift */; };
+		B3542F5A237146D600F914C6 /* LogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F3C237146D600F914C6 /* LogoutPresenter.swift */; };
+		B3542F5B237146D600F914C6 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F3E237146D600F914C6 /* LogoutViewController.swift */; };
+		B3542F5C237146D600F914C6 /* LogoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F40237146D600F914C6 /* LogoutConfigurator.swift */; };
+		B3542F5D237146D600F914C6 /* LogoutProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F42237146D600F914C6 /* LogoutProtocols.swift */; };
+		B3542F5E237146D600F914C6 /* LogoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F44237146D600F914C6 /* LogoutInteractor.swift */; };
+		B3542F5F237146D600F914C6 /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F46237146D600F914C6 /* LogoutRouter.swift */; };
+		B3542F60237146D600F914C6 /* AutoblockAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F49237146D600F914C6 /* AutoblockAssembler.swift */; };
+		B3542F61237146D600F914C6 /* AutoblockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F4B237146D600F914C6 /* AutoblockPresenter.swift */; };
+		B3542F62237146D600F914C6 /* AutoblockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F4D237146D600F914C6 /* AutoblockViewController.swift */; };
+		B3542F63237146D600F914C6 /* AutoblockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F50237146D600F914C6 /* AutoblockTableViewCell.swift */; };
+		B3542F64237146D600F914C6 /* AutoblockConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F52237146D600F914C6 /* AutoblockConfigurator.swift */; };
+		B3542F65237146D600F914C6 /* AutoblockProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F54237146D600F914C6 /* AutoblockProtocols.swift */; };
+		B3542F66237146D600F914C6 /* AutoblockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F56237146D600F914C6 /* AutoblockInteractor.swift */; };
+		B3542F67237146D600F914C6 /* AutoblockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3542F58237146D600F914C6 /* AutoblockRouter.swift */; };
+		B3542F6A2371564D00F914C6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3542F692371564C00F914C6 /* Settings.storyboard */; };
+		B391180C233503A9007B9DF6 /* SessionVerificationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39117FF233503A9007B9DF6 /* SessionVerificationAssembler.swift */; };
+		B391180D233503A9007B9DF6 /* SessionVerificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911801233503A9007B9DF6 /* SessionVerificationPresenter.swift */; };
+		B391180E233503A9007B9DF6 /* SessionVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911803233503A9007B9DF6 /* SessionVerificationViewController.swift */; };
+		B391180F233503A9007B9DF6 /* SessionVerificationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911805233503A9007B9DF6 /* SessionVerificationConfigurator.swift */; };
+		B3911810233503A9007B9DF6 /* SessionVerificationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911807233503A9007B9DF6 /* SessionVerificationProtocols.swift */; };
+		B3911811233503A9007B9DF6 /* SessionVerificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911809233503A9007B9DF6 /* SessionVerificationInteractor.swift */; };
+		B3911812233503A9007B9DF6 /* SessionVerificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391180B233503A9007B9DF6 /* SessionVerificationRouter.swift */; };
+		B3BCCE24235CC980005EED3D /* SharedColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BCCE23235CC97F005EED3D /* SharedColors.xcassets */; };
+		B3BCCE3C235CCDFF005EED3D /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B3BCCE3A235CCDF5005EED3D /* Poppins-Medium.otf */; };
+		B3BCCE3D235CCDFF005EED3D /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B3BCCE39235CCDF5005EED3D /* Poppins-Regular.otf */; };
+		B3BCCE3E235CCDFF005EED3D /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B3BCCE3B235CCDF5005EED3D /* Poppins-SemiBold.otf */; };
+		B3BCCE5C235CD982005EED3D /* SharedUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BCCE5B235CD982005EED3D /* SharedUIModule.framework */; };
+		B3BCCE5D235CD982005EED3D /* SharedUIModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3BCCE5B235CD982005EED3D /* SharedUIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3CA85752369BE9800C81E92 /* SensativeDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA85742369BE9800C81E92 /* SensativeDataServiceTests.swift */; };
+		B3CA857B2369D41B00C81E92 /* AuthFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CA857A2369D41B00C81E92 /* AuthFacadeTests.swift */; };
+		B3D531612332466A00132A40 /* SensitiveDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531602332466A00132A40 /* SensitiveDataService.swift */; };
+		B3D531632332472D00132A40 /* SensitiveDataServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531622332472D00132A40 /* SensitiveDataServiceImp.swift */; };
+		B3D5317A2332524F00132A40 /* UnlockPinAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D5316D2332524F00132A40 /* UnlockPinAssembler.swift */; };
+		B3D5317B2332524F00132A40 /* UnlockPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D5316F2332524F00132A40 /* UnlockPinPresenter.swift */; };
+		B3D5317C2332524F00132A40 /* UnlockPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531712332524F00132A40 /* UnlockPinViewController.swift */; };
+		B3D5317D2332524F00132A40 /* UnlockPinConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531732332524F00132A40 /* UnlockPinConfigurator.swift */; };
+		B3D5317E2332524F00132A40 /* UnlockPinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531752332524F00132A40 /* UnlockPinProtocols.swift */; };
+		B3D5317F2332524F00132A40 /* UnlockPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531772332524F00132A40 /* UnlockPinInteractor.swift */; };
+		B3D531802332524F00132A40 /* UnlockPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D531792332524F00132A40 /* UnlockPinRouter.swift */; };
+		B3F5DF6523676961002DBD31 /* CryptoCoreComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F5DF6423676961002DBD31 /* CryptoCoreComponentTest.swift */; };
+		C2EA5247D450A081FBE81BA2 /* ButtonSnackBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA673D86952F3DFDCCB6B670 /* ButtonSnackBarPresenter.swift */; };
+		C4EC2BF174F49C0A4F1C92F7 /* ForgotPinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381252F89A7530F6EC7FE468 /* ForgotPinProtocols.swift */; };
+		C93447EF4518811AFDB8756F /* ForgotPinAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAF35BF05D018D00F0E4F4 /* ForgotPinAssembler.swift */; };
+		C957A7E81E65537C33B7B958 /* ButtonSnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E46C8632EA7D95B2162EED /* ButtonSnackBarProtocols.swift */; };
+		CE37A625262090BF005349A4 /* CryptoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE92F7E6261F462900DABB00 /* CryptoAPI.framework */; };
+		CE37A626262090BF005349A4 /* CryptoAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE92F7E6261F462900DABB00 /* CryptoAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D044FC0023E842030012C2BA /* BTCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044FBFF23E842030012C2BA /* BTCModule.framework */; };
+		D044FC0123E842030012C2BA /* BTCModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D044FBFF23E842030012C2BA /* BTCModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0538EC3238ED63A00FDC853 /* FirebaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538EC2238ED63900FDC853 /* FirebaseConfigurator.swift */; };
+		D0A9B2D023323CAF008342F1 /* SnackBarRootAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C123323CAF008342F1 /* SnackBarRootAssembler.swift */; };
+		D0A9B2D123323CAF008342F1 /* SnackBarRootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C323323CAF008342F1 /* SnackBarRootPresenter.swift */; };
+		D0A9B2D223323CAF008342F1 /* SnackBarRootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C423323CAF008342F1 /* SnackBarRootModel.swift */; };
+		D0A9B2D323323CAF008342F1 /* SnackBarTouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C623323CAF008342F1 /* SnackBarTouchableView.swift */; };
+		D0A9B2D423323CAF008342F1 /* SnackBarRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C723323CAF008342F1 /* SnackBarRootViewController.swift */; };
+		D0A9B2D523323CAF008342F1 /* SnackBarRootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2C923323CAF008342F1 /* SnackBarRootConfigurator.swift */; };
+		D0A9B2D623323CAF008342F1 /* SnackBarRootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2CB23323CAF008342F1 /* SnackBarRootProtocols.swift */; };
+		D0A9B2D723323CAF008342F1 /* SnackBarRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2CD23323CAF008342F1 /* SnackBarRootInteractor.swift */; };
+		D0A9B2D823323CAF008342F1 /* SnackBarRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9B2CF23323CAF008342F1 /* SnackBarRootRouter.swift */; };
+		D0A9B2DA23323CC1008342F1 /* SnackBarsRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9B2D923323CC1008342F1 /* SnackBarsRoot.storyboard */; };
+		D0CB0F22236C27DA00A7184F /* AllCurrencies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CB0F21236C27DA00A7184F /* AllCurrencies.storyboard */; };
+		D0CB0F26236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB0F24236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift */; };
+		D0CB0F27236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CB0F25236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.xib */; };
+		D0CB0F2A236C39F800A7184F /* AllCurrenciesDuoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB0F28236C39F800A7184F /* AllCurrenciesDuoTableViewCell.swift */; };
+		D0CB0F2B236C39F800A7184F /* AllCurrenciesDuoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CB0F29236C39F800A7184F /* AllCurrenciesDuoTableViewCell.xib */; };
+		D0CB0F2E236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB0F2C236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.swift */; };
+		D0CB0F2F236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CB0F2D236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.xib */; };
+		D0CB0F32236C577100A7184F /* AllCurrenciesScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB0F31236C577100A7184F /* AllCurrenciesScreenModel.swift */; };
+		D4F77D3DE85B7406714425C2 /* AllCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D210AA23C078A5E1921383 /* AllCurrenciesViewController.swift */; };
+		D7820086CD0603CB43A2D7B7 /* MainRoutingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C867C0696D8884BDCE6DBA6 /* MainRoutingRouter.swift */; };
+		E803E033A2D67484389166C4 /* ForgotPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289A428AE63D982A11CE3B8 /* ForgotPinRouter.swift */; };
+		EDDBA97A61918C5FCED7C84F /* MultiAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F97D2EA5F2C08428CD4B50 /* MultiAccountsViewController.swift */; };
+		F2CF2D8F23853EA500B9C281 /* SnackBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CF2D8E23853EA500B9C281 /* SnackBar.storyboard */; };
+		F2D115AB2383D1EB0045793B /* AddAccountHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D115AA2383D1EB0045793B /* AddAccountHeaderCell.swift */; };
+		F2D115AD2383D21D0045793B /* AccountsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D115AC2383D21D0045793B /* AccountsCell.swift */; };
+		F2D115B02383DBBB0045793B /* MultiAccountsScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D115AF2383DBBB0045793B /* MultiAccountsScreenModel.swift */; };
+		F2E6FB1B23853F440026CB21 /* ButtonSnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6FB1A23853F440026CB21 /* ButtonSnackBarModel.swift */; };
+		F3525611249417830032B139 /* FlowNotificationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3525610249417830032B139 /* FlowNotificationFacade.swift */; };
+		F35305C32499EF8F008DA56E /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F35305C22499EF8F008DA56E /* Localization.strings */; };
+		F35305C72499F258008DA56E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305C62499F258008DA56E /* R.generated.swift */; };
+		F35B029324769B8B0024061C /* AllCurrenciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B029224769B8B0024061C /* AllCurrenciesModel.swift */; };
+		F36525A5248FC27A00DB518B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F36525A4248FC27A00DB518B /* GoogleService-Info.plist */; };
+		F36525AD2490BD4600DB518B /* FirebaseTokenEventProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525AC2490BD4400DB518B /* FirebaseTokenEventProxy.swift */; };
+		F36525AF2490BD7300DB518B /* FirebaseEventProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525AE2490BD7300DB518B /* FirebaseEventProxyImp.swift */; };
+		F36525C324911C2C00DB518B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525C224911C2C00DB518B /* NotificationService.swift */; };
+		F36525C724911C2C00DB518B /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F36525C024911C2C00DB518B /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F36525CF2491605300DB518B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525CE2491605300DB518B /* FirebaseService.swift */; };
+		F36525D12491605F00DB518B /* FirebaseServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525D02491605F00DB518B /* FirebaseServiceImp.swift */; };
+		F36525E824927CF500DB518B /* OneButtonSnackBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525DA24927CF500DB518B /* OneButtonSnackBarAssembler.swift */; };
+		F36525E924927CF500DB518B /* OneButtonSnackBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525DC24927CF500DB518B /* OneButtonSnackBarPresenter.swift */; };
+		F36525EA24927CF500DB518B /* OneButtonSnackBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525DE24927CF500DB518B /* OneButtonSnackBarViewController.swift */; };
+		F36525EB24927CF500DB518B /* OneButtonSnackBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525E024927CF500DB518B /* OneButtonSnackBarConfigurator.swift */; };
+		F36525EC24927CF500DB518B /* OneButtonSnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525E124927CF500DB518B /* OneButtonSnackBarModel.swift */; };
+		F36525ED24927CF500DB518B /* OneButtonSnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525E324927CF500DB518B /* OneButtonSnackBarProtocols.swift */; };
+		F36525EE24927CF500DB518B /* OneButtonSnackBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525E524927CF500DB518B /* OneButtonSnackBarInteractor.swift */; };
+		F36525EF24927CF500DB518B /* OneButtonSnackBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36525E724927CF500DB518B /* OneButtonSnackBarRouter.swift */; };
+		F36525F124927D6F00DB518B /* OneButtonSnackbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36525F024927D6F00DB518B /* OneButtonSnackbar.storyboard */; };
+		F3682A90248A801700F30C44 /* LTCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A8F248A801700F30C44 /* LTCModule.framework */; };
+		F3682A91248A801700F30C44 /* LTCModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A8F248A801700F30C44 /* LTCModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F374E8B42493788D00FF7F2B /* ReachabilityServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E8B32493788D00FF7F2B /* ReachabilityServiceImp.swift */; };
+		F374E8B62493789800FF7F2B /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E8B52493789800FF7F2B /* ReachabilityService.swift */; };
+		F374E8B824937B1200FF7F2B /* ReachabilityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E8B724937B1200FF7F2B /* ReachabilityConfigurator.swift */; };
+		F374E8BA24937D4900FF7F2B /* ReachabilityEventProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E8B924937D4900FF7F2B /* ReachabilityEventProxyImp.swift */; };
+		F374E8BC24937D5B00FF7F2B /* ReachabilityEventProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E8BB24937D5B00FF7F2B /* ReachabilityEventProxy.swift */; };
+		F3DE5A5824941B3D0005D718 /* FacadesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DE5A5724941B3D0005D718 /* FacadesAssembly.swift */; };
+		F3EA90E72481078F001B988A /* ChangeNetworkAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90D82481078F001B988A /* ChangeNetworkAssembler.swift */; };
+		F3EA90E82481078F001B988A /* ChangeNetworkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90DA2481078F001B988A /* ChangeNetworkPresenter.swift */; };
+		F3EA90E92481078F001B988A /* ChangeNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90DC2481078F001B988A /* ChangeNetworkViewController.swift */; };
+		F3EA90EA2481078F001B988A /* ChangeNetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90DE2481078F001B988A /* ChangeNetworkTableViewCell.swift */; };
+		F3EA90EB2481078F001B988A /* ChangeNetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90E02481078F001B988A /* ChangeNetworkConfigurator.swift */; };
+		F3EA90EC2481078F001B988A /* ChangeNetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90E22481078F001B988A /* ChangeNetworkProtocols.swift */; };
+		F3EA90ED2481078F001B988A /* ChangeNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90E42481078F001B988A /* ChangeNetworkInteractor.swift */; };
+		F3EA90EE2481078F001B988A /* ChangeNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90E62481078F001B988A /* ChangeNetworkRouter.swift */; };
+		F3EA90F32481166D001B988A /* ChangeNetworkHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90F22481166D001B988A /* ChangeNetworkHeaderCell.swift */; };
+		F3EA90F724812F7F001B988A /* ChangeNetworkScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA90F624812F7F001B988A /* ChangeNetworkScreenModels.swift */; };
+		F3F48DFF2493FEAA00DD2AF3 /* FlowNotificationFacadeImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F48DFE2493FEAA00DD2AF3 /* FlowNotificationFacadeImp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3ED2CCD23670C3800639B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33AE50521ECAA2E0016966A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B33AE50C21ECAA2E0016966A;
+			remoteInfo = CryptoWalletTemplate;
+		};
+		F36525C524911C2C00DB518B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33AE50521ECAA2E0016966A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36525BF24911C2C00DB518B;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3D53167233251BA00132A40 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B33550EF235504FF00995D9F /* ETHModule.framework in Embed Frameworks */,
+				B3BCCE5D235CD982005EED3D /* SharedUIModule.framework in Embed Frameworks */,
+				B344F3A7235DA6CC00D8F214 /* SharedFilesModule.framework in Embed Frameworks */,
+				F3682A91248A801700F30C44 /* LTCModule.framework in Embed Frameworks */,
+				CE37A626262090BF005349A4 /* CryptoAPI.framework in Embed Frameworks */,
+				D044FC0123E842030012C2BA /* BTCModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36525CB24911C2D00DB518B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F36525C724911C2C00DB518B /* NotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08F72469835EEF446AD5E400 /* MultiAccountsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsProtocols.swift; sourceTree = "<group>"; };
+		09DF1AFA028EBA9AED6E9325 /* AllCurrenciesConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesConfigurator.swift; sourceTree = "<group>"; };
+		0FE18CE2E51AD5878FB046A4 /* MultiAccountsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsPresenter.swift; sourceTree = "<group>"; };
+		11DAD87C72561928EA9FAE80 /* MultiAccountsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsRouter.swift; sourceTree = "<group>"; };
+		11F97D2EA5F2C08428CD4B50 /* MultiAccountsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsViewController.swift; sourceTree = "<group>"; };
+		1C867C0696D8884BDCE6DBA6 /* MainRoutingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingRouter.swift; sourceTree = "<group>"; };
+		322DF3C508054C36EFE2960E /* Pods-MAGWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGWallet.debug.xcconfig"; path = "Target Support Files/Pods-MAGWallet/Pods-MAGWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		34760D114B4BCD23D639B2F9 /* ForgotPinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinViewController.swift; sourceTree = "<group>"; };
+		381252F89A7530F6EC7FE468 /* ForgotPinProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinProtocols.swift; sourceTree = "<group>"; };
+		3CE8B6C51EAD8FF30D957E59 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3D45D29979450A85EBCAE2B2 /* Pods_MAGWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		433903FE74BA30C59D468F20 /* AllCurrenciesAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesAssembler.swift; sourceTree = "<group>"; };
+		4671CFECA27BA3759B51FE77 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5F19CEF45478081C4037C7 /* Pods-MAGWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGWalletTests.release.xcconfig"; path = "Target Support Files/Pods-MAGWalletTests/Pods-MAGWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E79E2F0BC4A0D2D0D6B190E /* MainRoutingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingPresenter.swift; sourceTree = "<group>"; };
+		4E9F7A9345B601480B102C25 /* Pods_MAGWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		525CC02A0812E72742CFF3F4 /* ForgotPinInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinInteractor.swift; sourceTree = "<group>"; };
+		5289A428AE63D982A11CE3B8 /* ForgotPinRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinRouter.swift; sourceTree = "<group>"; };
+		59E46C8632EA7D95B2162EED /* ButtonSnackBarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarProtocols.swift; sourceTree = "<group>"; };
+		6083CB60A85A4FC31A735346 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		610D8D1CC87C0AF1AB95D67C /* AllCurrenciesInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesInteractor.swift; sourceTree = "<group>"; };
+		62A3F4E4D2B88699A2C23282 /* MultiAccountsAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsAssembler.swift; sourceTree = "<group>"; };
+		6C222932F9076AE9D4C60CF3 /* MainRoutingProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingProtocols.swift; sourceTree = "<group>"; };
+		7B145E68321D45147F65B21D /* ButtonSnackBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarViewController.swift; sourceTree = "<group>"; };
+		82949EAB6B659D17BB1898B6 /* MultiAccountsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsConfigurator.swift; sourceTree = "<group>"; };
+		84FAF35BF05D018D00F0E4F4 /* ForgotPinAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinAssembler.swift; sourceTree = "<group>"; };
+		8630AA2508A5246F3552A5C7 /* Pods-MAGWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-MAGWalletTests/Pods-MAGWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88737F429944895429038E4A /* ButtonSnackBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarRouter.swift; sourceTree = "<group>"; };
+		8D752336E03688AB1B216C62 /* MainRoutingAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingAssembler.swift; sourceTree = "<group>"; };
+		927A40D3E5E00930465641B1 /* ForgotPinConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinConfigurator.swift; sourceTree = "<group>"; };
+		A3D210AA23C078A5E1921383 /* AllCurrenciesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesViewController.swift; sourceTree = "<group>"; };
+		AA673D86952F3DFDCCB6B670 /* ButtonSnackBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarPresenter.swift; sourceTree = "<group>"; };
+		AFDB151BAA7DBE71C46AC7A6 /* ButtonSnackBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarInteractor.swift; sourceTree = "<group>"; };
+		B30153372327C7810004AAD9 /* AuthEventProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEventProxy.swift; sourceTree = "<group>"; };
+		B30153392327C7880004AAD9 /* AuthEventProxyImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEventProxyImp.swift; sourceTree = "<group>"; };
+		B3015343232916AD0004AAD9 /* CryptoCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoreComponent.swift; sourceTree = "<group>"; };
+		B3015345232916BB0004AAD9 /* CryptoCoreComponentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoreComponentImp.swift; sourceTree = "<group>"; };
+		B301534B232943DF0004AAD9 /* MainRouting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainRouting.storyboard; sourceTree = "<group>"; };
+		B301534F232A30390004AAD9 /* ChangePinAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinAssembler.swift; sourceTree = "<group>"; };
+		B3015351232A30390004AAD9 /* ChangePinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinPresenter.swift; sourceTree = "<group>"; };
+		B3015353232A30390004AAD9 /* ChangePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinViewController.swift; sourceTree = "<group>"; };
+		B3015355232A30390004AAD9 /* ChangePinConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinConfigurator.swift; sourceTree = "<group>"; };
+		B3015357232A30390004AAD9 /* ChangePinProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinProtocols.swift; sourceTree = "<group>"; };
+		B3015359232A30390004AAD9 /* ChangePinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinInteractor.swift; sourceTree = "<group>"; };
+		B301535B232A30390004AAD9 /* ChangePinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinRouter.swift; sourceTree = "<group>"; };
+		B33550E4235502DA00995D9F /* ETHModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ETHModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33AE50D21ECAA2E0016966A /* MAGWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAGWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33AE52521ECAD210016966A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B33AE52821ECAD210016966A /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		B33AE52C21ECAD210016966A /* Localization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		B33AE52E21ECAD210016966A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B33AE53021ECAD210016966A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B33AE53121ECAD210016966A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B33AE54121ECAD210016966A /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreComponentAssembly.swift; sourceTree = "<group>"; };
+		B33AE54321ECAD210016966A /* ProxyAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyAssembly.swift; sourceTree = "<group>"; };
+		B33AE54421ECAD210016966A /* BusinessLayerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLayerAssembly.swift; sourceTree = "<group>"; };
+		B33AE54D21ECAD210016966A /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		B33AE54E21ECAD210016966A /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
+		B33AE54F21ECAD210016966A /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		B33AE55121ECAD210016966A /* ApplicationAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembler.swift; sourceTree = "<group>"; };
+		B33AE55221ECAD210016966A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B33AE55521ECAD210016966A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
+		B33AE55721ECAD210016966A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B33AE55B21ECAD210016966A /* RootAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootAssembler.swift; sourceTree = "<group>"; };
+		B33AE55D21ECAD210016966A /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		B33AE55E21ECAD210016966A /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		B33AE56021ECAD210016966A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B33AE56221ECAD210016966A /* RootConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootConfigurator.swift; sourceTree = "<group>"; };
+		B33AE56421ECAD210016966A /* RootProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
+		B33AE56621ECAD210016966A /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		B33AE56821ECAD210016966A /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		B344F3A5235DA6CC00D8F214 /* SharedFilesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedFilesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B346D0C22327AA0700559245 /* SplashAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashAssembler.swift; sourceTree = "<group>"; };
+		B346D0C42327AA0700559245 /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		B346D0C52327AA0700559245 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		B346D0C72327AA0700559245 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B346D0C92327AA0700559245 /* SplashConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashConfigurator.swift; sourceTree = "<group>"; };
+		B346D0CB2327AA0700559245 /* SplashProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		B346D0CD2327AA0700559245 /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		B346D0CF2327AA0700559245 /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		B346D0E82327AAA800559245 /* Pin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
+		B346D0EB2327AAA800559245 /* CreatePinAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinAssembler.swift; sourceTree = "<group>"; };
+		B346D0ED2327AAA800559245 /* CreatePinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinPresenter.swift; sourceTree = "<group>"; };
+		B346D0EF2327AAA800559245 /* CreatePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinViewController.swift; sourceTree = "<group>"; };
+		B346D0F12327AAA800559245 /* CreatePinConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinConfigurator.swift; sourceTree = "<group>"; };
+		B346D0F32327AAA800559245 /* CreatePinProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinProtocols.swift; sourceTree = "<group>"; };
+		B346D0F52327AAA800559245 /* CreatePinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinInteractor.swift; sourceTree = "<group>"; };
+		B346D0F72327AAA800559245 /* CreatePinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinRouter.swift; sourceTree = "<group>"; };
+		B346D1092327AAA900559245 /* PinVerificationAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationAssembler.swift; sourceTree = "<group>"; };
+		B346D10B2327AAA900559245 /* PinVerificationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationPresenter.swift; sourceTree = "<group>"; };
+		B346D10D2327AAA900559245 /* PinVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationViewController.swift; sourceTree = "<group>"; };
+		B346D10F2327AAA900559245 /* PinVerificationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationConfigurator.swift; sourceTree = "<group>"; };
+		B346D1112327AAA900559245 /* PinVerificationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationProtocols.swift; sourceTree = "<group>"; };
+		B346D1132327AAA900559245 /* PinVerificationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationInteractor.swift; sourceTree = "<group>"; };
+		B346D1152327AAA900559245 /* PinVerificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinVerificationRouter.swift; sourceTree = "<group>"; };
+		B346D1182327AAA900559245 /* PasswordFillingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordFillingCollectionCell.xib; sourceTree = "<group>"; };
+		B346D1192327AAA900559245 /* PasswordFillingCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordFillingCollectionCell.swift; sourceTree = "<group>"; };
+		B346D11C2327AAA900559245 /* PasswordKeyboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordKeyboardCell.swift; sourceTree = "<group>"; };
+		B346D11D2327AAA900559245 /* PasswordKeyboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordKeyboardCell.xib; sourceTree = "<group>"; };
+		B346D11E2327AAA900559245 /* PasswordKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordKeyboardView.swift; sourceTree = "<group>"; };
+		B346D11F2327AAA900559245 /* PasswordKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordKeyboardView.xib; sourceTree = "<group>"; };
+		B346D1212327AAA900559245 /* BasePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePasswordViewController.swift; sourceTree = "<group>"; };
+		B346D1232327AAA900559245 /* PasswordFillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordFillView.swift; sourceTree = "<group>"; };
+		B346D1242327AAA900559245 /* PasswordFillView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordFillView.xib; sourceTree = "<group>"; };
+		B346D14B2327AB1400559245 /* AuthFacadeImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFacadeImp.swift; sourceTree = "<group>"; };
+		B346D14D2327AB1D00559245 /* AuthFacadeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFacadeService.swift; sourceTree = "<group>"; };
+		B346D1502327B06C00559245 /* HighlightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightButton.swift; sourceTree = "<group>"; };
+		B3542F1C2371467D00F914C6 /* SettingsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAssembler.swift; sourceTree = "<group>"; };
+		B3542F1E2371467D00F914C6 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		B3542F212371467D00F914C6 /* SidebarScreenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarScreenButton.swift; sourceTree = "<group>"; };
+		B3542F232371467D00F914C6 /* SettingsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntity.swift; sourceTree = "<group>"; };
+		B3542F242371467D00F914C6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B3542F262371467D00F914C6 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		B3542F292371467D00F914C6 /* SettingsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		B3542F2B2371467D00F914C6 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		B3542F2D2371467D00F914C6 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		B3542F3A237146D600F914C6 /* LogoutAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutAssembler.swift; sourceTree = "<group>"; };
+		B3542F3C237146D600F914C6 /* LogoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutPresenter.swift; sourceTree = "<group>"; };
+		B3542F3E237146D600F914C6 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		B3542F40237146D600F914C6 /* LogoutConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutConfigurator.swift; sourceTree = "<group>"; };
+		B3542F42237146D600F914C6 /* LogoutProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutProtocols.swift; sourceTree = "<group>"; };
+		B3542F44237146D600F914C6 /* LogoutInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutInteractor.swift; sourceTree = "<group>"; };
+		B3542F46237146D600F914C6 /* LogoutRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
+		B3542F49237146D600F914C6 /* AutoblockAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockAssembler.swift; sourceTree = "<group>"; };
+		B3542F4B237146D600F914C6 /* AutoblockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockPresenter.swift; sourceTree = "<group>"; };
+		B3542F4D237146D600F914C6 /* AutoblockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockViewController.swift; sourceTree = "<group>"; };
+		B3542F50237146D600F914C6 /* AutoblockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockTableViewCell.swift; sourceTree = "<group>"; };
+		B3542F52237146D600F914C6 /* AutoblockConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockConfigurator.swift; sourceTree = "<group>"; };
+		B3542F54237146D600F914C6 /* AutoblockProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockProtocols.swift; sourceTree = "<group>"; };
+		B3542F56237146D600F914C6 /* AutoblockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockInteractor.swift; sourceTree = "<group>"; };
+		B3542F58237146D600F914C6 /* AutoblockRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockRouter.swift; sourceTree = "<group>"; };
+		B3542F692371564C00F914C6 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		B39117FF233503A9007B9DF6 /* SessionVerificationAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationAssembler.swift; sourceTree = "<group>"; };
+		B3911801233503A9007B9DF6 /* SessionVerificationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationPresenter.swift; sourceTree = "<group>"; };
+		B3911803233503A9007B9DF6 /* SessionVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationViewController.swift; sourceTree = "<group>"; };
+		B3911805233503A9007B9DF6 /* SessionVerificationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationConfigurator.swift; sourceTree = "<group>"; };
+		B3911807233503A9007B9DF6 /* SessionVerificationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationProtocols.swift; sourceTree = "<group>"; };
+		B3911809233503A9007B9DF6 /* SessionVerificationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationInteractor.swift; sourceTree = "<group>"; };
+		B391180B233503A9007B9DF6 /* SessionVerificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionVerificationRouter.swift; sourceTree = "<group>"; };
+		B3BCCE23235CC97F005EED3D /* SharedColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = SharedColors.xcassets; path = ../../../SharedUIModule/SharedUIModule/Other/Resources/SharedColors.xcassets; sourceTree = "<group>"; };
+		B3BCCE39235CCDF5005EED3D /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.otf"; path = "SharedUIModule/SharedUIModule/Other/Resources/Fonts/Poppins-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		B3BCCE3A235CCDF5005EED3D /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.otf"; path = "SharedUIModule/SharedUIModule/Other/Resources/Fonts/Poppins-Medium.otf"; sourceTree = SOURCE_ROOT; };
+		B3BCCE3B235CCDF5005EED3D /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-SemiBold.otf"; path = "SharedUIModule/SharedUIModule/Other/Resources/Fonts/Poppins-SemiBold.otf"; sourceTree = SOURCE_ROOT; };
+		B3BCCE5B235CD982005EED3D /* SharedUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CA85742369BE9800C81E92 /* SensativeDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensativeDataServiceTests.swift; sourceTree = "<group>"; };
+		B3CA857A2369D41B00C81E92 /* AuthFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFacadeTests.swift; sourceTree = "<group>"; };
+		B3D531602332466A00132A40 /* SensitiveDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveDataService.swift; sourceTree = "<group>"; };
+		B3D531622332472D00132A40 /* SensitiveDataServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveDataServiceImp.swift; sourceTree = "<group>"; };
+		B3D5316D2332524F00132A40 /* UnlockPinAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinAssembler.swift; sourceTree = "<group>"; };
+		B3D5316F2332524F00132A40 /* UnlockPinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinPresenter.swift; sourceTree = "<group>"; };
+		B3D531712332524F00132A40 /* UnlockPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinViewController.swift; sourceTree = "<group>"; };
+		B3D531732332524F00132A40 /* UnlockPinConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinConfigurator.swift; sourceTree = "<group>"; };
+		B3D531752332524F00132A40 /* UnlockPinProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinProtocols.swift; sourceTree = "<group>"; };
+		B3D531772332524F00132A40 /* UnlockPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinInteractor.swift; sourceTree = "<group>"; };
+		B3D531792332524F00132A40 /* UnlockPinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockPinRouter.swift; sourceTree = "<group>"; };
+		B3ED2CC823670C3700639B81 /* MAGWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAGWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3ED2CCC23670C3800639B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F5DF6423676961002DBD31 /* CryptoCoreComponentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCoreComponentTest.swift; sourceTree = "<group>"; };
+		BC6D2D335329D9E1534D10CF /* MainRoutingConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingConfigurator.swift; sourceTree = "<group>"; };
+		BDB6211CE747EA116D973792 /* MainRoutingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingViewController.swift; sourceTree = "<group>"; };
+		C282360B964D79E2DE5022E6 /* ForgotPinPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinPresenter.swift; sourceTree = "<group>"; };
+		CE92F7E6261F462900DABB00 /* CryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D044FBFF23E842030012C2BA /* BTCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BTCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04DBD5123216F1000ADEF2F /* ETHModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ETHModule.framework; path = "../../../Library/Developer/Xcode/DerivedData/CryptoWalletTemplate-ejirsyedirnvahbmvxvhmlngeuqi/Build/Products/Debug-iphoneos/ETHModule.framework"; sourceTree = "<group>"; };
+		D04DBDC62321703700ADEF2F /* SharedFilesModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedFilesModule.framework; path = "../../../Library/Developer/Xcode/DerivedData/CryptoWalletTemplate-ejirsyedirnvahbmvxvhmlngeuqi/Build/Products/Debug-iphoneos/SharedFilesModule.framework"; sourceTree = "<group>"; };
+		D0538EC2238ED63900FDC853 /* FirebaseConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConfigurator.swift; sourceTree = "<group>"; };
+		D0A9B2C123323CAF008342F1 /* SnackBarRootAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootAssembler.swift; sourceTree = "<group>"; };
+		D0A9B2C323323CAF008342F1 /* SnackBarRootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootPresenter.swift; sourceTree = "<group>"; };
+		D0A9B2C423323CAF008342F1 /* SnackBarRootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootModel.swift; sourceTree = "<group>"; };
+		D0A9B2C623323CAF008342F1 /* SnackBarTouchableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarTouchableView.swift; sourceTree = "<group>"; };
+		D0A9B2C723323CAF008342F1 /* SnackBarRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootViewController.swift; sourceTree = "<group>"; };
+		D0A9B2C923323CAF008342F1 /* SnackBarRootConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootConfigurator.swift; sourceTree = "<group>"; };
+		D0A9B2CB23323CAF008342F1 /* SnackBarRootProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootProtocols.swift; sourceTree = "<group>"; };
+		D0A9B2CD23323CAF008342F1 /* SnackBarRootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootInteractor.swift; sourceTree = "<group>"; };
+		D0A9B2CF23323CAF008342F1 /* SnackBarRootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBarRootRouter.swift; sourceTree = "<group>"; };
+		D0A9B2D923323CC1008342F1 /* SnackBarsRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnackBarsRoot.storyboard; sourceTree = "<group>"; };
+		D0CB0F21236C27DA00A7184F /* AllCurrencies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllCurrencies.storyboard; sourceTree = "<group>"; };
+		D0CB0F24236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesSingleTableViewCell.swift; sourceTree = "<group>"; };
+		D0CB0F25236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCurrenciesSingleTableViewCell.xib; sourceTree = "<group>"; };
+		D0CB0F28236C39F800A7184F /* AllCurrenciesDuoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesDuoTableViewCell.swift; sourceTree = "<group>"; };
+		D0CB0F29236C39F800A7184F /* AllCurrenciesDuoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCurrenciesDuoTableViewCell.xib; sourceTree = "<group>"; };
+		D0CB0F2C236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		D0CB0F2D236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCurrenciesEmptyTableViewCell.xib; sourceTree = "<group>"; };
+		D0CB0F31236C577100A7184F /* AllCurrenciesScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesScreenModel.swift; sourceTree = "<group>"; };
+		D20D8181BCF94FAD021C95F2 /* ButtonSnackBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarConfigurator.swift; sourceTree = "<group>"; };
+		D879FF49A712B8E5F557FDA9 /* MainRoutingInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingInteractor.swift; sourceTree = "<group>"; };
+		DAEF6EC9F747403C9215AEA8 /* AllCurrenciesRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesRouter.swift; sourceTree = "<group>"; };
+		DBBCC523B906781F234A668A /* AllCurrenciesProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesProtocols.swift; sourceTree = "<group>"; };
+		EDFE36942306B6EE78930480 /* MultiAccountsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiAccountsInteractor.swift; sourceTree = "<group>"; };
+		F2CF2D8E23853EA500B9C281 /* SnackBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnackBar.storyboard; sourceTree = "<group>"; };
+		F2D115AA2383D1EB0045793B /* AddAccountHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountHeaderCell.swift; sourceTree = "<group>"; };
+		F2D115AC2383D21D0045793B /* AccountsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsCell.swift; sourceTree = "<group>"; };
+		F2D115AF2383DBBB0045793B /* MultiAccountsScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAccountsScreenModel.swift; sourceTree = "<group>"; };
+		F2E6FB1A23853F440026CB21 /* ButtonSnackBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarModel.swift; sourceTree = "<group>"; };
+		F3525610249417830032B139 /* FlowNotificationFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNotificationFacade.swift; sourceTree = "<group>"; };
+		F35305C22499EF8F008DA56E /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		F35305C62499F258008DA56E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F35B029224769B8B0024061C /* AllCurrenciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesModel.swift; sourceTree = "<group>"; };
+		F36525A4248FC27A00DB518B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F36525AC2490BD4400DB518B /* FirebaseTokenEventProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenEventProxy.swift; sourceTree = "<group>"; };
+		F36525AE2490BD7300DB518B /* FirebaseEventProxyImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEventProxyImp.swift; sourceTree = "<group>"; };
+		F36525C024911C2C00DB518B /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36525C224911C2C00DB518B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F36525C424911C2C00DB518B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36525CE2491605300DB518B /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		F36525D02491605F00DB518B /* FirebaseServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseServiceImp.swift; sourceTree = "<group>"; };
+		F36525DA24927CF500DB518B /* OneButtonSnackBarAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarAssembler.swift; sourceTree = "<group>"; };
+		F36525DC24927CF500DB518B /* OneButtonSnackBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarPresenter.swift; sourceTree = "<group>"; };
+		F36525DE24927CF500DB518B /* OneButtonSnackBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarViewController.swift; sourceTree = "<group>"; };
+		F36525E024927CF500DB518B /* OneButtonSnackBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarConfigurator.swift; sourceTree = "<group>"; };
+		F36525E124927CF500DB518B /* OneButtonSnackBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarModel.swift; sourceTree = "<group>"; };
+		F36525E324927CF500DB518B /* OneButtonSnackBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarProtocols.swift; sourceTree = "<group>"; };
+		F36525E524927CF500DB518B /* OneButtonSnackBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarInteractor.swift; sourceTree = "<group>"; };
+		F36525E724927CF500DB518B /* OneButtonSnackBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarRouter.swift; sourceTree = "<group>"; };
+		F36525F024927D6F00DB518B /* OneButtonSnackbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneButtonSnackbar.storyboard; sourceTree = "<group>"; };
+		F3682A8F248A801700F30C44 /* LTCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LTCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F374E8B32493788D00FF7F2B /* ReachabilityServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceImp.swift; sourceTree = "<group>"; };
+		F374E8B52493789800FF7F2B /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		F374E8B724937B1200FF7F2B /* ReachabilityConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityConfigurator.swift; sourceTree = "<group>"; };
+		F374E8B924937D4900FF7F2B /* ReachabilityEventProxyImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityEventProxyImp.swift; sourceTree = "<group>"; };
+		F374E8BB24937D5B00FF7F2B /* ReachabilityEventProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityEventProxy.swift; sourceTree = "<group>"; };
+		F3DE5A5724941B3D0005D718 /* FacadesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadesAssembly.swift; sourceTree = "<group>"; };
+		F3EA90D82481078F001B988A /* ChangeNetworkAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkAssembler.swift; sourceTree = "<group>"; };
+		F3EA90DA2481078F001B988A /* ChangeNetworkPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkPresenter.swift; sourceTree = "<group>"; };
+		F3EA90DC2481078F001B988A /* ChangeNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkViewController.swift; sourceTree = "<group>"; };
+		F3EA90DE2481078F001B988A /* ChangeNetworkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkTableViewCell.swift; sourceTree = "<group>"; };
+		F3EA90E02481078F001B988A /* ChangeNetworkConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkConfigurator.swift; sourceTree = "<group>"; };
+		F3EA90E22481078F001B988A /* ChangeNetworkProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkProtocols.swift; sourceTree = "<group>"; };
+		F3EA90E42481078F001B988A /* ChangeNetworkInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkInteractor.swift; sourceTree = "<group>"; };
+		F3EA90E62481078F001B988A /* ChangeNetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkRouter.swift; sourceTree = "<group>"; };
+		F3EA90F22481166D001B988A /* ChangeNetworkHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNetworkHeaderCell.swift; sourceTree = "<group>"; };
+		F3EA90F624812F7F001B988A /* ChangeNetworkScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNetworkScreenModels.swift; sourceTree = "<group>"; };
+		F3F48DFE2493FEAA00DD2AF3 /* FlowNotificationFacadeImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNotificationFacadeImp.swift; sourceTree = "<group>"; };
+		F8AE14B3441EDF8F0A88658A /* Pods-MAGWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGWallet.release.xcconfig"; path = "Target Support Files/Pods-MAGWallet/Pods-MAGWallet.release.xcconfig"; sourceTree = "<group>"; };
+		FB32DF7373E69AAD28AFE13A /* ButtonSnackBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarAssembler.swift; sourceTree = "<group>"; };
+		FD8B51D19760548D02526ACD /* AllCurrenciesPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AllCurrenciesPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B33AE50A21ECAA2E0016966A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3682A90248A801700F30C44 /* LTCModule.framework in Frameworks */,
+				B344F3A6235DA6CC00D8F214 /* SharedFilesModule.framework in Frameworks */,
+				CE37A625262090BF005349A4 /* CryptoAPI.framework in Frameworks */,
+				B33550EE235504FF00995D9F /* ETHModule.framework in Frameworks */,
+				B3BCCE5C235CD982005EED3D /* SharedUIModule.framework in Frameworks */,
+				B344F3A1235DA67D00D8F214 /* SharedUIModule.framework in Frameworks */,
+				D044FC0023E842030012C2BA /* BTCModule.framework in Frameworks */,
+				365FB3B7D4F4517F1EC137C8 /* Pods_MAGWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3ED2CC523670C3700639B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4457829E7831036472DBD032 /* Pods_MAGWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36525BD24911C2C00DB518B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA1BA22A4102F7A75C8E13C /* Pods_NotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D56BA245B0B4E4074C9FE5 /* MainRouting */ = {
+			isa = PBXGroup;
+			children = (
+				B301534B232943DF0004AAD9 /* MainRouting.storyboard */,
+				BDB6211CE747EA116D973792 /* MainRoutingViewController.swift */,
+				4E79E2F0BC4A0D2D0D6B190E /* MainRoutingPresenter.swift */,
+				D879FF49A712B8E5F557FDA9 /* MainRoutingInteractor.swift */,
+				1C867C0696D8884BDCE6DBA6 /* MainRoutingRouter.swift */,
+				BC6D2D335329D9E1534D10CF /* MainRoutingConfigurator.swift */,
+				8D752336E03688AB1B216C62 /* MainRoutingAssembler.swift */,
+				6C222932F9076AE9D4C60CF3 /* MainRoutingProtocols.swift */,
+			);
+			path = MainRouting;
+			sourceTree = "<group>";
+		};
+		0B99EAB1C7CF7ACE01AB7651 /* AllCurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB0F21236C27DA00A7184F /* AllCurrencies.storyboard */,
+				42B8177A342B0E8D84A7D4F8 /* View */,
+				7A464FC0BEA86DDBEA1696DC /* Presenter */,
+				EECA5DC0739241E304223AFA /* Interactor */,
+				9405878FD02BF6B8E9196227 /* Router */,
+				6F2D7783F571EFA280C97919 /* Configurator */,
+				C464808456921AE7AF12E04A /* Assembly */,
+				956136C806EF01F9A983E3DF /* Protocols */,
+			);
+			path = AllCurrencies;
+			sourceTree = "<group>";
+		};
+		119EEC0C3FA9018670707E65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB151BAA7DBE71C46AC7A6 /* ButtonSnackBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		17224F5E2A76F45D455844CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				322DF3C508054C36EFE2960E /* Pods-MAGWallet.debug.xcconfig */,
+				F8AE14B3441EDF8F0A88658A /* Pods-MAGWallet.release.xcconfig */,
+				8630AA2508A5246F3552A5C7 /* Pods-MAGWalletTests.debug.xcconfig */,
+				4E5F19CEF45478081C4037C7 /* Pods-MAGWalletTests.release.xcconfig */,
+				3CE8B6C51EAD8FF30D957E59 /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				6083CB60A85A4FC31A735346 /* Pods-NotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		17CB392E969B2AC0C0242BA4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FB32DF7373E69AAD28AFE13A /* ButtonSnackBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		275E2C3C7ADD8812B427160E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11DAD87C72561928EA9FAE80 /* MultiAccountsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		296572E060D5B73F3E952D52 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5289A428AE63D982A11CE3B8 /* ForgotPinRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2C78D8D5780FA1510A61DED3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA673D86952F3DFDCCB6B670 /* ButtonSnackBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		42363114D954E2C054A84BC6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				82949EAB6B659D17BB1898B6 /* MultiAccountsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		42B8177A342B0E8D84A7D4F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB0F30236C574800A7184F /* Model */,
+				D0CB0F23236C372700A7184F /* Cells */,
+				A3D210AA23C078A5E1921383 /* AllCurrenciesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45841B210DB61FE857B8C1A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34760D114B4BCD23D639B2F9 /* ForgotPinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480F46B0DB7E7D3B117C964C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2D115AE2383D2250045793B /* Cell */,
+				F2D115B12383DBC30045793B /* Entity */,
+				11F97D2EA5F2C08428CD4B50 /* MultiAccountsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CE1E66D82016B847DA6548D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				62A3F4E4D2B88699A2C23282 /* MultiAccountsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		4D014CD36089D97B0156506B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				88737F429944895429038E4A /* ButtonSnackBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		55492B6803F38266429ABD2C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C282360B964D79E2DE5022E6 /* ForgotPinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5FD5ABB1C77B6C44B374C066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE92F7E6261F462900DABB00 /* CryptoAPI.framework */,
+				F3682A8F248A801700F30C44 /* LTCModule.framework */,
+				D044FBFF23E842030012C2BA /* BTCModule.framework */,
+				B344F3A5235DA6CC00D8F214 /* SharedFilesModule.framework */,
+				B3BCCE5B235CD982005EED3D /* SharedUIModule.framework */,
+				B33550E4235502DA00995D9F /* ETHModule.framework */,
+				D04DBDC62321703700ADEF2F /* SharedFilesModule.framework */,
+				D04DBD5123216F1000ADEF2F /* ETHModule.framework */,
+				3D45D29979450A85EBCAE2B2 /* Pods_MAGWallet.framework */,
+				4E9F7A9345B601480B102C25 /* Pods_MAGWalletTests.framework */,
+				4671CFECA27BA3759B51FE77 /* Pods_NotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D57CF280F6208B6BD19762 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				381252F89A7530F6EC7FE468 /* ForgotPinProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6F2D7783F571EFA280C97919 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				09DF1AFA028EBA9AED6E9325 /* AllCurrenciesConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		7A464FC0BEA86DDBEA1696DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B51D19760548D02526ACD /* AllCurrenciesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C7A0D0BF11351C687063535 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2E6FB1C23853F540026CB21 /* Model */,
+				7B145E68321D45147F65B21D /* ButtonSnackBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F86BFB7BA208A266DBDB088 /* ButtonSnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF2D8E23853EA500B9C281 /* SnackBar.storyboard */,
+				7C7A0D0BF11351C687063535 /* View */,
+				2C78D8D5780FA1510A61DED3 /* Presenter */,
+				119EEC0C3FA9018670707E65 /* Interactor */,
+				4D014CD36089D97B0156506B /* Router */,
+				D653C3ADE47FC635B809E2CD /* Configurator */,
+				17CB392E969B2AC0C0242BA4 /* Assembly */,
+				996E0C9888D043D3F2758A85 /* Protocols */,
+			);
+			path = ButtonSnackBar;
+			sourceTree = "<group>";
+		};
+		865A92C6C77ADEC462F0120F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE36942306B6EE78930480 /* MultiAccountsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9405878FD02BF6B8E9196227 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DAEF6EC9F747403C9215AEA8 /* AllCurrenciesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		956136C806EF01F9A983E3DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DBBCC523B906781F234A668A /* AllCurrenciesProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		996E0C9888D043D3F2758A85 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				59E46C8632EA7D95B2162EED /* ButtonSnackBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC1989E315120C35D84EFAE0 /* MultiAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				480F46B0DB7E7D3B117C964C /* View */,
+				DFD0329130CEC24AD19A4749 /* Presenter */,
+				865A92C6C77ADEC462F0120F /* Interactor */,
+				275E2C3C7ADD8812B427160E /* Router */,
+				42363114D954E2C054A84BC6 /* Configurator */,
+				4CE1E66D82016B847DA6548D /* Assembly */,
+				B0C222FEBD999EB3B4EC6506 /* Protocols */,
+			);
+			path = MultiAccounts;
+			sourceTree = "<group>";
+		};
+		B0C222FEBD999EB3B4EC6506 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				08F72469835EEF446AD5E400 /* MultiAccountsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B301534D232A30390004AAD9 /* ChangePin */ = {
+			isa = PBXGroup;
+			children = (
+				B301534E232A30390004AAD9 /* Assembly */,
+				B3015350232A30390004AAD9 /* Presenter */,
+				B3015352232A30390004AAD9 /* View */,
+				B3015354232A30390004AAD9 /* Configurator */,
+				B3015356232A30390004AAD9 /* Protocols */,
+				B3015358232A30390004AAD9 /* Interactor */,
+				B301535A232A30390004AAD9 /* Router */,
+			);
+			path = ChangePin;
+			sourceTree = "<group>";
+		};
+		B301534E232A30390004AAD9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B301534F232A30390004AAD9 /* ChangePinAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3015350232A30390004AAD9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3015351232A30390004AAD9 /* ChangePinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3015352232A30390004AAD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3015353232A30390004AAD9 /* ChangePinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3015354232A30390004AAD9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3015355232A30390004AAD9 /* ChangePinConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3015356232A30390004AAD9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3015357232A30390004AAD9 /* ChangePinProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3015358232A30390004AAD9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3015359232A30390004AAD9 /* ChangePinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B301535A232A30390004AAD9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B301535B232A30390004AAD9 /* ChangePinRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B33AE50421ECAA2E0016966A = {
+			isa = PBXGroup;
+			children = (
+				B33AE50F21ECAA2E0016966A /* MAGWallet */,
+				B3ED2CC923670C3800639B81 /* MAGWalletTests */,
+				F36525C124911C2C00DB518B /* NotificationServiceExtension */,
+				B33AE50E21ECAA2E0016966A /* Products */,
+				5FD5ABB1C77B6C44B374C066 /* Frameworks */,
+				17224F5E2A76F45D455844CE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B33AE50E21ECAA2E0016966A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE50D21ECAA2E0016966A /* MAGWallet.app */,
+				B3ED2CC823670C3700639B81 /* MAGWalletTests.xctest */,
+				F36525C024911C2C00DB518B /* NotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B33AE50F21ECAA2E0016966A /* MAGWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE53221ECAD210016966A /* Classes */,
+				B33AE52421ECAD210016966A /* Common */,
+				B33AE52B21ECAD210016966A /* Other */,
+			);
+			path = MAGWallet;
+			sourceTree = "<group>";
+		};
+		B33AE52421ECAD210016966A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B346D14F2327B05F00559245 /* SharedViews */,
+				B33AE52621ECAD210016966A /* Extensions */,
+				B33AE52721ECAD210016966A /* Protocols */,
+				B33AE52921ECAD210016966A /* Base */,
+				B33AE52521ECAD210016966A /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B33AE52621ECAD210016966A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B33AE52721ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE52821ECAD210016966A /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE52921ECAD210016966A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B33AE52B21ECAD210016966A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE52C21ECAD210016966A /* Localization.strings */,
+				B33AE52D21ECAD210016966A /* Resources */,
+				B33AE53021ECAD210016966A /* R.generated.swift */,
+				F36525A4248FC27A00DB518B /* GoogleService-Info.plist */,
+				B33AE53121ECAD210016966A /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B33AE52D21ECAD210016966A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3BCCE23235CC97F005EED3D /* SharedColors.xcassets */,
+				B33AE52E21ECAD210016966A /* Assets.xcassets */,
+				B33AE52F21ECAD210016966A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B33AE52F21ECAD210016966A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B3BCCE3A235CCDF5005EED3D /* Poppins-Medium.otf */,
+				B3BCCE39235CCDF5005EED3D /* Poppins-Regular.otf */,
+				B3BCCE3B235CCDF5005EED3D /* Poppins-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B33AE53221ECAD210016966A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55321ECAD210016966A /* PresentationLayer */,
+				B33AE53321ECAD210016966A /* BuisnessLayer */,
+				B33AE54B21ECAD210016966A /* ApplicationLayer */,
+				B33AE55221ECAD210016966A /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B33AE53321ECAD210016966A /* BuisnessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE53421ECAD210016966A /* Core */,
+				B33AE54021ECAD210016966A /* Assembler */,
+				B33AE54521ECAD210016966A /* Event Proxy */,
+				B33AE54821ECAD210016966A /* Services */,
+				F352560D249417330032B139 /* Facades */,
+			);
+			path = BuisnessLayer;
+			sourceTree = "<group>";
+		};
+		B33AE53421ECAD210016966A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE53521ECAD210016966A /* Network */,
+				B33AE53C21ECAD210016966A /* Implementation */,
+				B33AE53E21ECAD210016966A /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B33AE53521ECAD210016966A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE53621ECAD210016966A /* Implementation */,
+				B33AE53721ECAD210016966A /* Mappers */,
+				B33AE53A21ECAD210016966A /* Protocols */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B33AE53621ECAD210016966A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B33AE53721ECAD210016966A /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE53821ECAD210016966A /* Implementation */,
+				B33AE53921ECAD210016966A /* Protocols */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		B33AE53821ECAD210016966A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B33AE53921ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE53A21ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE53C21ECAD210016966A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				B3015345232916BB0004AAD9 /* CryptoCoreComponentImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B33AE53E21ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3015343232916AD0004AAD9 /* CryptoCoreComponent.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE54021ECAD210016966A /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE54121ECAD210016966A /* ServicesAssembly.swift */,
+				B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */,
+				B33AE54321ECAD210016966A /* ProxyAssembly.swift */,
+				F3DE5A5724941B3D0005D718 /* FacadesAssembly.swift */,
+				B33AE54421ECAD210016966A /* BusinessLayerAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B33AE54521ECAD210016966A /* Event Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE54621ECAD210016966A /* Implementation */,
+				B33AE54721ECAD210016966A /* Protocols */,
+			);
+			path = "Event Proxy";
+			sourceTree = "<group>";
+		};
+		B33AE54621ECAD210016966A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				B30153392327C7880004AAD9 /* AuthEventProxyImp.swift */,
+				F36525AE2490BD7300DB518B /* FirebaseEventProxyImp.swift */,
+				F374E8B924937D4900FF7F2B /* ReachabilityEventProxyImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B33AE54721ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B30153372327C7810004AAD9 /* AuthEventProxy.swift */,
+				F36525AC2490BD4400DB518B /* FirebaseTokenEventProxy.swift */,
+				F374E8BB24937D5B00FF7F2B /* ReachabilityEventProxy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE54821ECAD210016966A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE54921ECAD210016966A /* Implementation */,
+				B33AE54A21ECAD210016966A /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B33AE54921ECAD210016966A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				B346D14B2327AB1400559245 /* AuthFacadeImp.swift */,
+				B3D531622332472D00132A40 /* SensitiveDataServiceImp.swift */,
+				F36525D02491605F00DB518B /* FirebaseServiceImp.swift */,
+				F374E8B32493788D00FF7F2B /* ReachabilityServiceImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B33AE54A21ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B346D14D2327AB1D00559245 /* AuthFacadeService.swift */,
+				B3D531602332466A00132A40 /* SensitiveDataService.swift */,
+				F36525CE2491605300DB518B /* FirebaseService.swift */,
+				F374E8B52493789800FF7F2B /* ReachabilityService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE54B21ECAD210016966A /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE54C21ECAD210016966A /* Configurators */,
+				B33AE55021ECAD210016966A /* Assembler */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		B33AE54C21ECAD210016966A /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				D0538EC2238ED63900FDC853 /* FirebaseConfigurator.swift */,
+				B33AE54D21ECAD210016966A /* ConfiguratorProtocol.swift */,
+				B33AE54E21ECAD210016966A /* ApplicationConfigurator.swift */,
+				B33AE54F21ECAD210016966A /* AppearanceConfigurator.swift */,
+				F374E8B724937B1200FF7F2B /* ReachabilityConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		B33AE55021ECAD210016966A /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55121ECAD210016966A /* ApplicationAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B33AE55321ECAD210016966A /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55421ECAD210016966A /* Assembler */,
+				B33AE55621ECAD210016966A /* LaunchScreen.storyboard */,
+				B33AE55821ECAD210016966A /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		B33AE55421ECAD210016966A /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55521ECAD210016966A /* ModuleAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B33AE55821ECAD210016966A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F68237146E300F914C6 /* SettingsFlow */,
+				D0A9B2BE23323CAF008342F1 /* SnackBars */,
+				B346D0D82327AAA800559245 /* PinFlow */,
+				B346D0C02327AA0700559245 /* Splash */,
+				B33AE55921ECAD210016966A /* Root */,
+				06D56BA245B0B4E4074C9FE5 /* MainRouting */,
+				0B99EAB1C7CF7ACE01AB7651 /* AllCurrencies */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B33AE55921ECAD210016966A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55A21ECAD210016966A /* Assembly */,
+				B33AE55C21ECAD210016966A /* Presenter */,
+				B33AE55E21ECAD210016966A /* Root.storyboard */,
+				B33AE55F21ECAD210016966A /* View */,
+				B33AE56121ECAD210016966A /* Configurator */,
+				B33AE56321ECAD210016966A /* Protocols */,
+				B33AE56521ECAD210016966A /* Interactor */,
+				B33AE56721ECAD210016966A /* Router */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B33AE55A21ECAD210016966A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55B21ECAD210016966A /* RootAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B33AE55C21ECAD210016966A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE55D21ECAD210016966A /* RootPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B33AE55F21ECAD210016966A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE56021ECAD210016966A /* RootViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B33AE56121ECAD210016966A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE56221ECAD210016966A /* RootConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B33AE56321ECAD210016966A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE56421ECAD210016966A /* RootProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B33AE56521ECAD210016966A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE56621ECAD210016966A /* RootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B33AE56721ECAD210016966A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B33AE56821ECAD210016966A /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B346D0C02327AA0700559245 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0C12327AA0700559245 /* Assembly */,
+				B346D0C32327AA0700559245 /* Presenter */,
+				B346D0C52327AA0700559245 /* Splash.storyboard */,
+				B346D0C62327AA0700559245 /* View */,
+				B346D0C82327AA0700559245 /* Configurator */,
+				B346D0CA2327AA0700559245 /* Protocols */,
+				B346D0CC2327AA0700559245 /* Interactor */,
+				B346D0CE2327AA0700559245 /* Router */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B346D0C12327AA0700559245 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0C22327AA0700559245 /* SplashAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B346D0C32327AA0700559245 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0C42327AA0700559245 /* SplashPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B346D0C62327AA0700559245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0C72327AA0700559245 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B346D0C82327AA0700559245 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0C92327AA0700559245 /* SplashConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B346D0CA2327AA0700559245 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0CB2327AA0700559245 /* SplashProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B346D0CC2327AA0700559245 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0CD2327AA0700559245 /* SplashInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B346D0CE2327AA0700559245 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0CF2327AA0700559245 /* SplashRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B346D0D82327AAA800559245 /* PinFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0E82327AAA800559245 /* Pin.storyboard */,
+				DF605DAAF83D765DA11B1C4D /* ForgotPin */,
+				B39117FD233503A9007B9DF6 /* SessionVerification */,
+				B3D5316B2332524F00132A40 /* UnlockPin */,
+				B301534D232A30390004AAD9 /* ChangePin */,
+				B346D0E92327AAA800559245 /* CreatePin */,
+				B346D1072327AAA800559245 /* PinVerification */,
+				B346D1162327AAA900559245 /* Shared Views */,
+			);
+			path = PinFlow;
+			sourceTree = "<group>";
+		};
+		B346D0E92327AAA800559245 /* CreatePin */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0EA2327AAA800559245 /* Assembly */,
+				B346D0EC2327AAA800559245 /* Presenter */,
+				B346D0EE2327AAA800559245 /* View */,
+				B346D0F02327AAA800559245 /* Configurator */,
+				B346D0F22327AAA800559245 /* Protocols */,
+				B346D0F42327AAA800559245 /* Interactor */,
+				B346D0F62327AAA800559245 /* Router */,
+			);
+			path = CreatePin;
+			sourceTree = "<group>";
+		};
+		B346D0EA2327AAA800559245 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0EB2327AAA800559245 /* CreatePinAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B346D0EC2327AAA800559245 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0ED2327AAA800559245 /* CreatePinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B346D0EE2327AAA800559245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0EF2327AAA800559245 /* CreatePinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B346D0F02327AAA800559245 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0F12327AAA800559245 /* CreatePinConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B346D0F22327AAA800559245 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0F32327AAA800559245 /* CreatePinProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B346D0F42327AAA800559245 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0F52327AAA800559245 /* CreatePinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B346D0F62327AAA800559245 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B346D0F72327AAA800559245 /* CreatePinRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B346D1072327AAA800559245 /* PinVerification */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1082327AAA800559245 /* Assembly */,
+				B346D10A2327AAA900559245 /* Presenter */,
+				B346D10C2327AAA900559245 /* View */,
+				B346D10E2327AAA900559245 /* Configurator */,
+				B346D1102327AAA900559245 /* Protocols */,
+				B346D1122327AAA900559245 /* Interactor */,
+				B346D1142327AAA900559245 /* Router */,
+			);
+			path = PinVerification;
+			sourceTree = "<group>";
+		};
+		B346D1082327AAA800559245 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1092327AAA900559245 /* PinVerificationAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B346D10A2327AAA900559245 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B346D10B2327AAA900559245 /* PinVerificationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B346D10C2327AAA900559245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B346D10D2327AAA900559245 /* PinVerificationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B346D10E2327AAA900559245 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B346D10F2327AAA900559245 /* PinVerificationConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B346D1102327AAA900559245 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1112327AAA900559245 /* PinVerificationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B346D1122327AAA900559245 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1132327AAA900559245 /* PinVerificationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B346D1142327AAA900559245 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1152327AAA900559245 /* PinVerificationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B346D1162327AAA900559245 /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1172327AAA900559245 /* Cells */,
+				B346D11A2327AAA900559245 /* Password Keyboard View */,
+				B346D1202327AAA900559245 /* Base Password Controller */,
+				B346D1222327AAA900559245 /* Password View */,
+			);
+			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		B346D1172327AAA900559245 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1182327AAA900559245 /* PasswordFillingCollectionCell.xib */,
+				B346D1192327AAA900559245 /* PasswordFillingCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B346D11A2327AAA900559245 /* Password Keyboard View */ = {
+			isa = PBXGroup;
+			children = (
+				B346D11B2327AAA900559245 /* Cells */,
+				B346D11E2327AAA900559245 /* PasswordKeyboardView.swift */,
+				B346D11F2327AAA900559245 /* PasswordKeyboardView.xib */,
+			);
+			path = "Password Keyboard View";
+			sourceTree = "<group>";
+		};
+		B346D11B2327AAA900559245 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B346D11C2327AAA900559245 /* PasswordKeyboardCell.swift */,
+				B346D11D2327AAA900559245 /* PasswordKeyboardCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B346D1202327AAA900559245 /* Base Password Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1212327AAA900559245 /* BasePasswordViewController.swift */,
+			);
+			path = "Base Password Controller";
+			sourceTree = "<group>";
+		};
+		B346D1222327AAA900559245 /* Password View */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1232327AAA900559245 /* PasswordFillView.swift */,
+				B346D1242327AAA900559245 /* PasswordFillView.xib */,
+			);
+			path = "Password View";
+			sourceTree = "<group>";
+		};
+		B346D14F2327B05F00559245 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				B346D1502327B06C00559245 /* HighlightButton.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		B3542F1A2371467D00F914C6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F1B2371467D00F914C6 /* Assembly */,
+				B3542F1D2371467D00F914C6 /* Presenter */,
+				B3542F1F2371467D00F914C6 /* View */,
+				B3542F252371467D00F914C6 /* Configurator */,
+				B3542F282371467D00F914C6 /* Protocols */,
+				B3542F2A2371467D00F914C6 /* Interactor */,
+				B3542F2C2371467D00F914C6 /* Router */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B3542F1B2371467D00F914C6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F1C2371467D00F914C6 /* SettingsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3542F1D2371467D00F914C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F1E2371467D00F914C6 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3542F1F2371467D00F914C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F202371467D00F914C6 /* Button */,
+				B3542F222371467D00F914C6 /* Model */,
+				B3542F242371467D00F914C6 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3542F202371467D00F914C6 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F212371467D00F914C6 /* SidebarScreenButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		B3542F222371467D00F914C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F232371467D00F914C6 /* SettingsEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3542F252371467D00F914C6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F262371467D00F914C6 /* SettingsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3542F282371467D00F914C6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F292371467D00F914C6 /* SettingsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3542F2A2371467D00F914C6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F2B2371467D00F914C6 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B3542F2C2371467D00F914C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F2D2371467D00F914C6 /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3542F38237146D500F914C6 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F39237146D600F914C6 /* Assembly */,
+				B3542F3B237146D600F914C6 /* Presenter */,
+				B3542F3D237146D600F914C6 /* View */,
+				B3542F3F237146D600F914C6 /* Configurator */,
+				B3542F41237146D600F914C6 /* Protocols */,
+				B3542F43237146D600F914C6 /* Interactor */,
+				B3542F45237146D600F914C6 /* Router */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		B3542F39237146D600F914C6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F3A237146D600F914C6 /* LogoutAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3542F3B237146D600F914C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F3C237146D600F914C6 /* LogoutPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3542F3D237146D600F914C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F3E237146D600F914C6 /* LogoutViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3542F3F237146D600F914C6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F40237146D600F914C6 /* LogoutConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3542F41237146D600F914C6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F42237146D600F914C6 /* LogoutProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3542F43237146D600F914C6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F44237146D600F914C6 /* LogoutInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B3542F45237146D600F914C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F46237146D600F914C6 /* LogoutRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3542F47237146D600F914C6 /* Autoblock */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F4D237146D600F914C6 /* AutoblockViewController.swift */,
+				B3542F4B237146D600F914C6 /* AutoblockPresenter.swift */,
+				B3542F56237146D600F914C6 /* AutoblockInteractor.swift */,
+				B3542F58237146D600F914C6 /* AutoblockRouter.swift */,
+				B3542F49237146D600F914C6 /* AutoblockAssembler.swift */,
+				B3542F52237146D600F914C6 /* AutoblockConfigurator.swift */,
+				B3542F54237146D600F914C6 /* AutoblockProtocols.swift */,
+				B3542F4C237146D600F914C6 /* Views */,
+			);
+			path = Autoblock;
+			sourceTree = "<group>";
+		};
+		B3542F4C237146D600F914C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F4F237146D600F914C6 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3542F4F237146D600F914C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F50237146D600F914C6 /* AutoblockTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B3542F68237146E300F914C6 /* SettingsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B3542F692371564C00F914C6 /* Settings.storyboard */,
+				B3542F47237146D600F914C6 /* Autoblock */,
+				B3542F38237146D500F914C6 /* Logout */,
+				B3542F1A2371467D00F914C6 /* Settings */,
+				AC1989E315120C35D84EFAE0 /* MultiAccounts */,
+				F3EA90D62481078F001B988A /* ChangeNetwork */,
+			);
+			path = SettingsFlow;
+			sourceTree = "<group>";
+		};
+		B39117FD233503A9007B9DF6 /* SessionVerification */ = {
+			isa = PBXGroup;
+			children = (
+				B39117FE233503A9007B9DF6 /* Assembly */,
+				B3911800233503A9007B9DF6 /* Presenter */,
+				B3911802233503A9007B9DF6 /* View */,
+				B3911804233503A9007B9DF6 /* Configurator */,
+				B3911806233503A9007B9DF6 /* Protocols */,
+				B3911808233503A9007B9DF6 /* Interactor */,
+				B391180A233503A9007B9DF6 /* Router */,
+			);
+			path = SessionVerification;
+			sourceTree = "<group>";
+		};
+		B39117FE233503A9007B9DF6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B39117FF233503A9007B9DF6 /* SessionVerificationAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3911800233503A9007B9DF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3911801233503A9007B9DF6 /* SessionVerificationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3911802233503A9007B9DF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3911803233503A9007B9DF6 /* SessionVerificationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3911804233503A9007B9DF6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3911805233503A9007B9DF6 /* SessionVerificationConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3911806233503A9007B9DF6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3911807233503A9007B9DF6 /* SessionVerificationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3911808233503A9007B9DF6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3911809233503A9007B9DF6 /* SessionVerificationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B391180A233503A9007B9DF6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B391180B233503A9007B9DF6 /* SessionVerificationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3D5316B2332524F00132A40 /* UnlockPin */ = {
+			isa = PBXGroup;
+			children = (
+				B3D5316C2332524F00132A40 /* Assembly */,
+				B3D5316E2332524F00132A40 /* Presenter */,
+				B3D531702332524F00132A40 /* View */,
+				B3D531722332524F00132A40 /* Configurator */,
+				B3D531742332524F00132A40 /* Protocols */,
+				B3D531762332524F00132A40 /* Interactor */,
+				B3D531782332524F00132A40 /* Router */,
+			);
+			path = UnlockPin;
+			sourceTree = "<group>";
+		};
+		B3D5316C2332524F00132A40 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3D5316D2332524F00132A40 /* UnlockPinAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3D5316E2332524F00132A40 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3D5316F2332524F00132A40 /* UnlockPinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3D531702332524F00132A40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3D531712332524F00132A40 /* UnlockPinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3D531722332524F00132A40 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3D531732332524F00132A40 /* UnlockPinConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3D531742332524F00132A40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3D531752332524F00132A40 /* UnlockPinProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3D531762332524F00132A40 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3D531772332524F00132A40 /* UnlockPinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B3D531782332524F00132A40 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B3D531792332524F00132A40 /* UnlockPinRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3ED2CC923670C3800639B81 /* MAGWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F5DF6423676961002DBD31 /* CryptoCoreComponentTest.swift */,
+				B3CA85742369BE9800C81E92 /* SensativeDataServiceTests.swift */,
+				B3CA857A2369D41B00C81E92 /* AuthFacadeTests.swift */,
+				B3ED2CCC23670C3800639B81 /* Info.plist */,
+			);
+			path = MAGWalletTests;
+			sourceTree = "<group>";
+		};
+		C2088140D9A5E8504E76A238 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				525CC02A0812E72742CFF3F4 /* ForgotPinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C464808456921AE7AF12E04A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				433903FE74BA30C59D468F20 /* AllCurrenciesAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CED8970826245704006E32E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F36525E124927CF500DB518B /* OneButtonSnackBarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED8970B26245756006E32E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9B2C423323CAF008342F1 /* SnackBarRootModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D02A5B6E598D3261021BCF31 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				84FAF35BF05D018D00F0E4F4 /* ForgotPinAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		D0A9B2BE23323CAF008342F1 /* SnackBars */ = {
+			isa = PBXGroup;
+			children = (
+				F36525D824927CF500DB518B /* OneButtonSnackBar */,
+				D0A9B2BF23323CAF008342F1 /* SnackBarRoot */,
+				7F86BFB7BA208A266DBDB088 /* ButtonSnackBar */,
+			);
+			path = SnackBars;
+			sourceTree = "<group>";
+		};
+		D0A9B2BF23323CAF008342F1 /* SnackBarRoot */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9B2D923323CC1008342F1 /* SnackBarsRoot.storyboard */,
+				D0A9B2C723323CAF008342F1 /* SnackBarRootViewController.swift */,
+				D0A9B2C323323CAF008342F1 /* SnackBarRootPresenter.swift */,
+				D0A9B2CD23323CAF008342F1 /* SnackBarRootInteractor.swift */,
+				D0A9B2CF23323CAF008342F1 /* SnackBarRootRouter.swift */,
+				D0A9B2C123323CAF008342F1 /* SnackBarRootAssembler.swift */,
+				D0A9B2C923323CAF008342F1 /* SnackBarRootConfigurator.swift */,
+				D0A9B2CB23323CAF008342F1 /* SnackBarRootProtocols.swift */,
+				CED8970B26245756006E32E9 /* Models */,
+				D0A9B2C523323CAF008342F1 /* Views */,
+			);
+			path = SnackBarRoot;
+			sourceTree = "<group>";
+		};
+		D0A9B2C523323CAF008342F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9B2C623323CAF008342F1 /* SnackBarTouchableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0CB0F23236C372700A7184F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB0F24236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift */,
+				D0CB0F25236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.xib */,
+				D0CB0F28236C39F800A7184F /* AllCurrenciesDuoTableViewCell.swift */,
+				D0CB0F29236C39F800A7184F /* AllCurrenciesDuoTableViewCell.xib */,
+				D0CB0F2C236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.swift */,
+				D0CB0F2D236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D0CB0F30236C574800A7184F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB0F31236C577100A7184F /* AllCurrenciesScreenModel.swift */,
+				F35B029224769B8B0024061C /* AllCurrenciesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D653C3ADE47FC635B809E2CD /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D20D8181BCF94FAD021C95F2 /* ButtonSnackBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DF605DAAF83D765DA11B1C4D /* ForgotPin */ = {
+			isa = PBXGroup;
+			children = (
+				45841B210DB61FE857B8C1A2 /* View */,
+				55492B6803F38266429ABD2C /* Presenter */,
+				C2088140D9A5E8504E76A238 /* Interactor */,
+				296572E060D5B73F3E952D52 /* Router */,
+				EEB71BFBEE2D5E38B42DB1E3 /* Configurator */,
+				D02A5B6E598D3261021BCF31 /* Assembly */,
+				62D57CF280F6208B6BD19762 /* Protocols */,
+			);
+			path = ForgotPin;
+			sourceTree = "<group>";
+		};
+		DFD0329130CEC24AD19A4749 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0FE18CE2E51AD5878FB046A4 /* MultiAccountsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EEB71BFBEE2D5E38B42DB1E3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				927A40D3E5E00930465641B1 /* ForgotPinConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		EECA5DC0739241E304223AFA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				610D8D1CC87C0AF1AB95D67C /* AllCurrenciesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F2D115AE2383D2250045793B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D115AA2383D1EB0045793B /* AddAccountHeaderCell.swift */,
+				F2D115AC2383D21D0045793B /* AccountsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F2D115B12383DBC30045793B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F2D115AF2383DBBB0045793B /* MultiAccountsScreenModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F2E6FB1C23853F540026CB21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2E6FB1A23853F440026CB21 /* ButtonSnackBarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F352560D249417330032B139 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				F352560E2494173F0032B139 /* Implementation */,
+				F352560F249417450032B139 /* Protocols */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		F352560E2494173F0032B139 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F3F48DFE2493FEAA00DD2AF3 /* FlowNotificationFacadeImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F352560F249417450032B139 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3525610249417830032B139 /* FlowNotificationFacade.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F35305C42499EF94008DA56E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F35305C22499EF8F008DA56E /* Localization.strings */,
+				F35305C62499F258008DA56E /* R.generated.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F36525C124911C2C00DB518B /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F35305C42499EF94008DA56E /* Other */,
+				F36525C224911C2C00DB518B /* NotificationService.swift */,
+				F36525C424911C2C00DB518B /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		F36525D824927CF500DB518B /* OneButtonSnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				CED8970826245704006E32E9 /* Models */,
+				F36525F024927D6F00DB518B /* OneButtonSnackbar.storyboard */,
+				F36525DE24927CF500DB518B /* OneButtonSnackBarViewController.swift */,
+				F36525DC24927CF500DB518B /* OneButtonSnackBarPresenter.swift */,
+				F36525E524927CF500DB518B /* OneButtonSnackBarInteractor.swift */,
+				F36525E724927CF500DB518B /* OneButtonSnackBarRouter.swift */,
+				F36525DA24927CF500DB518B /* OneButtonSnackBarAssembler.swift */,
+				F36525E024927CF500DB518B /* OneButtonSnackBarConfigurator.swift */,
+				F36525E324927CF500DB518B /* OneButtonSnackBarProtocols.swift */,
+			);
+			path = OneButtonSnackBar;
+			sourceTree = "<group>";
+		};
+		F3EA90D62481078F001B988A /* ChangeNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90D72481078F001B988A /* Assembly */,
+				F3EA90D92481078F001B988A /* Presenter */,
+				F3EA90DB2481078F001B988A /* View */,
+				F3EA90DF2481078F001B988A /* Configurator */,
+				F3EA90E12481078F001B988A /* Protocols */,
+				F3EA90E32481078F001B988A /* Interactor */,
+				F3EA90E52481078F001B988A /* Router */,
+			);
+			path = ChangeNetwork;
+			sourceTree = "<group>";
+		};
+		F3EA90D72481078F001B988A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90D82481078F001B988A /* ChangeNetworkAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3EA90D92481078F001B988A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90DA2481078F001B988A /* ChangeNetworkPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3EA90DB2481078F001B988A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90DC2481078F001B988A /* ChangeNetworkViewController.swift */,
+				F3EA90DD2481078F001B988A /* Cell */,
+				F3EA90EF24810865001B988A /* Entity */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3EA90DD2481078F001B988A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90DE2481078F001B988A /* ChangeNetworkTableViewCell.swift */,
+				F3EA90F22481166D001B988A /* ChangeNetworkHeaderCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3EA90DF2481078F001B988A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90E02481078F001B988A /* ChangeNetworkConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3EA90E12481078F001B988A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90E22481078F001B988A /* ChangeNetworkProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3EA90E32481078F001B988A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90E42481078F001B988A /* ChangeNetworkInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3EA90E52481078F001B988A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90E62481078F001B988A /* ChangeNetworkRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3EA90EF24810865001B988A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3EA90F624812F7F001B988A /* ChangeNetworkScreenModels.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B33AE50C21ECAA2E0016966A /* MAGWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33AE51F21ECAA2F0016966A /* Build configuration list for PBXNativeTarget "MAGWallet" */;
+			buildPhases = (
+				146DEFC1052094912B5DF965 /* [CP] Check Pods Manifest.lock */,
+				B33AE52221ECACC70016966A /* Run Script */,
+				B33AE50921ECAA2E0016966A /* Sources */,
+				B33AE50A21ECAA2E0016966A /* Frameworks */,
+				B33AE50B21ECAA2E0016966A /* Resources */,
+				B33AE52321ECACE50016966A /* ShellScript */,
+				B3D53167233251BA00132A40 /* Embed Frameworks */,
+				F36525CB24911C2D00DB518B /* Embed App Extensions */,
+				0E01AD39CE413072CD20BD85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36525C624911C2C00DB518B /* PBXTargetDependency */,
+			);
+			name = MAGWallet;
+			productName = CryptoWalletTemplate;
+			productReference = B33AE50D21ECAA2E0016966A /* MAGWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3ED2CC723670C3700639B81 /* MAGWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3ED2CD123670C3800639B81 /* Build configuration list for PBXNativeTarget "MAGWalletTests" */;
+			buildPhases = (
+				21084AA2F988C305B393A464 /* [CP] Check Pods Manifest.lock */,
+				B3ED2CC423670C3700639B81 /* Sources */,
+				B3ED2CC523670C3700639B81 /* Frameworks */,
+				B3ED2CC623670C3700639B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3ED2CCE23670C3800639B81 /* PBXTargetDependency */,
+			);
+			name = MAGWalletTests;
+			productName = CryptoWalletTemplateTests;
+			productReference = B3ED2CC823670C3700639B81 /* MAGWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F36525BF24911C2C00DB518B /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36525C824911C2D00DB518B /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				333811A23CEDAAA22513921B /* [CP] Check Pods Manifest.lock */,
+				F35305C52499F0F1008DA56E /* ShellScript */,
+				F36525BC24911C2C00DB518B /* Sources */,
+				F36525BD24911C2C00DB518B /* Frameworks */,
+				F36525BE24911C2C00DB518B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = F36525C024911C2C00DB518B /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B33AE50521ECAA2E0016966A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					B33AE50C21ECAA2E0016966A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B3ED2CC723670C3700639B81 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B33AE50C21ECAA2E0016966A;
+					};
+					F36525BF24911C2C00DB518B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B33AE50821ECAA2E0016966A /* Build configuration list for PBXProject "MAGWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B33AE50421ECAA2E0016966A;
+			productRefGroup = B33AE50E21ECAA2E0016966A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B33AE50C21ECAA2E0016966A /* MAGWallet */,
+				B3ED2CC723670C3700639B81 /* MAGWalletTests */,
+				F36525BF24911C2C00DB518B /* NotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B33AE50B21ECAA2E0016966A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BCCE3C235CCDFF005EED3D /* Poppins-Medium.otf in Resources */,
+				D0CB0F22236C27DA00A7184F /* AllCurrencies.storyboard in Resources */,
+				D0CB0F2B236C39F800A7184F /* AllCurrenciesDuoTableViewCell.xib in Resources */,
+				B3BCCE3D235CCDFF005EED3D /* Poppins-Regular.otf in Resources */,
+				D0CB0F2F236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.xib in Resources */,
+				B3BCCE3E235CCDFF005EED3D /* Poppins-SemiBold.otf in Resources */,
+				B3542F6A2371564D00F914C6 /* Settings.storyboard in Resources */,
+				B3BCCE24235CC980005EED3D /* SharedColors.xcassets in Resources */,
+				B33AE57F21ECAD210016966A /* Root.storyboard in Resources */,
+				D0CB0F27236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.xib in Resources */,
+				D0A9B2DA23323CC1008342F1 /* SnackBarsRoot.storyboard in Resources */,
+				B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */,
+				B33AE57C21ECAD210016966A /* LaunchScreen.storyboard in Resources */,
+				F2CF2D8F23853EA500B9C281 /* SnackBar.storyboard in Resources */,
+				B346D1422327AAA900559245 /* PasswordFillingCollectionCell.xib in Resources */,
+				B346D1472327AAA900559245 /* PasswordKeyboardView.xib in Resources */,
+				B346D0D22327AA0700559245 /* Splash.storyboard in Resources */,
+				B301534C232943DF0004AAD9 /* MainRouting.storyboard in Resources */,
+				B346D14A2327AAA900559245 /* PasswordFillView.xib in Resources */,
+				F36525A5248FC27A00DB518B /* GoogleService-Info.plist in Resources */,
+				B346D1452327AAA900559245 /* PasswordKeyboardCell.xib in Resources */,
+				B346D12C2327AAA900559245 /* Pin.storyboard in Resources */,
+				F36525F124927D6F00DB518B /* OneButtonSnackbar.storyboard in Resources */,
+				B33AE56B21ECAD210016966A /* Localization.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3ED2CC623670C3700639B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36525BE24911C2C00DB518B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35305C32499EF8F008DA56E /* Localization.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E01AD39CE413072CD20BD85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAGWallet/Pods-MAGWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAGWallet/Pods-MAGWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAGWallet/Pods-MAGWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		146DEFC1052094912B5DF965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAGWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21084AA2F988C305B393A464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAGWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		333811A23CEDAAA22513921B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33AE52221ECACC70016966A /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/MAGWallet/Other/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/MAGWallet/Other/R.generated.swift\"\n";
+		};
+		B33AE52321ECACE50016966A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+		F35305C52499F0F1008DA56E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/NotificationServiceExtension/Other/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/NotificationServiceExtension/Other/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B33AE50921ECAA2E0016966A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36525E924927CF500DB518B /* OneButtonSnackBarPresenter.swift in Sources */,
+				B33AE56921ECAD210016966A /* Constants.swift in Sources */,
+				B3D531802332524F00132A40 /* UnlockPinRouter.swift in Sources */,
+				B3542F2F2371467D00F914C6 /* SettingsPresenter.swift in Sources */,
+				B33AE57421ECAD210016966A /* ProxyAssembly.swift in Sources */,
+				D0A9B2D623323CAF008342F1 /* SnackBarRootProtocols.swift in Sources */,
+				B3542F60237146D600F914C6 /* AutoblockAssembler.swift in Sources */,
+				F36525EA24927CF500DB518B /* OneButtonSnackBarViewController.swift in Sources */,
+				B391180E233503A9007B9DF6 /* SessionVerificationViewController.swift in Sources */,
+				F374E8B824937B1200FF7F2B /* ReachabilityConfigurator.swift in Sources */,
+				B346D1492327AAA900559245 /* PasswordFillView.swift in Sources */,
+				B346D1332327AAA900559245 /* CreatePinRouter.swift in Sources */,
+				B346D13E2327AAA900559245 /* PinVerificationConfigurator.swift in Sources */,
+				F36525EC24927CF500DB518B /* OneButtonSnackBarModel.swift in Sources */,
+				B33AE58321ECAD210016966A /* RootInteractor.swift in Sources */,
+				B3542F5C237146D600F914C6 /* LogoutConfigurator.swift in Sources */,
+				F3EA90EC2481078F001B988A /* ChangeNetworkProtocols.swift in Sources */,
+				B346D14E2327AB1D00559245 /* AuthFacadeService.swift in Sources */,
+				B33AE58021ECAD210016966A /* RootViewController.swift in Sources */,
+				B346D0D02327AA0700559245 /* SplashAssembler.swift in Sources */,
+				B3542F63237146D600F914C6 /* AutoblockTableViewCell.swift in Sources */,
+				B3542F322371467D00F914C6 /* SettingsViewController.swift in Sources */,
+				B346D14C2327AB1400559245 /* AuthFacadeImp.swift in Sources */,
+				B3911812233503A9007B9DF6 /* SessionVerificationRouter.swift in Sources */,
+				B346D1432327AAA900559245 /* PasswordFillingCollectionCell.swift in Sources */,
+				B33AE56A21ECAD210016966A /* Presentable.swift in Sources */,
+				B3911811233503A9007B9DF6 /* SessionVerificationInteractor.swift in Sources */,
+				B346D1412327AAA900559245 /* PinVerificationRouter.swift in Sources */,
+				B3542F372371467D00F914C6 /* SettingsRouter.swift in Sources */,
+				D0A9B2D223323CAF008342F1 /* SnackBarRootModel.swift in Sources */,
+				B3542F67237146D600F914C6 /* AutoblockRouter.swift in Sources */,
+				B346D13B2327AAA900559245 /* PinVerificationAssembler.swift in Sources */,
+				B301533A2327C7880004AAD9 /* AuthEventProxyImp.swift in Sources */,
+				B33AE57A21ECAD210016966A /* AppDelegate.swift in Sources */,
+				B3542F5A237146D600F914C6 /* LogoutPresenter.swift in Sources */,
+				B346D13C2327AAA900559245 /* PinVerificationPresenter.swift in Sources */,
+				D0CB0F2E236C3A0C00A7184F /* AllCurrenciesEmptyTableViewCell.swift in Sources */,
+				D0CB0F32236C577100A7184F /* AllCurrenciesScreenModel.swift in Sources */,
+				F3EA90EB2481078F001B988A /* ChangeNetworkConfigurator.swift in Sources */,
+				F36525AD2490BD4600DB518B /* FirebaseTokenEventProxy.swift in Sources */,
+				B346D0D72327AA0700559245 /* SplashRouter.swift in Sources */,
+				B33AE58421ECAD210016966A /* RootRouter.swift in Sources */,
+				F36525EB24927CF500DB518B /* OneButtonSnackBarConfigurator.swift in Sources */,
+				B3015361232A303A0004AAD9 /* ChangePinInteractor.swift in Sources */,
+				F36525D12491605F00DB518B /* FirebaseServiceImp.swift in Sources */,
+				B33AE57721ECAD210016966A /* ApplicationConfigurator.swift in Sources */,
+				B346D0D32327AA0700559245 /* SplashViewController.swift in Sources */,
+				F2D115B02383DBBB0045793B /* MultiAccountsScreenModel.swift in Sources */,
+				B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */,
+				B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */,
+				F374E8B42493788D00FF7F2B /* ReachabilityServiceImp.swift in Sources */,
+				B3542F5E237146D600F914C6 /* LogoutInteractor.swift in Sources */,
+				B346D0D12327AA0700559245 /* SplashPresenter.swift in Sources */,
+				B346D0D42327AA0700559245 /* SplashConfigurator.swift in Sources */,
+				D0A9B2D123323CAF008342F1 /* SnackBarRootPresenter.swift in Sources */,
+				B3D5317C2332524F00132A40 /* UnlockPinViewController.swift in Sources */,
+				B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */,
+				F2E6FB1B23853F440026CB21 /* ButtonSnackBarModel.swift in Sources */,
+				B346D0D62327AA0700559245 /* SplashInteractor.swift in Sources */,
+				B301535C232A303A0004AAD9 /* ChangePinAssembler.swift in Sources */,
+				B391180D233503A9007B9DF6 /* SessionVerificationPresenter.swift in Sources */,
+				B346D12D2327AAA900559245 /* CreatePinAssembler.swift in Sources */,
+				F36525EF24927CF500DB518B /* OneButtonSnackBarRouter.swift in Sources */,
+				B346D1312327AAA900559245 /* CreatePinProtocols.swift in Sources */,
+				F3EA90EE2481078F001B988A /* ChangeNetworkRouter.swift in Sources */,
+				B3542F66237146D600F914C6 /* AutoblockInteractor.swift in Sources */,
+				B3542F332371467D00F914C6 /* SettingsConfigurator.swift in Sources */,
+				B3015346232916BB0004AAD9 /* CryptoCoreComponentImp.swift in Sources */,
+				B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */,
+				B33AE56D21ECAD210016966A /* R.generated.swift in Sources */,
+				F35B029324769B8B0024061C /* AllCurrenciesModel.swift in Sources */,
+				B3542F5D237146D600F914C6 /* LogoutProtocols.swift in Sources */,
+				B346D1482327AAA900559245 /* BasePasswordViewController.swift in Sources */,
+				B3542F59237146D600F914C6 /* LogoutAssembler.swift in Sources */,
+				B3911810233503A9007B9DF6 /* SessionVerificationProtocols.swift in Sources */,
+				F374E8B62493789800FF7F2B /* ReachabilityService.swift in Sources */,
+				B3542F61237146D600F914C6 /* AutoblockPresenter.swift in Sources */,
+				D0A9B2D523323CAF008342F1 /* SnackBarRootConfigurator.swift in Sources */,
+				B346D0D52327AA0700559245 /* SplashProtocols.swift in Sources */,
+				B30153382327C7810004AAD9 /* AuthEventProxy.swift in Sources */,
+				B3542F2E2371467D00F914C6 /* SettingsAssembler.swift in Sources */,
+				B3D5317E2332524F00132A40 /* UnlockPinProtocols.swift in Sources */,
+				F3EA90F32481166D001B988A /* ChangeNetworkHeaderCell.swift in Sources */,
+				B3D5317A2332524F00132A40 /* UnlockPinAssembler.swift in Sources */,
+				B301535F232A303A0004AAD9 /* ChangePinConfigurator.swift in Sources */,
+				B3542F5B237146D600F914C6 /* LogoutViewController.swift in Sources */,
+				B33AE57621ECAD210016966A /* ConfiguratorProtocol.swift in Sources */,
+				B346D1442327AAA900559245 /* PasswordKeyboardCell.swift in Sources */,
+				B346D1462327AAA900559245 /* PasswordKeyboardView.swift in Sources */,
+				B301535D232A303A0004AAD9 /* ChangePinPresenter.swift in Sources */,
+				B346D13F2327AAA900559245 /* PinVerificationProtocols.swift in Sources */,
+				B3D5317B2332524F00132A40 /* UnlockPinPresenter.swift in Sources */,
+				F374E8BA24937D4900FF7F2B /* ReachabilityEventProxyImp.swift in Sources */,
+				B33AE57E21ECAD210016966A /* RootPresenter.swift in Sources */,
+				B301535E232A303A0004AAD9 /* ChangePinViewController.swift in Sources */,
+				B346D12F2327AAA900559245 /* CreatePinViewController.swift in Sources */,
+				B3542F5F237146D600F914C6 /* LogoutRouter.swift in Sources */,
+				F36525ED24927CF500DB518B /* OneButtonSnackBarProtocols.swift in Sources */,
+				B346D1322327AAA900559245 /* CreatePinInteractor.swift in Sources */,
+				B3015362232A303A0004AAD9 /* ChangePinRouter.swift in Sources */,
+				B3542F65237146D600F914C6 /* AutoblockProtocols.swift in Sources */,
+				B346D12E2327AAA900559245 /* CreatePinPresenter.swift in Sources */,
+				F3EA90E72481078F001B988A /* ChangeNetworkAssembler.swift in Sources */,
+				F3EA90F724812F7F001B988A /* ChangeNetworkScreenModels.swift in Sources */,
+				F374E8BC24937D5B00FF7F2B /* ReachabilityEventProxy.swift in Sources */,
+				B3542F362371467D00F914C6 /* SettingsInteractor.swift in Sources */,
+				B346D1402327AAA900559245 /* PinVerificationInteractor.swift in Sources */,
+				D0A9B2D023323CAF008342F1 /* SnackBarRootAssembler.swift in Sources */,
+				B3542F62237146D600F914C6 /* AutoblockViewController.swift in Sources */,
+				B3542F352371467D00F914C6 /* SettingsProtocols.swift in Sources */,
+				B33AE57821ECAD210016966A /* AppearanceConfigurator.swift in Sources */,
+				B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */,
+				B3015344232916AD0004AAD9 /* CryptoCoreComponent.swift in Sources */,
+				B346D1302327AAA900559245 /* CreatePinConfigurator.swift in Sources */,
+				D0538EC3238ED63A00FDC853 /* FirebaseConfigurator.swift in Sources */,
+				F36525E824927CF500DB518B /* OneButtonSnackBarAssembler.swift in Sources */,
+				B346D1512327B06C00559245 /* HighlightButton.swift in Sources */,
+				D0A9B2D723323CAF008342F1 /* SnackBarRootInteractor.swift in Sources */,
+				D0A9B2D323323CAF008342F1 /* SnackBarTouchableView.swift in Sources */,
+				D0CB0F2A236C39F800A7184F /* AllCurrenciesDuoTableViewCell.swift in Sources */,
+				B3015360232A303A0004AAD9 /* ChangePinProtocols.swift in Sources */,
+				F3525611249417830032B139 /* FlowNotificationFacade.swift in Sources */,
+				B33AE57521ECAD210016966A /* BusinessLayerAssembly.swift in Sources */,
+				B3542F312371467D00F914C6 /* SettingsEntity.swift in Sources */,
+				B33AE57D21ECAD210016966A /* RootAssembler.swift in Sources */,
+				B3D531632332472D00132A40 /* SensitiveDataServiceImp.swift in Sources */,
+				B3542F302371467D00F914C6 /* SidebarScreenButton.swift in Sources */,
+				F2D115AD2383D21D0045793B /* AccountsCell.swift in Sources */,
+				B346D13D2327AAA900559245 /* PinVerificationViewController.swift in Sources */,
+				B33AE57921ECAD210016966A /* ApplicationAssembler.swift in Sources */,
+				A758D90F161DF0B98F17AF6A /* MainRoutingViewController.swift in Sources */,
+				B3D5317F2332524F00132A40 /* UnlockPinInteractor.swift in Sources */,
+				B391180F233503A9007B9DF6 /* SessionVerificationConfigurator.swift in Sources */,
+				3C3EF31BB0D2BDCA089C3C46 /* MainRoutingPresenter.swift in Sources */,
+				B3D531612332466A00132A40 /* SensitiveDataService.swift in Sources */,
+				60A2243CB81AA91B6A50DE24 /* MainRoutingInteractor.swift in Sources */,
+				B3D5317D2332524F00132A40 /* UnlockPinConfigurator.swift in Sources */,
+				F3EA90E92481078F001B988A /* ChangeNetworkViewController.swift in Sources */,
+				F36525CF2491605300DB518B /* FirebaseService.swift in Sources */,
+				D7820086CD0603CB43A2D7B7 /* MainRoutingRouter.swift in Sources */,
+				B391180C233503A9007B9DF6 /* SessionVerificationAssembler.swift in Sources */,
+				9AC2FF197F5B19D8C52B59DE /* MainRoutingConfigurator.swift in Sources */,
+				43C795F27668C81247243F38 /* MainRoutingAssembler.swift in Sources */,
+				D0A9B2D823323CAF008342F1 /* SnackBarRootRouter.swift in Sources */,
+				F36525EE24927CF500DB518B /* OneButtonSnackBarInteractor.swift in Sources */,
+				D0CB0F26236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift in Sources */,
+				F3EA90EA2481078F001B988A /* ChangeNetworkTableViewCell.swift in Sources */,
+				D0A9B2D423323CAF008342F1 /* SnackBarRootViewController.swift in Sources */,
+				B3542F64237146D600F914C6 /* AutoblockConfigurator.swift in Sources */,
+				F2D115AB2383D1EB0045793B /* AddAccountHeaderCell.swift in Sources */,
+				645E58D80C55E1D949320C0B /* MainRoutingProtocols.swift in Sources */,
+				D4F77D3DE85B7406714425C2 /* AllCurrenciesViewController.swift in Sources */,
+				70F9235948D2C68A51ACF3F7 /* AllCurrenciesPresenter.swift in Sources */,
+				4CA492EE45B91F2169CA64D7 /* AllCurrenciesInteractor.swift in Sources */,
+				9D1749771AB71D9D9E374E5B /* AllCurrenciesRouter.swift in Sources */,
+				26EA8E2D2504D0FF579EB413 /* AllCurrenciesConfigurator.swift in Sources */,
+				5B7F5BE17B603EA698CE8FA5 /* AllCurrenciesAssembler.swift in Sources */,
+				0B3FDF3FA5E4F4C46A767274 /* AllCurrenciesProtocols.swift in Sources */,
+				EDDBA97A61918C5FCED7C84F /* MultiAccountsViewController.swift in Sources */,
+				F36525AF2490BD7300DB518B /* FirebaseEventProxyImp.swift in Sources */,
+				24B2C1C035122A6499B417E3 /* MultiAccountsPresenter.swift in Sources */,
+				76FFA02BDB3A0DAC7849C4B2 /* MultiAccountsInteractor.swift in Sources */,
+				98F3E6D54DD40510C97999C7 /* MultiAccountsRouter.swift in Sources */,
+				471FB360432E065E5D66D278 /* MultiAccountsConfigurator.swift in Sources */,
+				4F39A1635B5DE3B5C39B14BC /* MultiAccountsAssembler.swift in Sources */,
+				429AE78C708B59C13E184224 /* MultiAccountsProtocols.swift in Sources */,
+				F3EA90ED2481078F001B988A /* ChangeNetworkInteractor.swift in Sources */,
+				7BB5DDB92A75C199B0AD8475 /* ButtonSnackBarViewController.swift in Sources */,
+				C2EA5247D450A081FBE81BA2 /* ButtonSnackBarPresenter.swift in Sources */,
+				3BA3EBCD23F4525DC391EF3A /* ButtonSnackBarInteractor.swift in Sources */,
+				4B020F146655EFC753ACB695 /* ButtonSnackBarRouter.swift in Sources */,
+				5A6576C9069C2515D6855767 /* ButtonSnackBarConfigurator.swift in Sources */,
+				2C76C296F2ED6FA0D76E040A /* ButtonSnackBarAssembler.swift in Sources */,
+				C957A7E81E65537C33B7B958 /* ButtonSnackBarProtocols.swift in Sources */,
+				14FCCFADC171FE7C48896E72 /* ForgotPinViewController.swift in Sources */,
+				07618804FE27C5F35D6118B1 /* ForgotPinPresenter.swift in Sources */,
+				773108FE4E319CF1D71D631C /* ForgotPinInteractor.swift in Sources */,
+				F3EA90E82481078F001B988A /* ChangeNetworkPresenter.swift in Sources */,
+				E803E033A2D67484389166C4 /* ForgotPinRouter.swift in Sources */,
+				0E0081ADE8EB1082C0E477E8 /* ForgotPinConfigurator.swift in Sources */,
+				C93447EF4518811AFDB8756F /* ForgotPinAssembler.swift in Sources */,
+				F3F48DFF2493FEAA00DD2AF3 /* FlowNotificationFacadeImp.swift in Sources */,
+				C4EC2BF174F49C0A4F1C92F7 /* ForgotPinProtocols.swift in Sources */,
+				F3DE5A5824941B3D0005D718 /* FacadesAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3ED2CC423670C3700639B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3CA85752369BE9800C81E92 /* SensativeDataServiceTests.swift in Sources */,
+				B3F5DF6523676961002DBD31 /* CryptoCoreComponentTest.swift in Sources */,
+				B3CA857B2369D41B00C81E92 /* AuthFacadeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36525BC24911C2C00DB518B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36525C324911C2C00DB518B /* NotificationService.swift in Sources */,
+				F35305C72499F258008DA56E /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3ED2CCE23670C3800639B81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B33AE50C21ECAA2E0016966A /* MAGWallet */;
+			targetProxy = B3ED2CCD23670C3800639B81 /* PBXContainerItemProxy */;
+		};
+		F36525C624911C2C00DB518B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36525BF24911C2C00DB518B /* NotificationServiceExtension */;
+			targetProxy = F36525C524911C2C00DB518B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B33AE55621ECAD210016966A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33AE55721ECAD210016966A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B33AE51D21ECAA2F0016966A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B33AE51E21ECAA2F0016966A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B33AE52021ECAA2F0016966A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322DF3C508054C36EFE2960E /* Pods-MAGWallet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MAGWallet/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magalletapp;
+				PRODUCT_NAME = MAGWallet;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B33AE52121ECAA2F0016966A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AE14B3441EDF8F0A88658A /* Pods-MAGWallet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MAGWallet/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magalletapp;
+				PRODUCT_NAME = MAGWallet;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B3ED2CCF23670C3800639B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8630AA2508A5246F3552A5C7 /* Pods-MAGWalletTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = MAGWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magwalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAGWallet.app/MAGWallet";
+			};
+			name = Debug;
+		};
+		B3ED2CD023670C3800639B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5F19CEF45478081C4037C7 /* Pods-MAGWalletTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = MAGWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magwalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAGWallet.app/MAGWallet";
+			};
+			name = Release;
+		};
+		F36525C924911C2D00DB518B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE8B6C51EAD8FF30D957E59 /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magalletapp.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36525CA24911C2D00DB518B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6083CB60A85A4FC31A735346 /* Pods-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magalletapp.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B33AE50821ECAA2E0016966A /* Build configuration list for PBXProject "MAGWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33AE51D21ECAA2F0016966A /* Debug */,
+				B33AE51E21ECAA2F0016966A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33AE51F21ECAA2F0016966A /* Build configuration list for PBXNativeTarget "MAGWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33AE52021ECAA2F0016966A /* Debug */,
+				B33AE52121ECAA2F0016966A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3ED2CD123670C3800639B81 /* Build configuration list for PBXNativeTarget "MAGWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3ED2CCF23670C3800639B81 /* Debug */,
+				B3ED2CD023670C3800639B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36525C824911C2D00DB518B /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36525C924911C2D00DB518B /* Debug */,
+				F36525CA24911C2D00DB518B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B33AE50521ECAA2E0016966A /* Project object */;
+}

@@ -1,0 +1,3368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F3DEAC38903BB50F3FB07A9 /* Pods_LTCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A7002932B7A620953358CA /* Pods_LTCModule.framework */; };
+		DA3CC98662E61CF28C31DBE0 /* Pods_LTCModule_LTCModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17F5FD8A6EB97C0C3EE337A /* Pods_LTCModule_LTCModuleTests.framework */; };
+		F35305B92497CB4C008DA56E /* LTCNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305B82497CB4C008DA56E /* LTCNotificationType.swift */; };
+		F35305BB2497CB79008DA56E /* LTCSubscribeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305BA2497CB79008DA56E /* LTCSubscribeService.swift */; };
+		F35305BD2497CB88008DA56E /* LTCSubscribeServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305BC2497CB88008DA56E /* LTCSubscribeServiceImp.swift */; };
+		F35305BF2497CC30008DA56E /* LTCNotificationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305BE2497CC30008DA56E /* LTCNotificationFacade.swift */; };
+		F35305C12497CC4C008DA56E /* LTCNotificationFacadeImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35305C02497CC4C008DA56E /* LTCNotificationFacadeImp.swift */; };
+		F3682A7F248A7F1200F30C44 /* LTCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A75248A7F1200F30C44 /* LTCModule.framework */; };
+		F3682A93248A813E00F30C44 /* SharedFilesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A92248A813E00F30C44 /* SharedFilesModule.framework */; };
+		F3682A94248A813E00F30C44 /* SharedFilesModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A92248A813E00F30C44 /* SharedFilesModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3682A97248A814300F30C44 /* SharedUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A96248A814300F30C44 /* SharedUIModule.framework */; };
+		F3682A98248A814300F30C44 /* SharedUIModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3682A96248A814300F30C44 /* SharedUIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3682A9D248A81BD00F30C44 /* LTCModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682A9C248A81BD00F30C44 /* LTCModuleAssembly.swift */; };
+		F3682AA3248A825F00F30C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3682A9F248A825F00F30C44 /* Assets.xcassets */; };
+		F3682AA4248A825F00F30C44 /* loaderLight.json in Resources */ = {isa = PBXBuildFile; fileRef = F3682AA1248A825F00F30C44 /* loaderLight.json */; };
+		F3682AA5248A825F00F30C44 /* loaderGray.json in Resources */ = {isa = PBXBuildFile; fileRef = F3682AA2248A825F00F30C44 /* loaderGray.json */; };
+		F3682AAB248A82EF00F30C44 /* SharedColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3682AAA248A82EF00F30C44 /* SharedColors.xcassets */; };
+		F3682AB0248A832D00F30C44 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3682AAD248A832D00F30C44 /* Poppins-Medium.otf */; };
+		F3682AB1248A832D00F30C44 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3682AAE248A832D00F30C44 /* Poppins-SemiBold.otf */; };
+		F3682AB2248A832D00F30C44 /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3682AAF248A832D00F30C44 /* Poppins-Regular.otf */; };
+		F3682ABA248A878A00F30C44 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AB9248A878A00F30C44 /* Constants.swift */; };
+		F3682ABC248A908500F30C44 /* ApplicationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ABB248A908500F30C44 /* ApplicationAssembler.swift */; };
+		F3682AC0248A90A600F30C44 /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ABF248A90A600F30C44 /* ConfiguratorProtocol.swift */; };
+		F3682AC2248A90F800F30C44 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AC1248A90F800F30C44 /* AppearanceConfigurator.swift */; };
+		F3682ACB248A91B200F30C44 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ACA248A91B200F30C44 /* ServicesAssembly.swift */; };
+		F3682ACD248A91C500F30C44 /* CoreComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ACC248A91C500F30C44 /* CoreComponentAssembly.swift */; };
+		F3682ACF248A91D100F30C44 /* ProxyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ACE248A91D100F30C44 /* ProxyAssembly.swift */; };
+		F3682AD1248A91DD00F30C44 /* BusinessLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AD0248A91DD00F30C44 /* BusinessLayerAssembly.swift */; };
+		F3682AD3248A91E700F30C44 /* FacadesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AD2248A91E700F30C44 /* FacadesAssembly.swift */; };
+		F3682AD7248A924E00F30C44 /* AuthEventProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AD6248A924E00F30C44 /* AuthEventProxyImp.swift */; };
+		F3682AD9248A925B00F30C44 /* LTCUpdateEventProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AD8248A925B00F30C44 /* LTCUpdateEventProxyImp.swift */; };
+		F3682ADB248A926500F30C44 /* AuthEventProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ADA248A926500F30C44 /* AuthEventProxy.swift */; };
+		F3682ADD248A927100F30C44 /* LTCUpdateEventProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682ADC248A927100F30C44 /* LTCUpdateEventProxy.swift */; };
+		F3682AE4248A942B00F30C44 /* LTCNetworkAdapterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AE3248A942B00F30C44 /* LTCNetworkAdapterImp.swift */; };
+		F3682AE6248A943E00F30C44 /* LTCNetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AE5248A943E00F30C44 /* LTCNetworkAdapter.swift */; };
+		F3682AE8248A947600F30C44 /* LTCCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AE7248A947600F30C44 /* LTCCoreComponent.swift */; };
+		F3682AEA248A948100F30C44 /* QRCodeCoreComponentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AE9248A948100F30C44 /* QRCodeCoreComponentImp.swift */; };
+		F3682AEC248A949000F30C44 /* QRCodeCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AEB248A949000F30C44 /* QRCodeCoreComponent.swift */; };
+		F3682AEE248A94A400F30C44 /* SensitiveDataKeysCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AED248A94A400F30C44 /* SensitiveDataKeysCoreComponent.swift */; };
+		F3682AF0248A94C600F30C44 /* LTCCoreComponentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AEF248A94C600F30C44 /* LTCCoreComponentImp.swift */; };
+		F3682AF2248A94DE00F30C44 /* SensitiveDataKeysCoreComponentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AF1248A94DE00F30C44 /* SensitiveDataKeysCoreComponentImp.swift */; };
+		F3682AF8248A9C9200F30C44 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682AF7248A9C9200F30C44 /* R.generated.swift */; };
+		F3682AFA248A9CFA00F30C44 /* LTCModule-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = F3682AF9248A9CFA00F30C44 /* LTCModule-Bridging-Header.h */; };
+		F3682AFC248AA20F00F30C44 /* CoreLitecoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3682AFB248AA20E00F30C44 /* CoreLitecoin.framework */; };
+		F3682B07248AA6E900F30C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3682B05248AA6E900F30C44 /* LaunchScreen.storyboard */; };
+		F3682B09248AA73C00F30C44 /* LTCWalletBalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B08248AA73C00F30C44 /* LTCWalletBalanceModel.swift */; };
+		F3682B0B248AA75200F30C44 /* LTCWalletHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B0A248AA75200F30C44 /* LTCWalletHistoryModel.swift */; };
+		F3682B0D248AA76F00F30C44 /* LTCWalletOutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B0C248AA76F00F30C44 /* LTCWalletOutputModel.swift */; };
+		F3682B0F248AA77F00F30C44 /* LTCSettingsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B0E248AA77F00F30C44 /* LTCSettingsConfiguration.swift */; };
+		F3682B11248AA79200F30C44 /* LTCWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B10248AA79200F30C44 /* LTCWallet.swift */; };
+		F3682B13248AA7A200F30C44 /* LTCCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B12248AA7A200F30C44 /* LTCCurrency.swift */; };
+		F3682B15248AA7B300F30C44 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B14248AA7B300F30C44 /* Amount.swift */; };
+		F3682B17248AA7C200F30C44 /* LTCHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B16248AA7C200F30C44 /* LTCHistoryModel.swift */; };
+		F3682B19248AA7CE00F30C44 /* LTCPagedResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B18248AA7CE00F30C44 /* LTCPagedResponce.swift */; };
+		F3682B1B248AA7DB00F30C44 /* LTCCoinRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B1A248AA7DB00F30C44 /* LTCCoinRateModel.swift */; };
+		F3682B1D248AA7E800F30C44 /* LTCCoinHistoryRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B1C248AA7E800F30C44 /* LTCCoinHistoryRateModel.swift */; };
+		F3682B1F248AA7FC00F30C44 /* LTCNetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B1E248AA7FC00F30C44 /* LTCNetworkType.swift */; };
+		F3682B23248AAEB700F30C44 /* LTCTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B22248AAEB700F30C44 /* LTCTransferService.swift */; };
+		F3682B25248AAED900F30C44 /* LTCAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B24248AAED900F30C44 /* LTCAuthService.swift */; };
+		F3682B27248AAF0100F30C44 /* LTCUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B26248AAF0100F30C44 /* LTCUpdateService.swift */; };
+		F3682B29248AAF1B00F30C44 /* LTCAuthServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B28248AAF1B00F30C44 /* LTCAuthServiceImp.swift */; };
+		F3682B2B248AAF3500F30C44 /* LTCTransferServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B2A248AAF3500F30C44 /* LTCTransferServiceImp.swift */; };
+		F3682B2D248AAF4800F30C44 /* LTCUpdateServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B2C248AAF4800F30C44 /* LTCUpdateServiceImp.swift */; };
+		F3682B32248AB24000F30C44 /* LTCNetworkFacadeImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B31248AB24000F30C44 /* LTCNetworkFacadeImp.swift */; };
+		F3682B34248AB26300F30C44 /* LTCNetworkFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B33248AB26300F30C44 /* LTCNetworkFacade.swift */; };
+		F3682B36248AB2B300F30C44 /* LTCNetworkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B35248AB2B300F30C44 /* LTCNetworkConfigurable.swift */; };
+		F3682B38248AB38900F30C44 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3682B37248AB38900F30C44 /* Localization.strings */; };
+		F3682B3A248AB45F00F30C44 /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682B39248AB45F00F30C44 /* ModuleAssembly.swift */; };
+		F3AEC8EB248E0CD80081CF0D /* ApplicationModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8E0248E0CD80081CF0D /* ApplicationModuleInteractor.swift */; };
+		F3AEC8EC248E0CD80081CF0D /* ApplicationModuleModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8E2248E0CD80081CF0D /* ApplicationModuleModuleAssembler.swift */; };
+		F3AEC8ED248E0CD80081CF0D /* ApplicationModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8E4248E0CD80081CF0D /* ApplicationModulePresenter.swift */; };
+		F3AEC8EE248E0CD80081CF0D /* ApplicationModuleModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8E6248E0CD80081CF0D /* ApplicationModuleModuleConfigurator.swift */; };
+		F3AEC8EF248E0CD80081CF0D /* ApplicationModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8E8248E0CD80081CF0D /* ApplicationModuleProtocols.swift */; };
+		F3AEC8F0248E0CD80081CF0D /* ApplicationModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8EA248E0CD80081CF0D /* ApplicationModuleRouter.swift */; };
+		F3AEC92F248E0E190081CF0D /* AuthCreateAndCopyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8F4248E0E190081CF0D /* AuthCreateAndCopyAssembler.swift */; };
+		F3AEC930248E0E190081CF0D /* AuthCreateAndCopyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8F6248E0E190081CF0D /* AuthCreateAndCopyPresenter.swift */; };
+		F3AEC931248E0E190081CF0D /* AuthCreateAndCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8F8248E0E190081CF0D /* AuthCreateAndCopyViewController.swift */; };
+		F3AEC932248E0E190081CF0D /* AuthCreateAndCopyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8FA248E0E190081CF0D /* AuthCreateAndCopyConfigurator.swift */; };
+		F3AEC933248E0E190081CF0D /* AuthCreateAndCopyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8FC248E0E190081CF0D /* AuthCreateAndCopyProtocols.swift */; };
+		F3AEC934248E0E190081CF0D /* AuthCreateAndCopyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC8FE248E0E190081CF0D /* AuthCreateAndCopyInteractor.swift */; };
+		F3AEC935248E0E190081CF0D /* AuthCreateAndCopyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC900248E0E190081CF0D /* AuthCreateAndCopyRouter.swift */; };
+		F3AEC936248E0E190081CF0D /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AEC901248E0E190081CF0D /* Auth.storyboard */; };
+		F3AEC937248E0E190081CF0D /* AuthFlowSelectionAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC904248E0E190081CF0D /* AuthFlowSelectionAssembler.swift */; };
+		F3AEC938248E0E190081CF0D /* AuthFlowSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC906248E0E190081CF0D /* AuthFlowSelectionPresenter.swift */; };
+		F3AEC939248E0E190081CF0D /* AuthFlowSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC908248E0E190081CF0D /* AuthFlowSelectionViewController.swift */; };
+		F3AEC93A248E0E190081CF0D /* AuthFlowSelectionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC90A248E0E190081CF0D /* AuthFlowSelectionConfigurator.swift */; };
+		F3AEC93B248E0E190081CF0D /* AuthFlowSelectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC90C248E0E190081CF0D /* AuthFlowSelectionProtocols.swift */; };
+		F3AEC93C248E0E190081CF0D /* AuthFlowSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC90E248E0E190081CF0D /* AuthFlowSelectionInteractor.swift */; };
+		F3AEC93D248E0E190081CF0D /* AuthFlowSelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC910248E0E190081CF0D /* AuthFlowSelectionRouter.swift */; };
+		F3AEC93E248E0E190081CF0D /* AuthRootAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC913248E0E190081CF0D /* AuthRootAssembler.swift */; };
+		F3AEC93F248E0E190081CF0D /* AuthRootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC915248E0E190081CF0D /* AuthRootPresenter.swift */; };
+		F3AEC940248E0E190081CF0D /* AuthRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC917248E0E190081CF0D /* AuthRootViewController.swift */; };
+		F3AEC941248E0E190081CF0D /* AuthRootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC919248E0E190081CF0D /* AuthRootConfigurator.swift */; };
+		F3AEC942248E0E190081CF0D /* AuthRootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC91B248E0E190081CF0D /* AuthRootProtocols.swift */; };
+		F3AEC943248E0E190081CF0D /* AuthRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC91D248E0E190081CF0D /* AuthRootInteractor.swift */; };
+		F3AEC944248E0E190081CF0D /* AuthRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC91F248E0E190081CF0D /* AuthRootRouter.swift */; };
+		F3AEC945248E0E190081CF0D /* AuthImportBrainkeyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC922248E0E190081CF0D /* AuthImportBrainkeyAssembler.swift */; };
+		F3AEC946248E0E190081CF0D /* AuthImportBrainkeyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC924248E0E190081CF0D /* AuthImportBrainkeyPresenter.swift */; };
+		F3AEC947248E0E190081CF0D /* AuthImportBrainkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC926248E0E190081CF0D /* AuthImportBrainkeyViewController.swift */; };
+		F3AEC948248E0E190081CF0D /* AuthImportBrainkeyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC928248E0E190081CF0D /* AuthImportBrainkeyConfigurator.swift */; };
+		F3AEC949248E0E190081CF0D /* AuthImportBrainkeyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC92A248E0E190081CF0D /* AuthImportBrainkeyProtocols.swift */; };
+		F3AEC94A248E0E190081CF0D /* AuthImportBrainkeyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC92C248E0E190081CF0D /* AuthImportBrainkeyInteractor.swift */; };
+		F3AEC94B248E0E190081CF0D /* AuthImportBrainkeyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC92E248E0E190081CF0D /* AuthImportBrainkeyRouter.swift */; };
+		F3AEC97E248E10DF0081CF0D /* ApplySnackBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC94F248E10DE0081CF0D /* ApplySnackBarAssembler.swift */; };
+		F3AEC97F248E10DF0081CF0D /* ApplySnackBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC951248E10DE0081CF0D /* ApplySnackBarPresenter.swift */; };
+		F3AEC980248E10DF0081CF0D /* ApplySnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC952248E10DE0081CF0D /* ApplySnackBarModel.swift */; };
+		F3AEC981248E10DF0081CF0D /* ApplySnackBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC954248E10DE0081CF0D /* ApplySnackBarViewController.swift */; };
+		F3AEC982248E10DF0081CF0D /* ApplySnackBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC956248E10DE0081CF0D /* ApplySnackBarConfigurator.swift */; };
+		F3AEC983248E10DF0081CF0D /* ApplySnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC958248E10DE0081CF0D /* ApplySnackBarProtocols.swift */; };
+		F3AEC984248E10DF0081CF0D /* ApplySnackBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC95A248E10DE0081CF0D /* ApplySnackBarInteractor.swift */; };
+		F3AEC985248E10DF0081CF0D /* ApplySnackBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC95C248E10DE0081CF0D /* ApplySnackBarRouter.swift */; };
+		F3AEC986248E10DF0081CF0D /* ButtonSnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC95E248E10DE0081CF0D /* ButtonSnackBarModel.swift */; };
+		F3AEC987248E10DF0081CF0D /* ButtonSnackBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC960248E10DE0081CF0D /* ButtonSnackBarAssembler.swift */; };
+		F3AEC988248E10DF0081CF0D /* ButtonSnackBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC962248E10DE0081CF0D /* ButtonSnackBarPresenter.swift */; };
+		F3AEC989248E10DF0081CF0D /* ButtonSnackBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC964248E10DE0081CF0D /* ButtonSnackBarViewController.swift */; };
+		F3AEC98A248E10DF0081CF0D /* ButtonSnackBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC966248E10DE0081CF0D /* ButtonSnackBarConfigurator.swift */; };
+		F3AEC98B248E10DF0081CF0D /* ButtonSnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC968248E10DE0081CF0D /* ButtonSnackBarProtocols.swift */; };
+		F3AEC98C248E10DF0081CF0D /* ButtonSnackBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC96A248E10DE0081CF0D /* ButtonSnackBarInteractor.swift */; };
+		F3AEC98D248E10DF0081CF0D /* ButtonSnackBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC96C248E10DE0081CF0D /* ButtonSnackBarRouter.swift */; };
+		F3AEC98E248E10DF0081CF0D /* SnackBars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AEC96D248E10DE0081CF0D /* SnackBars.storyboard */; };
+		F3AEC98F248E10DF0081CF0D /* OneButtonSnackBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC970248E10DE0081CF0D /* OneButtonSnackBarAssembler.swift */; };
+		F3AEC990248E10DF0081CF0D /* OneButtonSnackBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC972248E10DE0081CF0D /* OneButtonSnackBarPresenter.swift */; };
+		F3AEC991248E10DF0081CF0D /* OneButtonSnackBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC974248E10DE0081CF0D /* OneButtonSnackBarViewController.swift */; };
+		F3AEC992248E10DF0081CF0D /* OneButtonSnackBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC976248E10DE0081CF0D /* OneButtonSnackBarConfigurator.swift */; };
+		F3AEC993248E10DF0081CF0D /* OneButtonSnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC977248E10DE0081CF0D /* OneButtonSnackBarModel.swift */; };
+		F3AEC994248E10DF0081CF0D /* OneButtonSnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC979248E10DE0081CF0D /* OneButtonSnackBarProtocols.swift */; };
+		F3AEC995248E10DF0081CF0D /* OneButtonSnackBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC97B248E10DE0081CF0D /* OneButtonSnackBarInteractor.swift */; };
+		F3AEC996248E10DF0081CF0D /* OneButtonSnackBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC97D248E10DE0081CF0D /* OneButtonSnackBarRouter.swift */; };
+		F3AEC9F5248E12080081CF0D /* HistoryDetailsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC99A248E12080081CF0D /* HistoryDetailsAssembler.swift */; };
+		F3AEC9F6248E12080081CF0D /* HistoryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC99C248E12080081CF0D /* HistoryDetailsPresenter.swift */; };
+		F3AEC9F7248E12080081CF0D /* HistoryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AEC99D248E12080081CF0D /* HistoryDetails.storyboard */; };
+		F3AEC9F8248E12080081CF0D /* HistoryDetailsAmountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A0248E12080081CF0D /* HistoryDetailsAmountDetail.swift */; };
+		F3AEC9F9248E12080081CF0D /* HistoryDetailsTextDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A1248E12080081CF0D /* HistoryDetailsTextDetail.swift */; };
+		F3AEC9FA248E12080081CF0D /* HistoryDetailsScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A3248E12080081CF0D /* HistoryDetailsScreenModel.swift */; };
+		F3AEC9FB248E12080081CF0D /* HistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A4248E12080081CF0D /* HistoryDetailsViewController.swift */; };
+		F3AEC9FC248E12080081CF0D /* HistoryDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A6248E12080081CF0D /* HistoryDetailsConfigurator.swift */; };
+		F3AEC9FD248E12080081CF0D /* HistoryDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9A8248E12080081CF0D /* HistoryDetailsProtocols.swift */; };
+		F3AEC9FE248E12080081CF0D /* HistoryDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9AA248E12080081CF0D /* HistoryDetailsInteractor.swift */; };
+		F3AEC9FF248E12080081CF0D /* HistoryDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9AC248E12080081CF0D /* HistoryDetailsRouter.swift */; };
+		F3AECA00248E12080081CF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AEC9AD248E12080081CF0D /* Main.storyboard */; };
+		F3AECA01248E12080081CF0D /* ReceiveAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9B0248E12080081CF0D /* ReceiveAssembler.swift */; };
+		F3AECA02248E12080081CF0D /* ReceivePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9B2248E12080081CF0D /* ReceivePresenter.swift */; };
+		F3AECA03248E12080081CF0D /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9B4248E12080081CF0D /* ReceiveViewController.swift */; };
+		F3AECA04248E12080081CF0D /* RecieveEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9B6248E12080081CF0D /* RecieveEntity.swift */; };
+		F3AECA05248E12080081CF0D /* ReceiveConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9B8248E12080081CF0D /* ReceiveConfigurator.swift */; };
+		F3AECA06248E12080081CF0D /* ReceiveProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9BA248E12080081CF0D /* ReceiveProtocols.swift */; };
+		F3AECA07248E12080081CF0D /* ReceiveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9BC248E12080081CF0D /* ReceiveInteractor.swift */; };
+		F3AECA08248E12080081CF0D /* ReceiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9BE248E12080081CF0D /* ReceiveRouter.swift */; };
+		F3AECA09248E12080081CF0D /* HistoryAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9C1248E12080081CF0D /* HistoryAssembler.swift */; };
+		F3AECA0A248E12080081CF0D /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9C3248E12080081CF0D /* HistoryPresenter.swift */; };
+		F3AECA0C248E12080081CF0D /* LoaderFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3AEC9C8248E12080081CF0D /* LoaderFooterCell.xib */; };
+		F3AECA0D248E12080081CF0D /* LoaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9C9248E12080081CF0D /* LoaderFooterCell.swift */; };
+		F3AECA0E248E12080081CF0D /* UniversalHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9CA248E12080081CF0D /* UniversalHistoryCell.swift */; };
+		F3AECA0F248E12080081CF0D /* HistoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9CB248E12080081CF0D /* HistoryItemCell.swift */; };
+		F3AECA10248E12080081CF0D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9CC248E12080081CF0D /* HistoryViewController.swift */; };
+		F3AECA11248E12080081CF0D /* HistoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9CE248E12080081CF0D /* HistoryConfigurator.swift */; };
+		F3AECA12248E12080081CF0D /* HistoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9D0248E12080081CF0D /* HistoryProtocols.swift */; };
+		F3AECA13248E12080081CF0D /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9D2248E12080081CF0D /* HistoryInteractor.swift */; };
+		F3AECA14248E12080081CF0D /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9D4248E12080081CF0D /* HistoryRouter.swift */; };
+		F3AECA15248E12080081CF0D /* WalletAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9D7248E12080081CF0D /* WalletAssembler.swift */; };
+		F3AECA16248E12080081CF0D /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9D9248E12080081CF0D /* WalletPresenter.swift */; };
+		F3AECA17248E12080081CF0D /* WalletEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9DC248E12080081CF0D /* WalletEntity.swift */; };
+		F3AECA18248E12080081CF0D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9DD248E12080081CF0D /* WalletViewController.swift */; };
+		F3AECA19248E12080081CF0D /* WalletConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9DF248E12080081CF0D /* WalletConfigurator.swift */; };
+		F3AECA1A248E12080081CF0D /* WalletProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9E1248E12080081CF0D /* WalletProtocols.swift */; };
+		F3AECA1B248E12080081CF0D /* WalletInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9E3248E12080081CF0D /* WalletInteractor.swift */; };
+		F3AECA1C248E12080081CF0D /* WalletRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9E5248E12080081CF0D /* WalletRouter.swift */; };
+		F3AECA1D248E12080081CF0D /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9E8248E12080081CF0D /* MainAssembler.swift */; };
+		F3AECA1E248E12080081CF0D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9EA248E12080081CF0D /* MainPresenter.swift */; };
+		F3AECA1F248E12080081CF0D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9EC248E12080081CF0D /* MainViewController.swift */; };
+		F3AECA20248E12080081CF0D /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9EE248E12080081CF0D /* MainConfigurator.swift */; };
+		F3AECA21248E12080081CF0D /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9F0248E12080081CF0D /* MainProtocols.swift */; };
+		F3AECA22248E12080081CF0D /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9F2248E12080081CF0D /* MainInteractor.swift */; };
+		F3AECA23248E12080081CF0D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC9F4248E12080081CF0D /* MainRouter.swift */; };
+		F3AECA35248E18410081CF0D /* ScanAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA26248E18400081CF0D /* ScanAssembler.swift */; };
+		F3AECA36248E18410081CF0D /* ScanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA28248E18400081CF0D /* ScanPresenter.swift */; };
+		F3AECA37248E18410081CF0D /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA2A248E18400081CF0D /* ScanViewController.swift */; };
+		F3AECA38248E18410081CF0D /* ScanEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA2B248E18400081CF0D /* ScanEntity.swift */; };
+		F3AECA39248E18410081CF0D /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AECA2C248E18400081CF0D /* Scan.storyboard */; };
+		F3AECA3A248E18410081CF0D /* ScanConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA2E248E18400081CF0D /* ScanConfigurator.swift */; };
+		F3AECA3B248E18410081CF0D /* ScanProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA30248E18400081CF0D /* ScanProtocols.swift */; };
+		F3AECA3C248E18410081CF0D /* ScanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA32248E18400081CF0D /* ScanInteractor.swift */; };
+		F3AECA3D248E18410081CF0D /* ScanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA34248E18400081CF0D /* ScanRouter.swift */; };
+		F3AECA40248E19510081CF0D /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA3E248E19510081CF0D /* CustomOverlay.swift */; };
+		F3AECA41248E19510081CF0D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA3F248E19510081CF0D /* CameraView.swift */; };
+		F3AECA55248E1A250081CF0D /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AECA43248E1A240081CF0D /* Send.storyboard */; };
+		F3AECA56248E1A250081CF0D /* SendAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA46248E1A240081CF0D /* SendAssembler.swift */; };
+		F3AECA57248E1A250081CF0D /* SendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA48248E1A240081CF0D /* SendPresenter.swift */; };
+		F3AECA58248E1A250081CF0D /* SendFeeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA4B248E1A240081CF0D /* SendFeeEntity.swift */; };
+		F3AECA59248E1A250081CF0D /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA4C248E1A240081CF0D /* SendViewController.swift */; };
+		F3AECA5A248E1A250081CF0D /* SendConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA4E248E1A240081CF0D /* SendConfigurator.swift */; };
+		F3AECA5B248E1A250081CF0D /* SendProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA50248E1A240081CF0D /* SendProtocols.swift */; };
+		F3AECA5C248E1A250081CF0D /* SendInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA52248E1A240081CF0D /* SendInteractor.swift */; };
+		F3AECA5D248E1A250081CF0D /* SendRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA54248E1A240081CF0D /* SendRouter.swift */; };
+		F3AECAC7248E1C150081CF0D /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA61248E1C150081CF0D /* SettingsAssembler.swift */; };
+		F3AECAC8248E1C150081CF0D /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA63248E1C150081CF0D /* SettingsPresenter.swift */; };
+		F3AECAC9248E1C150081CF0D /* SettingsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA66248E1C150081CF0D /* SettingsEntity.swift */; };
+		F3AECACA248E1C150081CF0D /* SidebarScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA68248E1C150081CF0D /* SidebarScreenButton.swift */; };
+		F3AECACB248E1C150081CF0D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA69248E1C150081CF0D /* SettingsViewController.swift */; };
+		F3AECACC248E1C150081CF0D /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA6B248E1C150081CF0D /* SettingsConfigurator.swift */; };
+		F3AECACD248E1C150081CF0D /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA6D248E1C150081CF0D /* SettingsProtocols.swift */; };
+		F3AECACE248E1C150081CF0D /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA6F248E1C150081CF0D /* SettingsInteractor.swift */; };
+		F3AECACF248E1C150081CF0D /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA71248E1C150081CF0D /* SettingsRouter.swift */; };
+		F3AECAD0248E1C150081CF0D /* ExportWifAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA74248E1C150081CF0D /* ExportWifAssembler.swift */; };
+		F3AECAD1248E1C150081CF0D /* ExportWifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA76248E1C150081CF0D /* ExportWifPresenter.swift */; };
+		F3AECAD2248E1C150081CF0D /* ExportWifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA78248E1C150081CF0D /* ExportWifViewController.swift */; };
+		F3AECAD3248E1C150081CF0D /* ExportWifConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA7A248E1C150081CF0D /* ExportWifConfigurator.swift */; };
+		F3AECAD4248E1C150081CF0D /* ExportWifProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA7C248E1C150081CF0D /* ExportWifProtocols.swift */; };
+		F3AECAD5248E1C150081CF0D /* ExportWifInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA7E248E1C150081CF0D /* ExportWifInteractor.swift */; };
+		F3AECAD6248E1C150081CF0D /* ExportWifRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA80248E1C150081CF0D /* ExportWifRouter.swift */; };
+		F3AECAD7248E1C150081CF0D /* ChangeNetworkAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA83248E1C150081CF0D /* ChangeNetworkAssembler.swift */; };
+		F3AECAD8248E1C150081CF0D /* ChangeNetworkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA85248E1C150081CF0D /* ChangeNetworkPresenter.swift */; };
+		F3AECAD9248E1C150081CF0D /* ChangeNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA87248E1C150081CF0D /* ChangeNetworkViewController.swift */; };
+		F3AECADA248E1C150081CF0D /* ChangeNetworkHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA89248E1C150081CF0D /* ChangeNetworkHeaderCell.swift */; };
+		F3AECADB248E1C150081CF0D /* ChangeNetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA8A248E1C150081CF0D /* ChangeNetworkTableViewCell.swift */; };
+		F3AECADC248E1C150081CF0D /* ChangeNetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA8C248E1C150081CF0D /* ChangeNetworkConfigurator.swift */; };
+		F3AECADD248E1C150081CF0D /* ChangeNetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA8E248E1C150081CF0D /* ChangeNetworkProtocols.swift */; };
+		F3AECADE248E1C150081CF0D /* ChangeNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA90248E1C150081CF0D /* ChangeNetworkInteractor.swift */; };
+		F3AECADF248E1C150081CF0D /* ChangeNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA92248E1C150081CF0D /* ChangeNetworkRouter.swift */; };
+		F3AECAE0248E1C150081CF0D /* LogoutAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA95248E1C150081CF0D /* LogoutAssembler.swift */; };
+		F3AECAE1248E1C150081CF0D /* LogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA97248E1C150081CF0D /* LogoutPresenter.swift */; };
+		F3AECAE2248E1C150081CF0D /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA99248E1C150081CF0D /* LogoutViewController.swift */; };
+		F3AECAE3248E1C150081CF0D /* LogoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA9B248E1C150081CF0D /* LogoutConfigurator.swift */; };
+		F3AECAE4248E1C150081CF0D /* LogoutProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA9D248E1C150081CF0D /* LogoutProtocols.swift */; };
+		F3AECAE5248E1C150081CF0D /* LogoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECA9F248E1C150081CF0D /* LogoutInteractor.swift */; };
+		F3AECAE6248E1C150081CF0D /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAA1248E1C150081CF0D /* LogoutRouter.swift */; };
+		F3AECAE7248E1C150081CF0D /* AccountsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAA4248E1C150081CF0D /* AccountsAssembler.swift */; };
+		F3AECAE8248E1C150081CF0D /* AccountsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAA6248E1C150081CF0D /* AccountsPresenter.swift */; };
+		F3AECAEA248E1C150081CF0D /* AccountsScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAAB248E1C150081CF0D /* AccountsScreenModule.swift */; };
+		F3AECAEB248E1C150081CF0D /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAAC248E1C150081CF0D /* AccountsViewController.swift */; };
+		F3AECAEC248E1C150081CF0D /* AccountsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAAE248E1C150081CF0D /* AccountsConfigurator.swift */; };
+		F3AECAED248E1C150081CF0D /* AccountsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAB0248E1C150081CF0D /* AccountsProtocols.swift */; };
+		F3AECAEE248E1C150081CF0D /* AccountsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAB2248E1C150081CF0D /* AccountsInteractor.swift */; };
+		F3AECAEF248E1C150081CF0D /* AccountsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAB4248E1C150081CF0D /* AccountsRouter.swift */; };
+		F3AECAF0248E1C150081CF0D /* AutoblockAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAB7248E1C150081CF0D /* AutoblockAssembler.swift */; };
+		F3AECAF1248E1C150081CF0D /* AutoblockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAB9248E1C150081CF0D /* AutoblockPresenter.swift */; };
+		F3AECAF2248E1C150081CF0D /* AutoblockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECABB248E1C150081CF0D /* AutoblockViewController.swift */; };
+		F3AECAF3248E1C150081CF0D /* AutoblockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECABD248E1C150081CF0D /* AutoblockTableViewCell.swift */; };
+		F3AECAF4248E1C150081CF0D /* AutoblockConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECABF248E1C150081CF0D /* AutoblockConfigurator.swift */; };
+		F3AECAF5248E1C150081CF0D /* AutoblockProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAC1248E1C150081CF0D /* AutoblockProtocols.swift */; };
+		F3AECAF6248E1C150081CF0D /* AutoblockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAC3248E1C150081CF0D /* AutoblockInteractor.swift */; };
+		F3AECAF7248E1C150081CF0D /* AutoblockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AECAC5248E1C150081CF0D /* AutoblockRouter.swift */; };
+		F3AECAF8248E1C150081CF0D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AECAC6248E1C150081CF0D /* Settings.storyboard */; };
+		F3C1292D248E222E002768EB /* LTCHistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1292C248E222E002768EB /* LTCHistoryEntity.swift */; };
+		F3C1292F248E22B8002768EB /* LTCAccountsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1292E248E22B8002768EB /* LTCAccountsCell.swift */; };
+		F3C12931248E2A31002768EB /* QRCodeCoreComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12930248E2A31002768EB /* QRCodeCoreComponentTests.swift */; };
+		F3C12933248E2A6E002768EB /* SensitiveDataKeysCoreComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12932248E2A6E002768EB /* SensitiveDataKeysCoreComponentTests.swift */; };
+		F3C12939248E3687002768EB /* LTCUpdateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12934248E3687002768EB /* LTCUpdateServiceTests.swift */; };
+		F3C1293A248E3687002768EB /* LTCNetworkAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12935248E3687002768EB /* LTCNetworkAdapterTests.swift */; };
+		F3C1293B248E3687002768EB /* LTCTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12936248E3687002768EB /* LTCTransferServiceTests.swift */; };
+		F3C1293C248E3687002768EB /* LTCAuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12937248E3687002768EB /* LTCAuthServiceTests.swift */; };
+		F3C1293D248E3687002768EB /* LTCCoreComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12938248E3687002768EB /* LTCCoreComponentTests.swift */; };
+		F3C1293F248E6042002768EB /* LTCNetworkFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1293E248E6042002768EB /* LTCNetworkFacadeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3682A80248A7F1200F30C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3682A6C248A7F1200F30C44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3682A74248A7F1200F30C44;
+			remoteInfo = LTCModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3682A95248A813E00F30C44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3682A94248A813E00F30C44 /* SharedFilesModule.framework in Embed Frameworks */,
+				F3682A98248A814300F30C44 /* SharedUIModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A7002932B7A620953358CA /* Pods_LTCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E83FBC54D1A188BD9F30F0B /* Pods-LTCModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCModule.debug.xcconfig"; path = "Target Support Files/Pods-LTCModule/Pods-LTCModule.debug.xcconfig"; sourceTree = "<group>"; };
+		2233A4D5A6E0460D9ED4C3E0 /* Pods-LTCModule-LTCModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCModule-LTCModuleTests.release.xcconfig"; path = "Target Support Files/Pods-LTCModule-LTCModuleTests/Pods-LTCModule-LTCModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		35C42682FBE30C07E4BAF559 /* Pods-LTCModule-LTCModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCModule-LTCModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-LTCModule-LTCModuleTests/Pods-LTCModule-LTCModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70E0A9A1B8645A91A7ADFBD6 /* Pods-LTCModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCModule.release.xcconfig"; path = "Target Support Files/Pods-LTCModule/Pods-LTCModule.release.xcconfig"; sourceTree = "<group>"; };
+		D17F5FD8A6EB97C0C3EE337A /* Pods_LTCModule_LTCModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCModule_LTCModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35305B82497CB4C008DA56E /* LTCNotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNotificationType.swift; sourceTree = "<group>"; };
+		F35305BA2497CB79008DA56E /* LTCSubscribeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCSubscribeService.swift; sourceTree = "<group>"; };
+		F35305BC2497CB88008DA56E /* LTCSubscribeServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCSubscribeServiceImp.swift; sourceTree = "<group>"; };
+		F35305BE2497CC30008DA56E /* LTCNotificationFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNotificationFacade.swift; sourceTree = "<group>"; };
+		F35305C02497CC4C008DA56E /* LTCNotificationFacadeImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNotificationFacadeImp.swift; sourceTree = "<group>"; };
+		F3682A75248A7F1200F30C44 /* LTCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3682A79248A7F1200F30C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3682A7E248A7F1200F30C44 /* LTCModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTCModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3682A85248A7F1200F30C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3682A92248A813E00F30C44 /* SharedFilesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedFilesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3682A96248A814300F30C44 /* SharedUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3682A9C248A81BD00F30C44 /* LTCModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCModuleAssembly.swift; sourceTree = "<group>"; };
+		F3682A9F248A825F00F30C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3682AA1248A825F00F30C44 /* loaderLight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loaderLight.json; sourceTree = "<group>"; };
+		F3682AA2248A825F00F30C44 /* loaderGray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loaderGray.json; sourceTree = "<group>"; };
+		F3682AAA248A82EF00F30C44 /* SharedColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = SharedColors.xcassets; path = ../../../../SharedUIModule/SharedUIModule/Other/Resources/SharedColors.xcassets; sourceTree = "<group>"; };
+		F3682AAD248A832D00F30C44 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		F3682AAE248A832D00F30C44 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		F3682AAF248A832D00F30C44 /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		F3682AB9248A878A00F30C44 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3682ABB248A908500F30C44 /* ApplicationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembler.swift; sourceTree = "<group>"; };
+		F3682ABF248A90A600F30C44 /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		F3682AC1248A90F800F30C44 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		F3682ACA248A91B200F30C44 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		F3682ACC248A91C500F30C44 /* CoreComponentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponentAssembly.swift; sourceTree = "<group>"; };
+		F3682ACE248A91D100F30C44 /* ProxyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyAssembly.swift; sourceTree = "<group>"; };
+		F3682AD0248A91DD00F30C44 /* BusinessLayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLayerAssembly.swift; sourceTree = "<group>"; };
+		F3682AD2248A91E700F30C44 /* FacadesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadesAssembly.swift; sourceTree = "<group>"; };
+		F3682AD6248A924E00F30C44 /* AuthEventProxyImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEventProxyImp.swift; sourceTree = "<group>"; };
+		F3682AD8248A925B00F30C44 /* LTCUpdateEventProxyImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCUpdateEventProxyImp.swift; sourceTree = "<group>"; };
+		F3682ADA248A926500F30C44 /* AuthEventProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEventProxy.swift; sourceTree = "<group>"; };
+		F3682ADC248A927100F30C44 /* LTCUpdateEventProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCUpdateEventProxy.swift; sourceTree = "<group>"; };
+		F3682AE3248A942B00F30C44 /* LTCNetworkAdapterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkAdapterImp.swift; sourceTree = "<group>"; };
+		F3682AE5248A943E00F30C44 /* LTCNetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkAdapter.swift; sourceTree = "<group>"; };
+		F3682AE7248A947600F30C44 /* LTCCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCCoreComponent.swift; sourceTree = "<group>"; };
+		F3682AE9248A948100F30C44 /* QRCodeCoreComponentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCoreComponentImp.swift; sourceTree = "<group>"; };
+		F3682AEB248A949000F30C44 /* QRCodeCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCoreComponent.swift; sourceTree = "<group>"; };
+		F3682AED248A94A400F30C44 /* SensitiveDataKeysCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveDataKeysCoreComponent.swift; sourceTree = "<group>"; };
+		F3682AEF248A94C600F30C44 /* LTCCoreComponentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCCoreComponentImp.swift; sourceTree = "<group>"; };
+		F3682AF1248A94DE00F30C44 /* SensitiveDataKeysCoreComponentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveDataKeysCoreComponentImp.swift; sourceTree = "<group>"; };
+		F3682AF7248A9C9200F30C44 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F3682AF9248A9CFA00F30C44 /* LTCModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTCModule-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3682AFB248AA20E00F30C44 /* CoreLitecoin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLitecoin.framework; sourceTree = "<group>"; };
+		F3682B06248AA6E900F30C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../ETHModule/ETHModule/Classes/PresentationLayer/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3682B08248AA73C00F30C44 /* LTCWalletBalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCWalletBalanceModel.swift; sourceTree = "<group>"; };
+		F3682B0A248AA75200F30C44 /* LTCWalletHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCWalletHistoryModel.swift; sourceTree = "<group>"; };
+		F3682B0C248AA76F00F30C44 /* LTCWalletOutputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCWalletOutputModel.swift; sourceTree = "<group>"; };
+		F3682B0E248AA77F00F30C44 /* LTCSettingsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCSettingsConfiguration.swift; sourceTree = "<group>"; };
+		F3682B10248AA79200F30C44 /* LTCWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCWallet.swift; sourceTree = "<group>"; };
+		F3682B12248AA7A200F30C44 /* LTCCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCCurrency.swift; sourceTree = "<group>"; };
+		F3682B14248AA7B300F30C44 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		F3682B16248AA7C200F30C44 /* LTCHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCHistoryModel.swift; sourceTree = "<group>"; };
+		F3682B18248AA7CE00F30C44 /* LTCPagedResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCPagedResponce.swift; sourceTree = "<group>"; };
+		F3682B1A248AA7DB00F30C44 /* LTCCoinRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCCoinRateModel.swift; sourceTree = "<group>"; };
+		F3682B1C248AA7E800F30C44 /* LTCCoinHistoryRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCCoinHistoryRateModel.swift; sourceTree = "<group>"; };
+		F3682B1E248AA7FC00F30C44 /* LTCNetworkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkType.swift; sourceTree = "<group>"; };
+		F3682B22248AAEB700F30C44 /* LTCTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCTransferService.swift; sourceTree = "<group>"; };
+		F3682B24248AAED900F30C44 /* LTCAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCAuthService.swift; sourceTree = "<group>"; };
+		F3682B26248AAF0100F30C44 /* LTCUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCUpdateService.swift; sourceTree = "<group>"; };
+		F3682B28248AAF1B00F30C44 /* LTCAuthServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCAuthServiceImp.swift; sourceTree = "<group>"; };
+		F3682B2A248AAF3500F30C44 /* LTCTransferServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCTransferServiceImp.swift; sourceTree = "<group>"; };
+		F3682B2C248AAF4800F30C44 /* LTCUpdateServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCUpdateServiceImp.swift; sourceTree = "<group>"; };
+		F3682B31248AB24000F30C44 /* LTCNetworkFacadeImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkFacadeImp.swift; sourceTree = "<group>"; };
+		F3682B33248AB26300F30C44 /* LTCNetworkFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkFacade.swift; sourceTree = "<group>"; };
+		F3682B35248AB2B300F30C44 /* LTCNetworkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkConfigurable.swift; sourceTree = "<group>"; };
+		F3682B37248AB38900F30C44 /* Localization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		F3682B39248AB45F00F30C44 /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
+		F3AEC8E0248E0CD80081CF0D /* ApplicationModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModuleInteractor.swift; sourceTree = "<group>"; };
+		F3AEC8E2248E0CD80081CF0D /* ApplicationModuleModuleAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModuleModuleAssembler.swift; sourceTree = "<group>"; };
+		F3AEC8E4248E0CD80081CF0D /* ApplicationModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModulePresenter.swift; sourceTree = "<group>"; };
+		F3AEC8E6248E0CD80081CF0D /* ApplicationModuleModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModuleModuleConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC8E8248E0CD80081CF0D /* ApplicationModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModuleProtocols.swift; sourceTree = "<group>"; };
+		F3AEC8EA248E0CD80081CF0D /* ApplicationModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModuleRouter.swift; sourceTree = "<group>"; };
+		F3AEC8F4248E0E190081CF0D /* AuthCreateAndCopyAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyAssembler.swift; sourceTree = "<group>"; };
+		F3AEC8F6248E0E190081CF0D /* AuthCreateAndCopyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyPresenter.swift; sourceTree = "<group>"; };
+		F3AEC8F8248E0E190081CF0D /* AuthCreateAndCopyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyViewController.swift; sourceTree = "<group>"; };
+		F3AEC8FA248E0E190081CF0D /* AuthCreateAndCopyConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC8FC248E0E190081CF0D /* AuthCreateAndCopyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyProtocols.swift; sourceTree = "<group>"; };
+		F3AEC8FE248E0E190081CF0D /* AuthCreateAndCopyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyInteractor.swift; sourceTree = "<group>"; };
+		F3AEC900248E0E190081CF0D /* AuthCreateAndCopyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCreateAndCopyRouter.swift; sourceTree = "<group>"; };
+		F3AEC901248E0E190081CF0D /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		F3AEC904248E0E190081CF0D /* AuthFlowSelectionAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionAssembler.swift; sourceTree = "<group>"; };
+		F3AEC906248E0E190081CF0D /* AuthFlowSelectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionPresenter.swift; sourceTree = "<group>"; };
+		F3AEC908248E0E190081CF0D /* AuthFlowSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionViewController.swift; sourceTree = "<group>"; };
+		F3AEC90A248E0E190081CF0D /* AuthFlowSelectionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC90C248E0E190081CF0D /* AuthFlowSelectionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionProtocols.swift; sourceTree = "<group>"; };
+		F3AEC90E248E0E190081CF0D /* AuthFlowSelectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionInteractor.swift; sourceTree = "<group>"; };
+		F3AEC910248E0E190081CF0D /* AuthFlowSelectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowSelectionRouter.swift; sourceTree = "<group>"; };
+		F3AEC913248E0E190081CF0D /* AuthRootAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootAssembler.swift; sourceTree = "<group>"; };
+		F3AEC915248E0E190081CF0D /* AuthRootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootPresenter.swift; sourceTree = "<group>"; };
+		F3AEC917248E0E190081CF0D /* AuthRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootViewController.swift; sourceTree = "<group>"; };
+		F3AEC919248E0E190081CF0D /* AuthRootConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC91B248E0E190081CF0D /* AuthRootProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootProtocols.swift; sourceTree = "<group>"; };
+		F3AEC91D248E0E190081CF0D /* AuthRootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootInteractor.swift; sourceTree = "<group>"; };
+		F3AEC91F248E0E190081CF0D /* AuthRootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRootRouter.swift; sourceTree = "<group>"; };
+		F3AEC922248E0E190081CF0D /* AuthImportBrainkeyAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyAssembler.swift; sourceTree = "<group>"; };
+		F3AEC924248E0E190081CF0D /* AuthImportBrainkeyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyPresenter.swift; sourceTree = "<group>"; };
+		F3AEC926248E0E190081CF0D /* AuthImportBrainkeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyViewController.swift; sourceTree = "<group>"; };
+		F3AEC928248E0E190081CF0D /* AuthImportBrainkeyConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC92A248E0E190081CF0D /* AuthImportBrainkeyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyProtocols.swift; sourceTree = "<group>"; };
+		F3AEC92C248E0E190081CF0D /* AuthImportBrainkeyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyInteractor.swift; sourceTree = "<group>"; };
+		F3AEC92E248E0E190081CF0D /* AuthImportBrainkeyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthImportBrainkeyRouter.swift; sourceTree = "<group>"; };
+		F3AEC94F248E10DE0081CF0D /* ApplySnackBarAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarAssembler.swift; sourceTree = "<group>"; };
+		F3AEC951248E10DE0081CF0D /* ApplySnackBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarPresenter.swift; sourceTree = "<group>"; };
+		F3AEC952248E10DE0081CF0D /* ApplySnackBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarModel.swift; sourceTree = "<group>"; };
+		F3AEC954248E10DE0081CF0D /* ApplySnackBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarViewController.swift; sourceTree = "<group>"; };
+		F3AEC956248E10DE0081CF0D /* ApplySnackBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC958248E10DE0081CF0D /* ApplySnackBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarProtocols.swift; sourceTree = "<group>"; };
+		F3AEC95A248E10DE0081CF0D /* ApplySnackBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarInteractor.swift; sourceTree = "<group>"; };
+		F3AEC95C248E10DE0081CF0D /* ApplySnackBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplySnackBarRouter.swift; sourceTree = "<group>"; };
+		F3AEC95E248E10DE0081CF0D /* ButtonSnackBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarModel.swift; sourceTree = "<group>"; };
+		F3AEC960248E10DE0081CF0D /* ButtonSnackBarAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarAssembler.swift; sourceTree = "<group>"; };
+		F3AEC962248E10DE0081CF0D /* ButtonSnackBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarPresenter.swift; sourceTree = "<group>"; };
+		F3AEC964248E10DE0081CF0D /* ButtonSnackBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarViewController.swift; sourceTree = "<group>"; };
+		F3AEC966248E10DE0081CF0D /* ButtonSnackBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC968248E10DE0081CF0D /* ButtonSnackBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarProtocols.swift; sourceTree = "<group>"; };
+		F3AEC96A248E10DE0081CF0D /* ButtonSnackBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarInteractor.swift; sourceTree = "<group>"; };
+		F3AEC96C248E10DE0081CF0D /* ButtonSnackBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSnackBarRouter.swift; sourceTree = "<group>"; };
+		F3AEC96D248E10DE0081CF0D /* SnackBars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SnackBars.storyboard; sourceTree = "<group>"; };
+		F3AEC970248E10DE0081CF0D /* OneButtonSnackBarAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarAssembler.swift; sourceTree = "<group>"; };
+		F3AEC972248E10DE0081CF0D /* OneButtonSnackBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarPresenter.swift; sourceTree = "<group>"; };
+		F3AEC974248E10DE0081CF0D /* OneButtonSnackBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarViewController.swift; sourceTree = "<group>"; };
+		F3AEC976248E10DE0081CF0D /* OneButtonSnackBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC977248E10DE0081CF0D /* OneButtonSnackBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarModel.swift; sourceTree = "<group>"; };
+		F3AEC979248E10DE0081CF0D /* OneButtonSnackBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarProtocols.swift; sourceTree = "<group>"; };
+		F3AEC97B248E10DE0081CF0D /* OneButtonSnackBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarInteractor.swift; sourceTree = "<group>"; };
+		F3AEC97D248E10DE0081CF0D /* OneButtonSnackBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonSnackBarRouter.swift; sourceTree = "<group>"; };
+		F3AEC99A248E12080081CF0D /* HistoryDetailsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsAssembler.swift; sourceTree = "<group>"; };
+		F3AEC99C248E12080081CF0D /* HistoryDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsPresenter.swift; sourceTree = "<group>"; };
+		F3AEC99D248E12080081CF0D /* HistoryDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HistoryDetails.storyboard; sourceTree = "<group>"; };
+		F3AEC9A0248E12080081CF0D /* HistoryDetailsAmountDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsAmountDetail.swift; sourceTree = "<group>"; };
+		F3AEC9A1248E12080081CF0D /* HistoryDetailsTextDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsTextDetail.swift; sourceTree = "<group>"; };
+		F3AEC9A3248E12080081CF0D /* HistoryDetailsScreenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsScreenModel.swift; sourceTree = "<group>"; };
+		F3AEC9A4248E12080081CF0D /* HistoryDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		F3AEC9A6248E12080081CF0D /* HistoryDetailsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC9A8248E12080081CF0D /* HistoryDetailsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsProtocols.swift; sourceTree = "<group>"; };
+		F3AEC9AA248E12080081CF0D /* HistoryDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsInteractor.swift; sourceTree = "<group>"; };
+		F3AEC9AC248E12080081CF0D /* HistoryDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailsRouter.swift; sourceTree = "<group>"; };
+		F3AEC9AD248E12080081CF0D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3AEC9B0248E12080081CF0D /* ReceiveAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveAssembler.swift; sourceTree = "<group>"; };
+		F3AEC9B2248E12080081CF0D /* ReceivePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivePresenter.swift; sourceTree = "<group>"; };
+		F3AEC9B4248E12080081CF0D /* ReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		F3AEC9B6248E12080081CF0D /* RecieveEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieveEntity.swift; sourceTree = "<group>"; };
+		F3AEC9B8248E12080081CF0D /* ReceiveConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC9BA248E12080081CF0D /* ReceiveProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveProtocols.swift; sourceTree = "<group>"; };
+		F3AEC9BC248E12080081CF0D /* ReceiveInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveInteractor.swift; sourceTree = "<group>"; };
+		F3AEC9BE248E12080081CF0D /* ReceiveRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveRouter.swift; sourceTree = "<group>"; };
+		F3AEC9C1248E12080081CF0D /* HistoryAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAssembler.swift; sourceTree = "<group>"; };
+		F3AEC9C3248E12080081CF0D /* HistoryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		F3AEC9C8248E12080081CF0D /* LoaderFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderFooterCell.xib; sourceTree = "<group>"; };
+		F3AEC9C9248E12080081CF0D /* LoaderFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderFooterCell.swift; sourceTree = "<group>"; };
+		F3AEC9CA248E12080081CF0D /* UniversalHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversalHistoryCell.swift; sourceTree = "<group>"; };
+		F3AEC9CB248E12080081CF0D /* HistoryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItemCell.swift; sourceTree = "<group>"; };
+		F3AEC9CC248E12080081CF0D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F3AEC9CE248E12080081CF0D /* HistoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC9D0248E12080081CF0D /* HistoryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryProtocols.swift; sourceTree = "<group>"; };
+		F3AEC9D2248E12080081CF0D /* HistoryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		F3AEC9D4248E12080081CF0D /* HistoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		F3AEC9D7248E12080081CF0D /* WalletAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletAssembler.swift; sourceTree = "<group>"; };
+		F3AEC9D9248E12080081CF0D /* WalletPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
+		F3AEC9DC248E12080081CF0D /* WalletEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletEntity.swift; sourceTree = "<group>"; };
+		F3AEC9DD248E12080081CF0D /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		F3AEC9DF248E12080081CF0D /* WalletConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC9E1248E12080081CF0D /* WalletProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletProtocols.swift; sourceTree = "<group>"; };
+		F3AEC9E3248E12080081CF0D /* WalletInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletInteractor.swift; sourceTree = "<group>"; };
+		F3AEC9E5248E12080081CF0D /* WalletRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletRouter.swift; sourceTree = "<group>"; };
+		F3AEC9E8248E12080081CF0D /* MainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		F3AEC9EA248E12080081CF0D /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		F3AEC9EC248E12080081CF0D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F3AEC9EE248E12080081CF0D /* MainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		F3AEC9F0248E12080081CF0D /* MainProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		F3AEC9F2248E12080081CF0D /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		F3AEC9F4248E12080081CF0D /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		F3AECA26248E18400081CF0D /* ScanAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAssembler.swift; sourceTree = "<group>"; };
+		F3AECA28248E18400081CF0D /* ScanPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanPresenter.swift; sourceTree = "<group>"; };
+		F3AECA2A248E18400081CF0D /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		F3AECA2B248E18400081CF0D /* ScanEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanEntity.swift; sourceTree = "<group>"; };
+		F3AECA2C248E18400081CF0D /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
+		F3AECA2E248E18400081CF0D /* ScanConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA30248E18400081CF0D /* ScanProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanProtocols.swift; sourceTree = "<group>"; };
+		F3AECA32248E18400081CF0D /* ScanInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanInteractor.swift; sourceTree = "<group>"; };
+		F3AECA34248E18400081CF0D /* ScanRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanRouter.swift; sourceTree = "<group>"; };
+		F3AECA3E248E19510081CF0D /* CustomOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
+		F3AECA3F248E19510081CF0D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F3AECA43248E1A240081CF0D /* Send.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
+		F3AECA46248E1A240081CF0D /* SendAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAssembler.swift; sourceTree = "<group>"; };
+		F3AECA48248E1A240081CF0D /* SendPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPresenter.swift; sourceTree = "<group>"; };
+		F3AECA4B248E1A240081CF0D /* SendFeeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeeEntity.swift; sourceTree = "<group>"; };
+		F3AECA4C248E1A240081CF0D /* SendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		F3AECA4E248E1A240081CF0D /* SendConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA50248E1A240081CF0D /* SendProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendProtocols.swift; sourceTree = "<group>"; };
+		F3AECA52248E1A240081CF0D /* SendInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInteractor.swift; sourceTree = "<group>"; };
+		F3AECA54248E1A240081CF0D /* SendRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRouter.swift; sourceTree = "<group>"; };
+		F3AECA61248E1C150081CF0D /* SettingsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAssembler.swift; sourceTree = "<group>"; };
+		F3AECA63248E1C150081CF0D /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		F3AECA66248E1C150081CF0D /* SettingsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEntity.swift; sourceTree = "<group>"; };
+		F3AECA68248E1C150081CF0D /* SidebarScreenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarScreenButton.swift; sourceTree = "<group>"; };
+		F3AECA69248E1C150081CF0D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F3AECA6B248E1C150081CF0D /* SettingsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA6D248E1C150081CF0D /* SettingsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		F3AECA6F248E1C150081CF0D /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		F3AECA71248E1C150081CF0D /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		F3AECA74248E1C150081CF0D /* ExportWifAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifAssembler.swift; sourceTree = "<group>"; };
+		F3AECA76248E1C150081CF0D /* ExportWifPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifPresenter.swift; sourceTree = "<group>"; };
+		F3AECA78248E1C150081CF0D /* ExportWifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifViewController.swift; sourceTree = "<group>"; };
+		F3AECA7A248E1C150081CF0D /* ExportWifConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA7C248E1C150081CF0D /* ExportWifProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifProtocols.swift; sourceTree = "<group>"; };
+		F3AECA7E248E1C150081CF0D /* ExportWifInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifInteractor.swift; sourceTree = "<group>"; };
+		F3AECA80248E1C150081CF0D /* ExportWifRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportWifRouter.swift; sourceTree = "<group>"; };
+		F3AECA83248E1C150081CF0D /* ChangeNetworkAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkAssembler.swift; sourceTree = "<group>"; };
+		F3AECA85248E1C150081CF0D /* ChangeNetworkPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkPresenter.swift; sourceTree = "<group>"; };
+		F3AECA87248E1C150081CF0D /* ChangeNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkViewController.swift; sourceTree = "<group>"; };
+		F3AECA89248E1C150081CF0D /* ChangeNetworkHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkHeaderCell.swift; sourceTree = "<group>"; };
+		F3AECA8A248E1C150081CF0D /* ChangeNetworkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkTableViewCell.swift; sourceTree = "<group>"; };
+		F3AECA8C248E1C150081CF0D /* ChangeNetworkConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA8E248E1C150081CF0D /* ChangeNetworkProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkProtocols.swift; sourceTree = "<group>"; };
+		F3AECA90248E1C150081CF0D /* ChangeNetworkInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkInteractor.swift; sourceTree = "<group>"; };
+		F3AECA92248E1C150081CF0D /* ChangeNetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNetworkRouter.swift; sourceTree = "<group>"; };
+		F3AECA95248E1C150081CF0D /* LogoutAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutAssembler.swift; sourceTree = "<group>"; };
+		F3AECA97248E1C150081CF0D /* LogoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutPresenter.swift; sourceTree = "<group>"; };
+		F3AECA99248E1C150081CF0D /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		F3AECA9B248E1C150081CF0D /* LogoutConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutConfigurator.swift; sourceTree = "<group>"; };
+		F3AECA9D248E1C150081CF0D /* LogoutProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutProtocols.swift; sourceTree = "<group>"; };
+		F3AECA9F248E1C150081CF0D /* LogoutInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutInteractor.swift; sourceTree = "<group>"; };
+		F3AECAA1248E1C150081CF0D /* LogoutRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
+		F3AECAA4248E1C150081CF0D /* AccountsAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsAssembler.swift; sourceTree = "<group>"; };
+		F3AECAA6248E1C150081CF0D /* AccountsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsPresenter.swift; sourceTree = "<group>"; };
+		F3AECAAB248E1C150081CF0D /* AccountsScreenModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsScreenModule.swift; sourceTree = "<group>"; };
+		F3AECAAC248E1C150081CF0D /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		F3AECAAE248E1C150081CF0D /* AccountsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsConfigurator.swift; sourceTree = "<group>"; };
+		F3AECAB0248E1C150081CF0D /* AccountsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsProtocols.swift; sourceTree = "<group>"; };
+		F3AECAB2248E1C150081CF0D /* AccountsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsInteractor.swift; sourceTree = "<group>"; };
+		F3AECAB4248E1C150081CF0D /* AccountsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsRouter.swift; sourceTree = "<group>"; };
+		F3AECAB7248E1C150081CF0D /* AutoblockAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockAssembler.swift; sourceTree = "<group>"; };
+		F3AECAB9248E1C150081CF0D /* AutoblockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockPresenter.swift; sourceTree = "<group>"; };
+		F3AECABB248E1C150081CF0D /* AutoblockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockViewController.swift; sourceTree = "<group>"; };
+		F3AECABD248E1C150081CF0D /* AutoblockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockTableViewCell.swift; sourceTree = "<group>"; };
+		F3AECABF248E1C150081CF0D /* AutoblockConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockConfigurator.swift; sourceTree = "<group>"; };
+		F3AECAC1248E1C150081CF0D /* AutoblockProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockProtocols.swift; sourceTree = "<group>"; };
+		F3AECAC3248E1C150081CF0D /* AutoblockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockInteractor.swift; sourceTree = "<group>"; };
+		F3AECAC5248E1C150081CF0D /* AutoblockRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoblockRouter.swift; sourceTree = "<group>"; };
+		F3AECAC6248E1C150081CF0D /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F3C1292C248E222E002768EB /* LTCHistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCHistoryEntity.swift; sourceTree = "<group>"; };
+		F3C1292E248E22B8002768EB /* LTCAccountsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCAccountsCell.swift; sourceTree = "<group>"; };
+		F3C12930248E2A31002768EB /* QRCodeCoreComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCoreComponentTests.swift; sourceTree = "<group>"; };
+		F3C12932248E2A6E002768EB /* SensitiveDataKeysCoreComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveDataKeysCoreComponentTests.swift; sourceTree = "<group>"; };
+		F3C12934248E3687002768EB /* LTCUpdateServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCUpdateServiceTests.swift; sourceTree = "<group>"; };
+		F3C12935248E3687002768EB /* LTCNetworkAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCNetworkAdapterTests.swift; sourceTree = "<group>"; };
+		F3C12936248E3687002768EB /* LTCTransferServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCTransferServiceTests.swift; sourceTree = "<group>"; };
+		F3C12937248E3687002768EB /* LTCAuthServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCAuthServiceTests.swift; sourceTree = "<group>"; };
+		F3C12938248E3687002768EB /* LTCCoreComponentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCCoreComponentTests.swift; sourceTree = "<group>"; };
+		F3C1293E248E6042002768EB /* LTCNetworkFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCNetworkFacadeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3682A72248A7F1200F30C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3DEAC38903BB50F3FB07A9 /* Pods_LTCModule.framework in Frameworks */,
+				F3682A93248A813E00F30C44 /* SharedFilesModule.framework in Frameworks */,
+				F3682AFC248AA20F00F30C44 /* CoreLitecoin.framework in Frameworks */,
+				F3682A97248A814300F30C44 /* SharedUIModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3682A7B248A7F1200F30C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3682A7F248A7F1200F30C44 /* LTCModule.framework in Frameworks */,
+				DA3CC98662E61CF28C31DBE0 /* Pods_LTCModule_LTCModuleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5680C4EB34E68A290F1F2CD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E83FBC54D1A188BD9F30F0B /* Pods-LTCModule.debug.xcconfig */,
+				70E0A9A1B8645A91A7ADFBD6 /* Pods-LTCModule.release.xcconfig */,
+				35C42682FBE30C07E4BAF559 /* Pods-LTCModule-LTCModuleTests.debug.xcconfig */,
+				2233A4D5A6E0460D9ED4C3E0 /* Pods-LTCModule-LTCModuleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		6ABF7CB2BE59CFFA65812957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AFB248AA20E00F30C44 /* CoreLitecoin.framework */,
+				F3682A96248A814300F30C44 /* SharedUIModule.framework */,
+				F3682A92248A813E00F30C44 /* SharedFilesModule.framework */,
+				07A7002932B7A620953358CA /* Pods_LTCModule.framework */,
+				D17F5FD8A6EB97C0C3EE337A /* Pods_LTCModule_LTCModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3682A6B248A7F1200F30C44 = {
+			isa = PBXGroup;
+			children = (
+				F3682A77248A7F1200F30C44 /* LTCModule */,
+				F3682A82248A7F1200F30C44 /* LTCModuleTests */,
+				F3682A76248A7F1200F30C44 /* Products */,
+				5680C4EB34E68A290F1F2CD1 /* Pods */,
+				6ABF7CB2BE59CFFA65812957 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3682A76248A7F1200F30C44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3682A75248A7F1200F30C44 /* LTCModule.framework */,
+				F3682A7E248A7F1200F30C44 /* LTCModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3682A77248A7F1200F30C44 /* LTCModule */ = {
+			isa = PBXGroup;
+			children = (
+				F3682A99248A818C00F30C44 /* Classes */,
+				F3682A9A248A819300F30C44 /* Common */,
+				F3682A9B248A819C00F30C44 /* Other */,
+				F3682A9C248A81BD00F30C44 /* LTCModuleAssembly.swift */,
+				F3682AF9248A9CFA00F30C44 /* LTCModule-Bridging-Header.h */,
+			);
+			path = LTCModule;
+			sourceTree = "<group>";
+		};
+		F3682A82248A7F1200F30C44 /* LTCModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3C12937248E3687002768EB /* LTCAuthServiceTests.swift */,
+				F3C12938248E3687002768EB /* LTCCoreComponentTests.swift */,
+				F3C12935248E3687002768EB /* LTCNetworkAdapterTests.swift */,
+				F3C12936248E3687002768EB /* LTCTransferServiceTests.swift */,
+				F3C12934248E3687002768EB /* LTCUpdateServiceTests.swift */,
+				F3C1293E248E6042002768EB /* LTCNetworkFacadeTests.swift */,
+				F3C12930248E2A31002768EB /* QRCodeCoreComponentTests.swift */,
+				F3C12932248E2A6E002768EB /* SensitiveDataKeysCoreComponentTests.swift */,
+				F3682A85248A7F1200F30C44 /* Info.plist */,
+			);
+			path = LTCModuleTests;
+			sourceTree = "<group>";
+		};
+		F3682A99248A818C00F30C44 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AB3248A871600F30C44 /* PresentationLayer */,
+				F3682AB4248A871900F30C44 /* BuisnessLayer */,
+				F3682AB5248A872A00F30C44 /* ApplicationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F3682A9A248A819300F30C44 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AB8248A877C00F30C44 /* SharedViews */,
+				F3682AB9248A878A00F30C44 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F3682A9B248A819C00F30C44 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B37248AB38900F30C44 /* Localization.strings */,
+				F3682A9E248A825F00F30C44 /* Resources */,
+				F3682AF7248A9C9200F30C44 /* R.generated.swift */,
+				F3682A79248A7F1200F30C44 /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F3682A9E248A825F00F30C44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AAC248A832D00F30C44 /* Fonts */,
+				F3682AA0248A825F00F30C44 /* Animation */,
+				F3682AAA248A82EF00F30C44 /* SharedColors.xcassets */,
+				F3682A9F248A825F00F30C44 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3682AA0248A825F00F30C44 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AA1248A825F00F30C44 /* loaderLight.json */,
+				F3682AA2248A825F00F30C44 /* loaderGray.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		F3682AAC248A832D00F30C44 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AAD248A832D00F30C44 /* Poppins-Medium.otf */,
+				F3682AAE248A832D00F30C44 /* Poppins-SemiBold.otf */,
+				F3682AAF248A832D00F30C44 /* Poppins-Regular.otf */,
+			);
+			name = Fonts;
+			path = ../../../../SharedUIModule/SharedUIModule/Other/Resources/Fonts;
+			sourceTree = "<group>";
+		};
+		F3682AB3248A871600F30C44 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B05248AA6E900F30C44 /* LaunchScreen.storyboard */,
+				F3682AFF248AA68C00F30C44 /* Assembler */,
+				F3682AFE248AA68400F30C44 /* ApplicationModule */,
+				F3682B00248AA69000F30C44 /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		F3682AB4248A871900F30C44 /* BuisnessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AC3248A916200F30C44 /* Assembler */,
+				F3682AC4248A916600F30C44 /* EventProxy */,
+				F3682AC5248A916B00F30C44 /* Models */,
+				F3682AC6248A917000F30C44 /* Core */,
+				F3682AC7248A917700F30C44 /* Services */,
+				F3682AC8248A917C00F30C44 /* Facades */,
+				F3682AC9248A918200F30C44 /* Configurators */,
+			);
+			path = BuisnessLayer;
+			sourceTree = "<group>";
+		};
+		F3682AB5248A872A00F30C44 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AB7248A876C00F30C44 /* Assembler */,
+				F3682AB6248A876700F30C44 /* Configurators */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		F3682AB6248A876700F30C44 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				F3682ABF248A90A600F30C44 /* ConfiguratorProtocol.swift */,
+				F3682AC1248A90F800F30C44 /* AppearanceConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		F3682AB7248A876C00F30C44 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F3682ABB248A908500F30C44 /* ApplicationAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F3682AB8248A877C00F30C44 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA3F248E19510081CF0D /* CameraView.swift */,
+				F3AECA3E248E19510081CF0D /* CustomOverlay.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		F3682AC3248A916200F30C44 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F3682ACA248A91B200F30C44 /* ServicesAssembly.swift */,
+				F3682ACC248A91C500F30C44 /* CoreComponentAssembly.swift */,
+				F3682ACE248A91D100F30C44 /* ProxyAssembly.swift */,
+				F3682AD0248A91DD00F30C44 /* BusinessLayerAssembly.swift */,
+				F3682AD2248A91E700F30C44 /* FacadesAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F3682AC4248A916600F30C44 /* EventProxy */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AD4248A923A00F30C44 /* Implementations */,
+				F3682AD5248A923F00F30C44 /* Protocols */,
+			);
+			path = EventProxy;
+			sourceTree = "<group>";
+		};
+		F3682AC5248A916B00F30C44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B08248AA73C00F30C44 /* LTCWalletBalanceModel.swift */,
+				F3682B0A248AA75200F30C44 /* LTCWalletHistoryModel.swift */,
+				F3682B0C248AA76F00F30C44 /* LTCWalletOutputModel.swift */,
+				F3682B0E248AA77F00F30C44 /* LTCSettingsConfiguration.swift */,
+				F3682B10248AA79200F30C44 /* LTCWallet.swift */,
+				F3682B12248AA7A200F30C44 /* LTCCurrency.swift */,
+				F3682B14248AA7B300F30C44 /* Amount.swift */,
+				F3682B16248AA7C200F30C44 /* LTCHistoryModel.swift */,
+				F3682B18248AA7CE00F30C44 /* LTCPagedResponce.swift */,
+				F3682B1A248AA7DB00F30C44 /* LTCCoinRateModel.swift */,
+				F3682B1C248AA7E800F30C44 /* LTCCoinHistoryRateModel.swift */,
+				F3682B1E248AA7FC00F30C44 /* LTCNetworkType.swift */,
+				F35305B82497CB4C008DA56E /* LTCNotificationType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3682AC6248A917000F30C44 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F3682ADE248A93E300F30C44 /* Network */,
+				F3682AE0248A93F200F30C44 /* Implementation */,
+				F3682ADF248A93EC00F30C44 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F3682AC7248A917700F30C44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B20248AAE8A00F30C44 /* Implementations */,
+				F3682B21248AAE9000F30C44 /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3682AC8248A917C00F30C44 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B2E248AB21200F30C44 /* Implementation */,
+				F3682B30248AB21C00F30C44 /* Protocols */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		F3682AC9248A918200F30C44 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B35248AB2B300F30C44 /* LTCNetworkConfigurable.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		F3682AD4248A923A00F30C44 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AD6248A924E00F30C44 /* AuthEventProxyImp.swift */,
+				F3682AD8248A925B00F30C44 /* LTCUpdateEventProxyImp.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		F3682AD5248A923F00F30C44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3682ADA248A926500F30C44 /* AuthEventProxy.swift */,
+				F3682ADC248A927100F30C44 /* LTCUpdateEventProxy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3682ADE248A93E300F30C44 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AE1248A941100F30C44 /* Implementation */,
+				F3682AE2248A941800F30C44 /* Protocols */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F3682ADF248A93EC00F30C44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AE7248A947600F30C44 /* LTCCoreComponent.swift */,
+				F3682AEB248A949000F30C44 /* QRCodeCoreComponent.swift */,
+				F3682AED248A94A400F30C44 /* SensitiveDataKeysCoreComponent.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3682AE0248A93F200F30C44 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AEF248A94C600F30C44 /* LTCCoreComponentImp.swift */,
+				F3682AE9248A948100F30C44 /* QRCodeCoreComponentImp.swift */,
+				F3682AF1248A94DE00F30C44 /* SensitiveDataKeysCoreComponentImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F3682AE1248A941100F30C44 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AE3248A942B00F30C44 /* LTCNetworkAdapterImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F3682AE2248A941800F30C44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3682AE5248A943E00F30C44 /* LTCNetworkAdapter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3682AFE248AA68400F30C44 /* ApplicationModule */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E1248E0CD80081CF0D /* Assembly */,
+				F3AEC8E5248E0CD80081CF0D /* Configurator */,
+				F3AEC8DF248E0CD80081CF0D /* Interactor */,
+				F3AEC8E3248E0CD80081CF0D /* Presenter */,
+				F3AEC8E7248E0CD80081CF0D /* Protocols */,
+				F3AEC8E9248E0CD80081CF0D /* Router */,
+			);
+			path = ApplicationModule;
+			sourceTree = "<group>";
+		};
+		F3682AFF248AA68C00F30C44 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B39248AB45F00F30C44 /* ModuleAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F3682B00248AA69000F30C44 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8F1248E0E190081CF0D /* AuthFlow */,
+				F3AEC997248E12080081CF0D /* MainFlow */,
+				F3AECA24248E18400081CF0D /* Scan */,
+				F3AECA42248E1A240081CF0D /* SendFlow */,
+				F3AECA5E248E1C150081CF0D /* SettingsFlow */,
+				F3AEC94C248E10DE0081CF0D /* SnackBars */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F3682B20248AAE8A00F30C44 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B28248AAF1B00F30C44 /* LTCAuthServiceImp.swift */,
+				F3682B2A248AAF3500F30C44 /* LTCTransferServiceImp.swift */,
+				F3682B2C248AAF4800F30C44 /* LTCUpdateServiceImp.swift */,
+				F35305BC2497CB88008DA56E /* LTCSubscribeServiceImp.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		F3682B21248AAE9000F30C44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B22248AAEB700F30C44 /* LTCTransferService.swift */,
+				F3682B24248AAED900F30C44 /* LTCAuthService.swift */,
+				F3682B26248AAF0100F30C44 /* LTCUpdateService.swift */,
+				F35305BA2497CB79008DA56E /* LTCSubscribeService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3682B2E248AB21200F30C44 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B31248AB24000F30C44 /* LTCNetworkFacadeImp.swift */,
+				F35305C02497CC4C008DA56E /* LTCNotificationFacadeImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F3682B30248AB21C00F30C44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3682B33248AB26300F30C44 /* LTCNetworkFacade.swift */,
+				F35305BE2497CC30008DA56E /* LTCNotificationFacade.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC8DF248E0CD80081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E0248E0CD80081CF0D /* ApplicationModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC8E1248E0CD80081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E2248E0CD80081CF0D /* ApplicationModuleModuleAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC8E3248E0CD80081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E4248E0CD80081CF0D /* ApplicationModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC8E5248E0CD80081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E6248E0CD80081CF0D /* ApplicationModuleModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC8E7248E0CD80081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8E8248E0CD80081CF0D /* ApplicationModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC8E9248E0CD80081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8EA248E0CD80081CF0D /* ApplicationModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC8F1248E0E190081CF0D /* AuthFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC901248E0E190081CF0D /* Auth.storyboard */,
+				F3AEC8F2248E0E190081CF0D /* AuthCreateAndCopy */,
+				F3AEC902248E0E190081CF0D /* AuthFlowSelection */,
+				F3AEC911248E0E190081CF0D /* AuthRoot */,
+				F3AEC920248E0E190081CF0D /* AuthImportBrainkey */,
+			);
+			path = AuthFlow;
+			sourceTree = "<group>";
+		};
+		F3AEC8F2248E0E190081CF0D /* AuthCreateAndCopy */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8F3248E0E190081CF0D /* Assembly */,
+				F3AEC8F5248E0E190081CF0D /* Presenter */,
+				F3AEC8F7248E0E190081CF0D /* View */,
+				F3AEC8F9248E0E190081CF0D /* Configurator */,
+				F3AEC8FB248E0E190081CF0D /* Protocols */,
+				F3AEC8FD248E0E190081CF0D /* Interactor */,
+				F3AEC8FF248E0E190081CF0D /* Router */,
+			);
+			path = AuthCreateAndCopy;
+			sourceTree = "<group>";
+		};
+		F3AEC8F3248E0E190081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8F4248E0E190081CF0D /* AuthCreateAndCopyAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC8F5248E0E190081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8F6248E0E190081CF0D /* AuthCreateAndCopyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC8F7248E0E190081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8F8248E0E190081CF0D /* AuthCreateAndCopyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC8F9248E0E190081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8FA248E0E190081CF0D /* AuthCreateAndCopyConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC8FB248E0E190081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8FC248E0E190081CF0D /* AuthCreateAndCopyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC8FD248E0E190081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC8FE248E0E190081CF0D /* AuthCreateAndCopyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC8FF248E0E190081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC900248E0E190081CF0D /* AuthCreateAndCopyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC902248E0E190081CF0D /* AuthFlowSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC903248E0E190081CF0D /* Assembly */,
+				F3AEC905248E0E190081CF0D /* Presenter */,
+				F3AEC907248E0E190081CF0D /* View */,
+				F3AEC909248E0E190081CF0D /* Configurator */,
+				F3AEC90B248E0E190081CF0D /* Protocols */,
+				F3AEC90D248E0E190081CF0D /* Interactor */,
+				F3AEC90F248E0E190081CF0D /* Router */,
+			);
+			path = AuthFlowSelection;
+			sourceTree = "<group>";
+		};
+		F3AEC903248E0E190081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC904248E0E190081CF0D /* AuthFlowSelectionAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC905248E0E190081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC906248E0E190081CF0D /* AuthFlowSelectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC907248E0E190081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC908248E0E190081CF0D /* AuthFlowSelectionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC909248E0E190081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC90A248E0E190081CF0D /* AuthFlowSelectionConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC90B248E0E190081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC90C248E0E190081CF0D /* AuthFlowSelectionProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC90D248E0E190081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC90E248E0E190081CF0D /* AuthFlowSelectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC90F248E0E190081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC910248E0E190081CF0D /* AuthFlowSelectionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC911248E0E190081CF0D /* AuthRoot */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC912248E0E190081CF0D /* Assembly */,
+				F3AEC914248E0E190081CF0D /* Presenter */,
+				F3AEC916248E0E190081CF0D /* View */,
+				F3AEC918248E0E190081CF0D /* Configurator */,
+				F3AEC91A248E0E190081CF0D /* Protocols */,
+				F3AEC91C248E0E190081CF0D /* Interactor */,
+				F3AEC91E248E0E190081CF0D /* Router */,
+			);
+			path = AuthRoot;
+			sourceTree = "<group>";
+		};
+		F3AEC912248E0E190081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC913248E0E190081CF0D /* AuthRootAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC914248E0E190081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC915248E0E190081CF0D /* AuthRootPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC916248E0E190081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC917248E0E190081CF0D /* AuthRootViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC918248E0E190081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC919248E0E190081CF0D /* AuthRootConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC91A248E0E190081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC91B248E0E190081CF0D /* AuthRootProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC91C248E0E190081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC91D248E0E190081CF0D /* AuthRootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC91E248E0E190081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC91F248E0E190081CF0D /* AuthRootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC920248E0E190081CF0D /* AuthImportBrainkey */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC921248E0E190081CF0D /* Assembly */,
+				F3AEC923248E0E190081CF0D /* Presenter */,
+				F3AEC925248E0E190081CF0D /* View */,
+				F3AEC927248E0E190081CF0D /* Configurator */,
+				F3AEC929248E0E190081CF0D /* Protocols */,
+				F3AEC92B248E0E190081CF0D /* Interactor */,
+				F3AEC92D248E0E190081CF0D /* Router */,
+			);
+			path = AuthImportBrainkey;
+			sourceTree = "<group>";
+		};
+		F3AEC921248E0E190081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC922248E0E190081CF0D /* AuthImportBrainkeyAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC923248E0E190081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC924248E0E190081CF0D /* AuthImportBrainkeyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC925248E0E190081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC926248E0E190081CF0D /* AuthImportBrainkeyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC927248E0E190081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC928248E0E190081CF0D /* AuthImportBrainkeyConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC929248E0E190081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC92A248E0E190081CF0D /* AuthImportBrainkeyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC92B248E0E190081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC92C248E0E190081CF0D /* AuthImportBrainkeyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC92D248E0E190081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC92E248E0E190081CF0D /* AuthImportBrainkeyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC94C248E10DE0081CF0D /* SnackBars */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC96D248E10DE0081CF0D /* SnackBars.storyboard */,
+				F3AEC94D248E10DE0081CF0D /* ApplySnackBar */,
+				F3AEC95D248E10DE0081CF0D /* ButtonSnackBar */,
+				F3AEC96E248E10DE0081CF0D /* OneButtonSnackBar */,
+			);
+			path = SnackBars;
+			sourceTree = "<group>";
+		};
+		F3AEC94D248E10DE0081CF0D /* ApplySnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC94E248E10DE0081CF0D /* Assembly */,
+				F3AEC950248E10DE0081CF0D /* Presenter */,
+				F3AEC952248E10DE0081CF0D /* ApplySnackBarModel.swift */,
+				F3AEC953248E10DE0081CF0D /* View */,
+				F3AEC955248E10DE0081CF0D /* Configurator */,
+				F3AEC957248E10DE0081CF0D /* Protocols */,
+				F3AEC959248E10DE0081CF0D /* Interactor */,
+				F3AEC95B248E10DE0081CF0D /* Router */,
+			);
+			path = ApplySnackBar;
+			sourceTree = "<group>";
+		};
+		F3AEC94E248E10DE0081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC94F248E10DE0081CF0D /* ApplySnackBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC950248E10DE0081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC951248E10DE0081CF0D /* ApplySnackBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC953248E10DE0081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC954248E10DE0081CF0D /* ApplySnackBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC955248E10DE0081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC956248E10DE0081CF0D /* ApplySnackBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC957248E10DE0081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC958248E10DE0081CF0D /* ApplySnackBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC959248E10DE0081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC95A248E10DE0081CF0D /* ApplySnackBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC95B248E10DE0081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC95C248E10DE0081CF0D /* ApplySnackBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC95D248E10DE0081CF0D /* ButtonSnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC95E248E10DE0081CF0D /* ButtonSnackBarModel.swift */,
+				F3AEC95F248E10DE0081CF0D /* Assembly */,
+				F3AEC961248E10DE0081CF0D /* Presenter */,
+				F3AEC963248E10DE0081CF0D /* View */,
+				F3AEC965248E10DE0081CF0D /* Configurator */,
+				F3AEC967248E10DE0081CF0D /* Protocols */,
+				F3AEC969248E10DE0081CF0D /* Interactor */,
+				F3AEC96B248E10DE0081CF0D /* Router */,
+			);
+			path = ButtonSnackBar;
+			sourceTree = "<group>";
+		};
+		F3AEC95F248E10DE0081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC960248E10DE0081CF0D /* ButtonSnackBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC961248E10DE0081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC962248E10DE0081CF0D /* ButtonSnackBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC963248E10DE0081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC964248E10DE0081CF0D /* ButtonSnackBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC965248E10DE0081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC966248E10DE0081CF0D /* ButtonSnackBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC967248E10DE0081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC968248E10DE0081CF0D /* ButtonSnackBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC969248E10DE0081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC96A248E10DE0081CF0D /* ButtonSnackBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC96B248E10DE0081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC96C248E10DE0081CF0D /* ButtonSnackBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC96E248E10DE0081CF0D /* OneButtonSnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC96F248E10DE0081CF0D /* Assembly */,
+				F3AEC971248E10DE0081CF0D /* Presenter */,
+				F3AEC973248E10DE0081CF0D /* View */,
+				F3AEC975248E10DE0081CF0D /* Configurator */,
+				F3AEC977248E10DE0081CF0D /* OneButtonSnackBarModel.swift */,
+				F3AEC978248E10DE0081CF0D /* Protocols */,
+				F3AEC97A248E10DE0081CF0D /* Interactor */,
+				F3AEC97C248E10DE0081CF0D /* Router */,
+			);
+			path = OneButtonSnackBar;
+			sourceTree = "<group>";
+		};
+		F3AEC96F248E10DE0081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC970248E10DE0081CF0D /* OneButtonSnackBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC971248E10DE0081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC972248E10DE0081CF0D /* OneButtonSnackBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC973248E10DE0081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC974248E10DE0081CF0D /* OneButtonSnackBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC975248E10DE0081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC976248E10DE0081CF0D /* OneButtonSnackBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC978248E10DE0081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC979248E10DE0081CF0D /* OneButtonSnackBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC97A248E10DE0081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC97B248E10DE0081CF0D /* OneButtonSnackBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC97C248E10DE0081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC97D248E10DE0081CF0D /* OneButtonSnackBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC997248E12080081CF0D /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9AD248E12080081CF0D /* Main.storyboard */,
+				F3AEC998248E12080081CF0D /* HistoryDetails */,
+				F3AEC9AE248E12080081CF0D /* Receive */,
+				F3AEC9BF248E12080081CF0D /* History */,
+				F3AEC9D5248E12080081CF0D /* Wallet */,
+				F3AEC9E6248E12080081CF0D /* Main */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		F3AEC998248E12080081CF0D /* HistoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC99D248E12080081CF0D /* HistoryDetails.storyboard */,
+				F3AEC999248E12080081CF0D /* Assembly */,
+				F3AEC99B248E12080081CF0D /* Presenter */,
+				F3AEC99E248E12080081CF0D /* View */,
+				F3AEC9A5248E12080081CF0D /* Configurator */,
+				F3AEC9A7248E12080081CF0D /* Protocols */,
+				F3AEC9A9248E12080081CF0D /* Interactor */,
+				F3AEC9AB248E12080081CF0D /* Router */,
+			);
+			path = HistoryDetails;
+			sourceTree = "<group>";
+		};
+		F3AEC999248E12080081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC99A248E12080081CF0D /* HistoryDetailsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC99B248E12080081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC99C248E12080081CF0D /* HistoryDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC99E248E12080081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC99F248E12080081CF0D /* DetailViews */,
+				F3AEC9A2248E12080081CF0D /* Models */,
+				F3AEC9A4248E12080081CF0D /* HistoryDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC99F248E12080081CF0D /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9A0248E12080081CF0D /* HistoryDetailsAmountDetail.swift */,
+				F3AEC9A1248E12080081CF0D /* HistoryDetailsTextDetail.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		F3AEC9A2248E12080081CF0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9A3248E12080081CF0D /* HistoryDetailsScreenModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3AEC9A5248E12080081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9A6248E12080081CF0D /* HistoryDetailsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC9A7248E12080081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9A8248E12080081CF0D /* HistoryDetailsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC9A9248E12080081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9AA248E12080081CF0D /* HistoryDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC9AB248E12080081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9AC248E12080081CF0D /* HistoryDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC9AE248E12080081CF0D /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9AF248E12080081CF0D /* Assembly */,
+				F3AEC9B1248E12080081CF0D /* Presenter */,
+				F3AEC9B3248E12080081CF0D /* View */,
+				F3AEC9B7248E12080081CF0D /* Configurator */,
+				F3AEC9B9248E12080081CF0D /* Protocols */,
+				F3AEC9BB248E12080081CF0D /* Interactor */,
+				F3AEC9BD248E12080081CF0D /* Router */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		F3AEC9AF248E12080081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9B0248E12080081CF0D /* ReceiveAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC9B1248E12080081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9B2248E12080081CF0D /* ReceivePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC9B3248E12080081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9B4248E12080081CF0D /* ReceiveViewController.swift */,
+				F3AEC9B5248E12080081CF0D /* Entity */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC9B5248E12080081CF0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9B6248E12080081CF0D /* RecieveEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F3AEC9B7248E12080081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9B8248E12080081CF0D /* ReceiveConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC9B9248E12080081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9BA248E12080081CF0D /* ReceiveProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC9BB248E12080081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9BC248E12080081CF0D /* ReceiveInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC9BD248E12080081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9BE248E12080081CF0D /* ReceiveRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC9BF248E12080081CF0D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9C0248E12080081CF0D /* Assembly */,
+				F3AEC9C2248E12080081CF0D /* Presenter */,
+				F3AEC9C4248E12080081CF0D /* View */,
+				F3AEC9CD248E12080081CF0D /* Configurator */,
+				F3AEC9CF248E12080081CF0D /* Protocols */,
+				F3AEC9D1248E12080081CF0D /* Interactor */,
+				F3AEC9D3248E12080081CF0D /* Router */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		F3AEC9C0248E12080081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9C1248E12080081CF0D /* HistoryAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC9C2248E12080081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9C3248E12080081CF0D /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC9C4248E12080081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9C5248E12080081CF0D /* Entity */,
+				F3AEC9C7248E12080081CF0D /* Cell */,
+				F3AEC9CC248E12080081CF0D /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC9C5248E12080081CF0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1292C248E222E002768EB /* LTCHistoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F3AEC9C7248E12080081CF0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9C8248E12080081CF0D /* LoaderFooterCell.xib */,
+				F3AEC9C9248E12080081CF0D /* LoaderFooterCell.swift */,
+				F3AEC9CA248E12080081CF0D /* UniversalHistoryCell.swift */,
+				F3AEC9CB248E12080081CF0D /* HistoryItemCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3AEC9CD248E12080081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9CE248E12080081CF0D /* HistoryConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC9CF248E12080081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D0248E12080081CF0D /* HistoryProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC9D1248E12080081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D2248E12080081CF0D /* HistoryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC9D3248E12080081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D4248E12080081CF0D /* HistoryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC9D5248E12080081CF0D /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D6248E12080081CF0D /* Assembly */,
+				F3AEC9D8248E12080081CF0D /* Presenter */,
+				F3AEC9DA248E12080081CF0D /* View */,
+				F3AEC9DE248E12080081CF0D /* Configurator */,
+				F3AEC9E0248E12080081CF0D /* Protocols */,
+				F3AEC9E2248E12080081CF0D /* Interactor */,
+				F3AEC9E4248E12080081CF0D /* Router */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		F3AEC9D6248E12080081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D7248E12080081CF0D /* WalletAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC9D8248E12080081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9D9248E12080081CF0D /* WalletPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC9DA248E12080081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9DB248E12080081CF0D /* Entity */,
+				F3AEC9DD248E12080081CF0D /* WalletViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC9DB248E12080081CF0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9DC248E12080081CF0D /* WalletEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F3AEC9DE248E12080081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9DF248E12080081CF0D /* WalletConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC9E0248E12080081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9E1248E12080081CF0D /* WalletProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC9E2248E12080081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9E3248E12080081CF0D /* WalletInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC9E4248E12080081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9E5248E12080081CF0D /* WalletRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AEC9E6248E12080081CF0D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9E7248E12080081CF0D /* Assembly */,
+				F3AEC9E9248E12080081CF0D /* Presenter */,
+				F3AEC9EB248E12080081CF0D /* View */,
+				F3AEC9ED248E12080081CF0D /* Configurator */,
+				F3AEC9EF248E12080081CF0D /* Protocols */,
+				F3AEC9F1248E12080081CF0D /* Interactor */,
+				F3AEC9F3248E12080081CF0D /* Router */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3AEC9E7248E12080081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9E8248E12080081CF0D /* MainAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AEC9E9248E12080081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9EA248E12080081CF0D /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AEC9EB248E12080081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9EC248E12080081CF0D /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AEC9ED248E12080081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9EE248E12080081CF0D /* MainConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AEC9EF248E12080081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9F0248E12080081CF0D /* MainProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AEC9F1248E12080081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9F2248E12080081CF0D /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AEC9F3248E12080081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEC9F4248E12080081CF0D /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA24248E18400081CF0D /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA2C248E18400081CF0D /* Scan.storyboard */,
+				F3AECA25248E18400081CF0D /* Assembly */,
+				F3AECA27248E18400081CF0D /* Presenter */,
+				F3AECA29248E18400081CF0D /* View */,
+				F3AECA2D248E18400081CF0D /* Configurator */,
+				F3AECA2F248E18400081CF0D /* Protocols */,
+				F3AECA31248E18400081CF0D /* Interactor */,
+				F3AECA33248E18400081CF0D /* Router */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		F3AECA25248E18400081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA26248E18400081CF0D /* ScanAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA27248E18400081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA28248E18400081CF0D /* ScanPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA29248E18400081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA2A248E18400081CF0D /* ScanViewController.swift */,
+				F3AECA2B248E18400081CF0D /* ScanEntity.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA2D248E18400081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA2E248E18400081CF0D /* ScanConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA2F248E18400081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA30248E18400081CF0D /* ScanProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA31248E18400081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA32248E18400081CF0D /* ScanInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECA33248E18400081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA34248E18400081CF0D /* ScanRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA42248E1A240081CF0D /* SendFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA43248E1A240081CF0D /* Send.storyboard */,
+				F3AECA44248E1A240081CF0D /* Send */,
+			);
+			name = SendFlow;
+			path = LTCModule/Classes/PresentationLayer/Modules/SendFlow;
+			sourceTree = SOURCE_ROOT;
+		};
+		F3AECA44248E1A240081CF0D /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA45248E1A240081CF0D /* Assembly */,
+				F3AECA47248E1A240081CF0D /* Presenter */,
+				F3AECA49248E1A240081CF0D /* View */,
+				F3AECA4D248E1A240081CF0D /* Configurator */,
+				F3AECA4F248E1A240081CF0D /* Protocols */,
+				F3AECA51248E1A240081CF0D /* Interactor */,
+				F3AECA53248E1A240081CF0D /* Router */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		F3AECA45248E1A240081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA46248E1A240081CF0D /* SendAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA47248E1A240081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA48248E1A240081CF0D /* SendPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA49248E1A240081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA4A248E1A240081CF0D /* Entity */,
+				F3AECA4C248E1A240081CF0D /* SendViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA4A248E1A240081CF0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA4B248E1A240081CF0D /* SendFeeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F3AECA4D248E1A240081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA4E248E1A240081CF0D /* SendConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA4F248E1A240081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA50248E1A240081CF0D /* SendProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA51248E1A240081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA52248E1A240081CF0D /* SendInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECA53248E1A240081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA54248E1A240081CF0D /* SendRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA5E248E1C150081CF0D /* SettingsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAC6248E1C150081CF0D /* Settings.storyboard */,
+				F3AECA5F248E1C150081CF0D /* Settings */,
+				F3AECA72248E1C150081CF0D /* ExportWif */,
+				F3AECA81248E1C150081CF0D /* ChangeNetwork */,
+				F3AECA93248E1C150081CF0D /* Logout */,
+				F3AECAA2248E1C150081CF0D /* Accounts */,
+				F3AECAB5248E1C150081CF0D /* Autoblock */,
+			);
+			path = SettingsFlow;
+			sourceTree = "<group>";
+		};
+		F3AECA5F248E1C150081CF0D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA60248E1C150081CF0D /* Assembly */,
+				F3AECA62248E1C150081CF0D /* Presenter */,
+				F3AECA64248E1C150081CF0D /* View */,
+				F3AECA6A248E1C150081CF0D /* Configurator */,
+				F3AECA6C248E1C150081CF0D /* Protocols */,
+				F3AECA6E248E1C150081CF0D /* Interactor */,
+				F3AECA70248E1C150081CF0D /* Router */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3AECA60248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA61248E1C150081CF0D /* SettingsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA62248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA63248E1C150081CF0D /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA64248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA65248E1C150081CF0D /* Entity */,
+				F3AECA67248E1C150081CF0D /* Button */,
+				F3AECA69248E1C150081CF0D /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA65248E1C150081CF0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA66248E1C150081CF0D /* SettingsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F3AECA67248E1C150081CF0D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA68248E1C150081CF0D /* SidebarScreenButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F3AECA6A248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA6B248E1C150081CF0D /* SettingsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA6C248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA6D248E1C150081CF0D /* SettingsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA6E248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA6F248E1C150081CF0D /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECA70248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA71248E1C150081CF0D /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA72248E1C150081CF0D /* ExportWif */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA73248E1C150081CF0D /* Assembly */,
+				F3AECA75248E1C150081CF0D /* Presenter */,
+				F3AECA77248E1C150081CF0D /* View */,
+				F3AECA79248E1C150081CF0D /* Configurator */,
+				F3AECA7B248E1C150081CF0D /* Protocols */,
+				F3AECA7D248E1C150081CF0D /* Interactor */,
+				F3AECA7F248E1C150081CF0D /* Router */,
+			);
+			path = ExportWif;
+			sourceTree = "<group>";
+		};
+		F3AECA73248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA74248E1C150081CF0D /* ExportWifAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA75248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA76248E1C150081CF0D /* ExportWifPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA77248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA78248E1C150081CF0D /* ExportWifViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA79248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA7A248E1C150081CF0D /* ExportWifConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA7B248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA7C248E1C150081CF0D /* ExportWifProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA7D248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA7E248E1C150081CF0D /* ExportWifInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECA7F248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA80248E1C150081CF0D /* ExportWifRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA81248E1C150081CF0D /* ChangeNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA82248E1C150081CF0D /* Assembly */,
+				F3AECA84248E1C150081CF0D /* Presenter */,
+				F3AECA86248E1C150081CF0D /* View */,
+				F3AECA8B248E1C150081CF0D /* Configurator */,
+				F3AECA8D248E1C150081CF0D /* Protocols */,
+				F3AECA8F248E1C150081CF0D /* Interactor */,
+				F3AECA91248E1C150081CF0D /* Router */,
+			);
+			path = ChangeNetwork;
+			sourceTree = "<group>";
+		};
+		F3AECA82248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA83248E1C150081CF0D /* ChangeNetworkAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA84248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA85248E1C150081CF0D /* ChangeNetworkPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA86248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA87248E1C150081CF0D /* ChangeNetworkViewController.swift */,
+				F3AECA88248E1C150081CF0D /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA88248E1C150081CF0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA89248E1C150081CF0D /* ChangeNetworkHeaderCell.swift */,
+				F3AECA8A248E1C150081CF0D /* ChangeNetworkTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3AECA8B248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA8C248E1C150081CF0D /* ChangeNetworkConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA8D248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA8E248E1C150081CF0D /* ChangeNetworkProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA8F248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA90248E1C150081CF0D /* ChangeNetworkInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECA91248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA92248E1C150081CF0D /* ChangeNetworkRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECA93248E1C150081CF0D /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA94248E1C150081CF0D /* Assembly */,
+				F3AECA96248E1C150081CF0D /* Presenter */,
+				F3AECA98248E1C150081CF0D /* View */,
+				F3AECA9A248E1C150081CF0D /* Configurator */,
+				F3AECA9C248E1C150081CF0D /* Protocols */,
+				F3AECA9E248E1C150081CF0D /* Interactor */,
+				F3AECAA0248E1C150081CF0D /* Router */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		F3AECA94248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA95248E1C150081CF0D /* LogoutAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECA96248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA97248E1C150081CF0D /* LogoutPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECA98248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA99248E1C150081CF0D /* LogoutViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECA9A248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA9B248E1C150081CF0D /* LogoutConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECA9C248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA9D248E1C150081CF0D /* LogoutProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECA9E248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECA9F248E1C150081CF0D /* LogoutInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECAA0248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAA1248E1C150081CF0D /* LogoutRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECAA2248E1C150081CF0D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAA3248E1C150081CF0D /* Assembly */,
+				F3AECAA5248E1C150081CF0D /* Presenter */,
+				F3AECAA7248E1C150081CF0D /* View */,
+				F3AECAAD248E1C150081CF0D /* Configurator */,
+				F3AECAAF248E1C150081CF0D /* Protocols */,
+				F3AECAB1248E1C150081CF0D /* Interactor */,
+				F3AECAB3248E1C150081CF0D /* Router */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		F3AECAA3248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAA4248E1C150081CF0D /* AccountsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECAA5248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAA6248E1C150081CF0D /* AccountsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECAA7248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAA8248E1C150081CF0D /* Cell */,
+				F3AECAAA248E1C150081CF0D /* Model */,
+				F3AECAAC248E1C150081CF0D /* AccountsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECAA8248E1C150081CF0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1292E248E22B8002768EB /* LTCAccountsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3AECAAA248E1C150081CF0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAAB248E1C150081CF0D /* AccountsScreenModule.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3AECAAD248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAAE248E1C150081CF0D /* AccountsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECAAF248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB0248E1C150081CF0D /* AccountsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECAB1248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB2248E1C150081CF0D /* AccountsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECAB3248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB4248E1C150081CF0D /* AccountsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3AECAB5248E1C150081CF0D /* Autoblock */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB6248E1C150081CF0D /* Assembly */,
+				F3AECAB8248E1C150081CF0D /* Presenter */,
+				F3AECABA248E1C150081CF0D /* View */,
+				F3AECABE248E1C150081CF0D /* Configurator */,
+				F3AECAC0248E1C150081CF0D /* Protocols */,
+				F3AECAC2248E1C150081CF0D /* Interactor */,
+				F3AECAC4248E1C150081CF0D /* Router */,
+			);
+			path = Autoblock;
+			sourceTree = "<group>";
+		};
+		F3AECAB6248E1C150081CF0D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB7248E1C150081CF0D /* AutoblockAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3AECAB8248E1C150081CF0D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAB9248E1C150081CF0D /* AutoblockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3AECABA248E1C150081CF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECABB248E1C150081CF0D /* AutoblockViewController.swift */,
+				F3AECABC248E1C150081CF0D /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3AECABC248E1C150081CF0D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECABD248E1C150081CF0D /* AutoblockTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3AECABE248E1C150081CF0D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECABF248E1C150081CF0D /* AutoblockConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F3AECAC0248E1C150081CF0D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAC1248E1C150081CF0D /* AutoblockProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3AECAC2248E1C150081CF0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAC3248E1C150081CF0D /* AutoblockInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3AECAC4248E1C150081CF0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3AECAC5248E1C150081CF0D /* AutoblockRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F3682A70248A7F1200F30C44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3682AFA248A9CFA00F30C44 /* LTCModule-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3682A74248A7F1200F30C44 /* LTCModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3682A89248A7F1200F30C44 /* Build configuration list for PBXNativeTarget "LTCModule" */;
+			buildPhases = (
+				83AC8BFB7B8717AAA1ADEFC0 /* [CP] Check Pods Manifest.lock */,
+				F3682A70248A7F1200F30C44 /* Headers */,
+				F3682AF6248A9B6500F30C44 /* ShellScript */,
+				F3682A71248A7F1200F30C44 /* Sources */,
+				F3682A72248A7F1200F30C44 /* Frameworks */,
+				F3682A73248A7F1200F30C44 /* Resources */,
+				F3682A95248A813E00F30C44 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTCModule;
+			productName = LTCModule;
+			productReference = F3682A75248A7F1200F30C44 /* LTCModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3682A7D248A7F1200F30C44 /* LTCModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3682A8C248A7F1200F30C44 /* Build configuration list for PBXNativeTarget "LTCModuleTests" */;
+			buildPhases = (
+				28CAD12D6B6F3A4B7205DE8D /* [CP] Check Pods Manifest.lock */,
+				F3682A7A248A7F1200F30C44 /* Sources */,
+				F3682A7B248A7F1200F30C44 /* Frameworks */,
+				F3682A7C248A7F1200F30C44 /* Resources */,
+				7E3C3E1309D24BA64793329F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3682A81248A7F1200F30C44 /* PBXTargetDependency */,
+			);
+			name = LTCModuleTests;
+			productName = LTCModuleTests;
+			productReference = F3682A7E248A7F1200F30C44 /* LTCModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3682A6C248A7F1200F30C44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = PixelPlex;
+				TargetAttributes = {
+					F3682A74248A7F1200F30C44 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+					F3682A7D248A7F1200F30C44 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F3682A6F248A7F1200F30C44 /* Build configuration list for PBXProject "LTCModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3682A6B248A7F1200F30C44;
+			productRefGroup = F3682A76248A7F1200F30C44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3682A74248A7F1200F30C44 /* LTCModule */,
+				F3682A7D248A7F1200F30C44 /* LTCModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3682A73248A7F1200F30C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AECA55248E1A250081CF0D /* Send.storyboard in Resources */,
+				F3AECAF8248E1C150081CF0D /* Settings.storyboard in Resources */,
+				F3682AA3248A825F00F30C44 /* Assets.xcassets in Resources */,
+				F3682B07248AA6E900F30C44 /* LaunchScreen.storyboard in Resources */,
+				F3AECA39248E18410081CF0D /* Scan.storyboard in Resources */,
+				F3AEC98E248E10DF0081CF0D /* SnackBars.storyboard in Resources */,
+				F3AEC936248E0E190081CF0D /* Auth.storyboard in Resources */,
+				F3682AA5248A825F00F30C44 /* loaderGray.json in Resources */,
+				F3AECA0C248E12080081CF0D /* LoaderFooterCell.xib in Resources */,
+				F3682AB1248A832D00F30C44 /* Poppins-SemiBold.otf in Resources */,
+				F3682B38248AB38900F30C44 /* Localization.strings in Resources */,
+				F3AECA00248E12080081CF0D /* Main.storyboard in Resources */,
+				F3682AAB248A82EF00F30C44 /* SharedColors.xcassets in Resources */,
+				F3AEC9F7248E12080081CF0D /* HistoryDetails.storyboard in Resources */,
+				F3682AA4248A825F00F30C44 /* loaderLight.json in Resources */,
+				F3682AB2248A832D00F30C44 /* Poppins-Regular.otf in Resources */,
+				F3682AB0248A832D00F30C44 /* Poppins-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3682A7C248A7F1200F30C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28CAD12D6B6F3A4B7205DE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTCModule-LTCModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3C3E1309D24BA64793329F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LTCModule-LTCModuleTests/Pods-LTCModule-LTCModuleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LTCModule-LTCModuleTests/Pods-LTCModule-LTCModuleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LTCModule-LTCModuleTests/Pods-LTCModule-LTCModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83AC8BFB7B8717AAA1ADEFC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTCModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3682AF6248A9B6500F30C44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/LTCModule/Other/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/LTCModule/Other/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3682A71248A7F1200F30C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AEC984248E10DF0081CF0D /* ApplySnackBarInteractor.swift in Sources */,
+				F3AECAD9248E1C150081CF0D /* ChangeNetworkViewController.swift in Sources */,
+				F3AECA1F248E12080081CF0D /* MainViewController.swift in Sources */,
+				F3AEC98B248E10DF0081CF0D /* ButtonSnackBarProtocols.swift in Sources */,
+				F3AECADB248E1C150081CF0D /* ChangeNetworkTableViewCell.swift in Sources */,
+				F3682AF2248A94DE00F30C44 /* SensitiveDataKeysCoreComponentImp.swift in Sources */,
+				F3AEC98A248E10DF0081CF0D /* ButtonSnackBarConfigurator.swift in Sources */,
+				F3AECA59248E1A250081CF0D /* SendViewController.swift in Sources */,
+				F3AECAEF248E1C150081CF0D /* AccountsRouter.swift in Sources */,
+				F3AEC939248E0E190081CF0D /* AuthFlowSelectionViewController.swift in Sources */,
+				F3AEC943248E0E190081CF0D /* AuthRootInteractor.swift in Sources */,
+				F3AECA0D248E12080081CF0D /* LoaderFooterCell.swift in Sources */,
+				F3AEC93E248E0E190081CF0D /* AuthRootAssembler.swift in Sources */,
+				F3AECA3A248E18410081CF0D /* ScanConfigurator.swift in Sources */,
+				F3AEC94B248E0E190081CF0D /* AuthImportBrainkeyRouter.swift in Sources */,
+				F3AECA19248E12080081CF0D /* WalletConfigurator.swift in Sources */,
+				F3AEC987248E10DF0081CF0D /* ButtonSnackBarAssembler.swift in Sources */,
+				F3AECAE7248E1C150081CF0D /* AccountsAssembler.swift in Sources */,
+				F3AECA09248E12080081CF0D /* HistoryAssembler.swift in Sources */,
+				F3AEC992248E10DF0081CF0D /* OneButtonSnackBarConfigurator.swift in Sources */,
+				F3AEC930248E0E190081CF0D /* AuthCreateAndCopyPresenter.swift in Sources */,
+				F3AECA18248E12080081CF0D /* WalletViewController.swift in Sources */,
+				F3682B0F248AA77F00F30C44 /* LTCSettingsConfiguration.swift in Sources */,
+				F3AECA35248E18410081CF0D /* ScanAssembler.swift in Sources */,
+				F3AECAD2248E1C150081CF0D /* ExportWifViewController.swift in Sources */,
+				F3AEC9FE248E12080081CF0D /* HistoryDetailsInteractor.swift in Sources */,
+				F3AECAD6248E1C150081CF0D /* ExportWifRouter.swift in Sources */,
+				F3C1292D248E222E002768EB /* LTCHistoryEntity.swift in Sources */,
+				F3682AEC248A949000F30C44 /* QRCodeCoreComponent.swift in Sources */,
+				F3AEC93A248E0E190081CF0D /* AuthFlowSelectionConfigurator.swift in Sources */,
+				F3682AE6248A943E00F30C44 /* LTCNetworkAdapter.swift in Sources */,
+				F3AECA5A248E1A250081CF0D /* SendConfigurator.swift in Sources */,
+				F3AEC990248E10DF0081CF0D /* OneButtonSnackBarPresenter.swift in Sources */,
+				F3AEC93D248E0E190081CF0D /* AuthFlowSelectionRouter.swift in Sources */,
+				F3AECA1A248E12080081CF0D /* WalletProtocols.swift in Sources */,
+				F3AEC996248E10DF0081CF0D /* OneButtonSnackBarRouter.swift in Sources */,
+				F3682AEA248A948100F30C44 /* QRCodeCoreComponentImp.swift in Sources */,
+				F3AECAE1248E1C150081CF0D /* LogoutPresenter.swift in Sources */,
+				F3AECA08248E12080081CF0D /* ReceiveRouter.swift in Sources */,
+				F3AECA0A248E12080081CF0D /* HistoryPresenter.swift in Sources */,
+				F3AEC982248E10DF0081CF0D /* ApplySnackBarConfigurator.swift in Sources */,
+				F3AECAF5248E1C150081CF0D /* AutoblockProtocols.swift in Sources */,
+				F3AECA38248E18410081CF0D /* ScanEntity.swift in Sources */,
+				F3AECAE0248E1C150081CF0D /* LogoutAssembler.swift in Sources */,
+				F3682B32248AB24000F30C44 /* LTCNetworkFacadeImp.swift in Sources */,
+				F3AECA3C248E18410081CF0D /* ScanInteractor.swift in Sources */,
+				F3AEC935248E0E190081CF0D /* AuthCreateAndCopyRouter.swift in Sources */,
+				F3AEC98C248E10DF0081CF0D /* ButtonSnackBarInteractor.swift in Sources */,
+				F3682B15248AA7B300F30C44 /* Amount.swift in Sources */,
+				F3AEC934248E0E190081CF0D /* AuthCreateAndCopyInteractor.swift in Sources */,
+				F3AEC97E248E10DF0081CF0D /* ApplySnackBarAssembler.swift in Sources */,
+				F3AECADC248E1C150081CF0D /* ChangeNetworkConfigurator.swift in Sources */,
+				F3AECA36248E18410081CF0D /* ScanPresenter.swift in Sources */,
+				F3AEC938248E0E190081CF0D /* AuthFlowSelectionPresenter.swift in Sources */,
+				F3AECA06248E12080081CF0D /* ReceiveProtocols.swift in Sources */,
+				F3AEC949248E0E190081CF0D /* AuthImportBrainkeyProtocols.swift in Sources */,
+				F3AEC989248E10DF0081CF0D /* ButtonSnackBarViewController.swift in Sources */,
+				F3AECACA248E1C150081CF0D /* SidebarScreenButton.swift in Sources */,
+				F3AEC946248E0E190081CF0D /* AuthImportBrainkeyPresenter.swift in Sources */,
+				F3AEC9FC248E12080081CF0D /* HistoryDetailsConfigurator.swift in Sources */,
+				F3682B23248AAEB700F30C44 /* LTCTransferService.swift in Sources */,
+				F3AEC9FB248E12080081CF0D /* HistoryDetailsViewController.swift in Sources */,
+				F3AECAD4248E1C150081CF0D /* ExportWifProtocols.swift in Sources */,
+				F3AECACF248E1C150081CF0D /* SettingsRouter.swift in Sources */,
+				F3AECA10248E12080081CF0D /* HistoryViewController.swift in Sources */,
+				F3AECAF1248E1C150081CF0D /* AutoblockPresenter.swift in Sources */,
+				F3682AD7248A924E00F30C44 /* AuthEventProxyImp.swift in Sources */,
+				F3AEC941248E0E190081CF0D /* AuthRootConfigurator.swift in Sources */,
+				F3AECA0F248E12080081CF0D /* HistoryItemCell.swift in Sources */,
+				F3AECA11248E12080081CF0D /* HistoryConfigurator.swift in Sources */,
+				F3AEC8EB248E0CD80081CF0D /* ApplicationModuleInteractor.swift in Sources */,
+				F3AECA02248E12080081CF0D /* ReceivePresenter.swift in Sources */,
+				F35305C12497CC4C008DA56E /* LTCNotificationFacadeImp.swift in Sources */,
+				F3682B13248AA7A200F30C44 /* LTCCurrency.swift in Sources */,
+				F3C1292F248E22B8002768EB /* LTCAccountsCell.swift in Sources */,
+				F3AECA04248E12080081CF0D /* RecieveEntity.swift in Sources */,
+				F3AECA17248E12080081CF0D /* WalletEntity.swift in Sources */,
+				F3AECADE248E1C150081CF0D /* ChangeNetworkInteractor.swift in Sources */,
+				F3AECA22248E12080081CF0D /* MainInteractor.swift in Sources */,
+				F3682B1F248AA7FC00F30C44 /* LTCNetworkType.swift in Sources */,
+				F3AECACB248E1C150081CF0D /* SettingsViewController.swift in Sources */,
+				F3682B2D248AAF4800F30C44 /* LTCUpdateServiceImp.swift in Sources */,
+				F3AEC937248E0E190081CF0D /* AuthFlowSelectionAssembler.swift in Sources */,
+				F3AEC988248E10DF0081CF0D /* ButtonSnackBarPresenter.swift in Sources */,
+				F3AEC932248E0E190081CF0D /* AuthCreateAndCopyConfigurator.swift in Sources */,
+				F3AECACD248E1C150081CF0D /* SettingsProtocols.swift in Sources */,
+				F3AEC980248E10DF0081CF0D /* ApplySnackBarModel.swift in Sources */,
+				F3AECAEA248E1C150081CF0D /* AccountsScreenModule.swift in Sources */,
+				F3682B17248AA7C200F30C44 /* LTCHistoryModel.swift in Sources */,
+				F3AEC98D248E10DF0081CF0D /* ButtonSnackBarRouter.swift in Sources */,
+				F3682ACF248A91D100F30C44 /* ProxyAssembly.swift in Sources */,
+				F3AEC993248E10DF0081CF0D /* OneButtonSnackBarModel.swift in Sources */,
+				F3AECAF4248E1C150081CF0D /* AutoblockConfigurator.swift in Sources */,
+				F3AECA1B248E12080081CF0D /* WalletInteractor.swift in Sources */,
+				F3682B3A248AB45F00F30C44 /* ModuleAssembly.swift in Sources */,
+				F3AEC9F9248E12080081CF0D /* HistoryDetailsTextDetail.swift in Sources */,
+				F3682AE4248A942B00F30C44 /* LTCNetworkAdapterImp.swift in Sources */,
+				F3682B1B248AA7DB00F30C44 /* LTCCoinRateModel.swift in Sources */,
+				F3AEC944248E0E190081CF0D /* AuthRootRouter.swift in Sources */,
+				F3682B0D248AA76F00F30C44 /* LTCWalletOutputModel.swift in Sources */,
+				F3AECAD8248E1C150081CF0D /* ChangeNetworkPresenter.swift in Sources */,
+				F3682B25248AAED900F30C44 /* LTCAuthService.swift in Sources */,
+				F3AEC995248E10DF0081CF0D /* OneButtonSnackBarInteractor.swift in Sources */,
+				F3AEC9FD248E12080081CF0D /* HistoryDetailsProtocols.swift in Sources */,
+				F3AECADD248E1C150081CF0D /* ChangeNetworkProtocols.swift in Sources */,
+				F3AECAC8248E1C150081CF0D /* SettingsPresenter.swift in Sources */,
+				F3AECA15248E12080081CF0D /* WalletAssembler.swift in Sources */,
+				F3AEC991248E10DF0081CF0D /* OneButtonSnackBarViewController.swift in Sources */,
+				F3682ADB248A926500F30C44 /* AuthEventProxy.swift in Sources */,
+				F3AEC9FA248E12080081CF0D /* HistoryDetailsScreenModel.swift in Sources */,
+				F3682ABC248A908500F30C44 /* ApplicationAssembler.swift in Sources */,
+				F3AEC933248E0E190081CF0D /* AuthCreateAndCopyProtocols.swift in Sources */,
+				F3682AD1248A91DD00F30C44 /* BusinessLayerAssembly.swift in Sources */,
+				F3AECA56248E1A250081CF0D /* SendAssembler.swift in Sources */,
+				F3682ACB248A91B200F30C44 /* ServicesAssembly.swift in Sources */,
+				F3AECA57248E1A250081CF0D /* SendPresenter.swift in Sources */,
+				F3AEC8EF248E0CD80081CF0D /* ApplicationModuleProtocols.swift in Sources */,
+				F3AEC940248E0E190081CF0D /* AuthRootViewController.swift in Sources */,
+				F3AECAEB248E1C150081CF0D /* AccountsViewController.swift in Sources */,
+				F3682B0B248AA75200F30C44 /* LTCWalletHistoryModel.swift in Sources */,
+				F3AEC983248E10DF0081CF0D /* ApplySnackBarProtocols.swift in Sources */,
+				F35305BB2497CB79008DA56E /* LTCSubscribeService.swift in Sources */,
+				F3AEC98F248E10DF0081CF0D /* OneButtonSnackBarAssembler.swift in Sources */,
+				F3682ADD248A927100F30C44 /* LTCUpdateEventProxy.swift in Sources */,
+				F3AEC9F6248E12080081CF0D /* HistoryDetailsPresenter.swift in Sources */,
+				F3AECAF3248E1C150081CF0D /* AutoblockTableViewCell.swift in Sources */,
+				F3682B27248AAF0100F30C44 /* LTCUpdateService.swift in Sources */,
+				F3AECA40248E19510081CF0D /* CustomOverlay.swift in Sources */,
+				F3AEC97F248E10DF0081CF0D /* ApplySnackBarPresenter.swift in Sources */,
+				F3682AF8248A9C9200F30C44 /* R.generated.swift in Sources */,
+				F3AEC94A248E0E190081CF0D /* AuthImportBrainkeyInteractor.swift in Sources */,
+				F3AECA58248E1A250081CF0D /* SendFeeEntity.swift in Sources */,
+				F3AECAD0248E1C150081CF0D /* ExportWifAssembler.swift in Sources */,
+				F3AECA03248E12080081CF0D /* ReceiveViewController.swift in Sources */,
+				F3AECACE248E1C150081CF0D /* SettingsInteractor.swift in Sources */,
+				F3AECA12248E12080081CF0D /* HistoryProtocols.swift in Sources */,
+				F3AECAE2248E1C150081CF0D /* LogoutViewController.swift in Sources */,
+				F3682AF0248A94C600F30C44 /* LTCCoreComponentImp.swift in Sources */,
+				F3AECA3D248E18410081CF0D /* ScanRouter.swift in Sources */,
+				F3AECAD1248E1C150081CF0D /* ExportWifPresenter.swift in Sources */,
+				F3682B19248AA7CE00F30C44 /* LTCPagedResponce.swift in Sources */,
+				F3AECAD5248E1C150081CF0D /* ExportWifInteractor.swift in Sources */,
+				F3682AD9248A925B00F30C44 /* LTCUpdateEventProxyImp.swift in Sources */,
+				F3682A9D248A81BD00F30C44 /* LTCModuleAssembly.swift in Sources */,
+				F3682AE8248A947600F30C44 /* LTCCoreComponent.swift in Sources */,
+				F3AEC92F248E0E190081CF0D /* AuthCreateAndCopyAssembler.swift in Sources */,
+				F3AECAE6248E1C150081CF0D /* LogoutRouter.swift in Sources */,
+				F3AECAF2248E1C150081CF0D /* AutoblockViewController.swift in Sources */,
+				F3AECAEC248E1C150081CF0D /* AccountsConfigurator.swift in Sources */,
+				F3AECAD7248E1C150081CF0D /* ChangeNetworkAssembler.swift in Sources */,
+				F3AECA1E248E12080081CF0D /* MainPresenter.swift in Sources */,
+				F3AECA1C248E12080081CF0D /* WalletRouter.swift in Sources */,
+				F3AEC8EC248E0CD80081CF0D /* ApplicationModuleModuleAssembler.swift in Sources */,
+				F3682B2B248AAF3500F30C44 /* LTCTransferServiceImp.swift in Sources */,
+				F3AECA41248E19510081CF0D /* CameraView.swift in Sources */,
+				F3AEC986248E10DF0081CF0D /* ButtonSnackBarModel.swift in Sources */,
+				F3AEC981248E10DF0081CF0D /* ApplySnackBarViewController.swift in Sources */,
+				F3682B09248AA73C00F30C44 /* LTCWalletBalanceModel.swift in Sources */,
+				F3AEC93B248E0E190081CF0D /* AuthFlowSelectionProtocols.swift in Sources */,
+				F3682ACD248A91C500F30C44 /* CoreComponentAssembly.swift in Sources */,
+				F3AECAC9248E1C150081CF0D /* SettingsEntity.swift in Sources */,
+				F3682B11248AA79200F30C44 /* LTCWallet.swift in Sources */,
+				F3AECAE3248E1C150081CF0D /* LogoutConfigurator.swift in Sources */,
+				F3682B34248AB26300F30C44 /* LTCNetworkFacade.swift in Sources */,
+				F3AEC8F0248E0CD80081CF0D /* ApplicationModuleRouter.swift in Sources */,
+				F3AEC945248E0E190081CF0D /* AuthImportBrainkeyAssembler.swift in Sources */,
+				F3AECAF0248E1C150081CF0D /* AutoblockAssembler.swift in Sources */,
+				F3682AC2248A90F800F30C44 /* AppearanceConfigurator.swift in Sources */,
+				F3AEC942248E0E190081CF0D /* AuthRootProtocols.swift in Sources */,
+				F3AEC947248E0E190081CF0D /* AuthImportBrainkeyViewController.swift in Sources */,
+				F3AEC93C248E0E190081CF0D /* AuthFlowSelectionInteractor.swift in Sources */,
+				F3AECAE4248E1C150081CF0D /* LogoutProtocols.swift in Sources */,
+				F3AECAED248E1C150081CF0D /* AccountsProtocols.swift in Sources */,
+				F35305BF2497CC30008DA56E /* LTCNotificationFacade.swift in Sources */,
+				F3AECA21248E12080081CF0D /* MainProtocols.swift in Sources */,
+				F3AECA14248E12080081CF0D /* HistoryRouter.swift in Sources */,
+				F3AECAE8248E1C150081CF0D /* AccountsPresenter.swift in Sources */,
+				F3682B36248AB2B300F30C44 /* LTCNetworkConfigurable.swift in Sources */,
+				F35305B92497CB4C008DA56E /* LTCNotificationType.swift in Sources */,
+				F3AECAF6248E1C150081CF0D /* AutoblockInteractor.swift in Sources */,
+				F3AEC931248E0E190081CF0D /* AuthCreateAndCopyViewController.swift in Sources */,
+				F3AECA1D248E12080081CF0D /* MainAssembler.swift in Sources */,
+				F3682AD3248A91E700F30C44 /* FacadesAssembly.swift in Sources */,
+				F3AECAF7248E1C150081CF0D /* AutoblockRouter.swift in Sources */,
+				F3AEC8ED248E0CD80081CF0D /* ApplicationModulePresenter.swift in Sources */,
+				F3AECADF248E1C150081CF0D /* ChangeNetworkRouter.swift in Sources */,
+				F3AECA5D248E1A250081CF0D /* SendRouter.swift in Sources */,
+				F3AECA07248E12080081CF0D /* ReceiveInteractor.swift in Sources */,
+				F3AEC948248E0E190081CF0D /* AuthImportBrainkeyConfigurator.swift in Sources */,
+				F3AECA05248E12080081CF0D /* ReceiveConfigurator.swift in Sources */,
+				F3AECA0E248E12080081CF0D /* UniversalHistoryCell.swift in Sources */,
+				F3AECAE5248E1C150081CF0D /* LogoutInteractor.swift in Sources */,
+				F3AEC9F5248E12080081CF0D /* HistoryDetailsAssembler.swift in Sources */,
+				F3AECAEE248E1C150081CF0D /* AccountsInteractor.swift in Sources */,
+				F3AECA13248E12080081CF0D /* HistoryInteractor.swift in Sources */,
+				F3AEC985248E10DF0081CF0D /* ApplySnackBarRouter.swift in Sources */,
+				F3682AC0248A90A600F30C44 /* ConfiguratorProtocol.swift in Sources */,
+				F3AECA23248E12080081CF0D /* MainRouter.swift in Sources */,
+				F3AECA37248E18410081CF0D /* ScanViewController.swift in Sources */,
+				F3AECA01248E12080081CF0D /* ReceiveAssembler.swift in Sources */,
+				F3AEC994248E10DF0081CF0D /* OneButtonSnackBarProtocols.swift in Sources */,
+				F3AECA16248E12080081CF0D /* WalletPresenter.swift in Sources */,
+				F3682B1D248AA7E800F30C44 /* LTCCoinHistoryRateModel.swift in Sources */,
+				F3AEC93F248E0E190081CF0D /* AuthRootPresenter.swift in Sources */,
+				F3AECA20248E12080081CF0D /* MainConfigurator.swift in Sources */,
+				F3AEC8EE248E0CD80081CF0D /* ApplicationModuleModuleConfigurator.swift in Sources */,
+				F3AECAD3248E1C150081CF0D /* ExportWifConfigurator.swift in Sources */,
+				F3AEC9F8248E12080081CF0D /* HistoryDetailsAmountDetail.swift in Sources */,
+				F3682B29248AAF1B00F30C44 /* LTCAuthServiceImp.swift in Sources */,
+				F3682ABA248A878A00F30C44 /* Constants.swift in Sources */,
+				F35305BD2497CB88008DA56E /* LTCSubscribeServiceImp.swift in Sources */,
+				F3682AEE248A94A400F30C44 /* SensitiveDataKeysCoreComponent.swift in Sources */,
+				F3AECACC248E1C150081CF0D /* SettingsConfigurator.swift in Sources */,
+				F3AECADA248E1C150081CF0D /* ChangeNetworkHeaderCell.swift in Sources */,
+				F3AECA5C248E1A250081CF0D /* SendInteractor.swift in Sources */,
+				F3AECA3B248E18410081CF0D /* ScanProtocols.swift in Sources */,
+				F3AECAC7248E1C150081CF0D /* SettingsAssembler.swift in Sources */,
+				F3AECA5B248E1A250081CF0D /* SendProtocols.swift in Sources */,
+				F3AEC9FF248E12080081CF0D /* HistoryDetailsRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3682A7A248A7F1200F30C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C1293A248E3687002768EB /* LTCNetworkAdapterTests.swift in Sources */,
+				F3C1293B248E3687002768EB /* LTCTransferServiceTests.swift in Sources */,
+				F3C1293F248E6042002768EB /* LTCNetworkFacadeTests.swift in Sources */,
+				F3C12939248E3687002768EB /* LTCUpdateServiceTests.swift in Sources */,
+				F3C1293C248E3687002768EB /* LTCAuthServiceTests.swift in Sources */,
+				F3C1293D248E3687002768EB /* LTCCoreComponentTests.swift in Sources */,
+				F3C12931248E2A31002768EB /* QRCodeCoreComponentTests.swift in Sources */,
+				F3C12933248E2A6E002768EB /* SensitiveDataKeysCoreComponentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3682A81248A7F1200F30C44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3682A74248A7F1200F30C44 /* LTCModule */;
+			targetProxy = F3682A80248A7F1200F30C44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3682B05248AA6E900F30C44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3682B06248AA6E900F30C44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3682A87248A7F1200F30C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3682A88248A7F1200F30C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3682A8A248A7F1200F30C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E83FBC54D1A188BD9F30F0B /* Pods-LTCModule.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LTCModule/Other/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magwallet.LTCModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LTCModule/LTCModule-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3682A8B248A7F1200F30C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E0A9A1B8645A91A7ADFBD6 /* Pods-LTCModule.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LTCModule/Other/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mag.magwallet.LTCModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LTCModule/LTCModule-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F3682A8D248A7F1200F30C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C42682FBE30C07E4BAF559 /* Pods-LTCModule-LTCModuleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = LTCModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelplex.LTCModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3682A8E248A7F1200F30C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2233A4D5A6E0460D9ED4C3E0 /* Pods-LTCModule-LTCModuleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 726V7J6M2J;
+				INFOPLIST_FILE = LTCModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelplex.LTCModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3682A6F248A7F1200F30C44 /* Build configuration list for PBXProject "LTCModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3682A87248A7F1200F30C44 /* Debug */,
+				F3682A88248A7F1200F30C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3682A89248A7F1200F30C44 /* Build configuration list for PBXNativeTarget "LTCModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3682A8A248A7F1200F30C44 /* Debug */,
+				F3682A8B248A7F1200F30C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3682A8C248A7F1200F30C44 /* Build configuration list for PBXNativeTarget "LTCModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3682A8D248A7F1200F30C44 /* Debug */,
+				F3682A8E248A7F1200F30C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3682A6C248A7F1200F30C44 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="X8R-BN-gds">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewController" id="bMt-DN-qPD" customClass="ScanViewController" customModule="ETHModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYJ-Kj-q06">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIs-Eq-ii5">
+                                <rect key="frame" x="16" y="92" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-Va-vUa" customClass="ImageButton" customModule="SharedUIModule">
+                                <rect key="frame" x="364" y="46" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0cs-B1-5dH"/>
+                                    <constraint firstAttribute="width" constant="40" id="jbE-Dd-ouw"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6L-UQ-ha3">
+                                <rect key="frame" x="16" y="152.5" width="382" height="625.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1Z-gv-O5R" customClass="CameraView" customModule="ETHModule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="625.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="j1Z-gv-O5R" firstAttribute="top" secondItem="I6L-UQ-ha3" secondAttribute="top" id="ZlP-NS-Wmx"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1Z-gv-O5R" secondAttribute="trailing" id="eii-IU-Nha"/>
+                                    <constraint firstAttribute="bottom" secondItem="j1Z-gv-O5R" secondAttribute="bottom" id="lnR-Nf-HdD"/>
+                                    <constraint firstItem="j1Z-gv-O5R" firstAttribute="leading" secondItem="I6L-UQ-ha3" secondAttribute="leading" id="ncl-WP-Op8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NIs-Eq-ii5" firstAttribute="leading" secondItem="2sO-aa-cbm" secondAttribute="leading" constant="16" id="2xX-74-V2I"/>
+                            <constraint firstItem="2sO-aa-cbm" firstAttribute="trailing" secondItem="rKE-Va-vUa" secondAttribute="trailing" constant="10" id="GDn-De-KtP"/>
+                            <constraint firstItem="2sO-aa-cbm" firstAttribute="bottom" secondItem="j1Z-gv-O5R" secondAttribute="bottom" constant="84" id="JIZ-ph-l6s"/>
+                            <constraint firstItem="rKE-Va-vUa" firstAttribute="top" secondItem="2sO-aa-cbm" secondAttribute="top" constant="2" id="L4a-4O-gvF"/>
+                            <constraint firstItem="I6L-UQ-ha3" firstAttribute="top" secondItem="NIs-Eq-ii5" secondAttribute="bottom" constant="40" id="M2F-5A-iMT"/>
+                            <constraint firstItem="2sO-aa-cbm" firstAttribute="trailing" secondItem="I6L-UQ-ha3" secondAttribute="trailing" constant="16" id="Vo0-eG-cUq"/>
+                            <constraint firstItem="I6L-UQ-ha3" firstAttribute="leading" secondItem="2sO-aa-cbm" secondAttribute="leading" constant="16" id="Xef-h8-QZE"/>
+                            <constraint firstItem="NIs-Eq-ii5" firstAttribute="top" secondItem="2sO-aa-cbm" secondAttribute="top" constant="48" id="yh7-Le-NC4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2sO-aa-cbm"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="rKE-Va-vUa" id="M38-2Z-soR"/>
+                        <outlet property="cameraView" destination="j1Z-gv-O5R" id="NTG-Jh-353"/>
+                        <outlet property="containerView" destination="I6L-UQ-ha3" id="fZr-d2-gHV"/>
+                        <outlet property="titleLabel" destination="NIs-Eq-ii5" id="mTv-b7-p06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8m-1S-yB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="165"/>
+        </scene>
+    </scenes>
+</document>

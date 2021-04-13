@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Routing View Controller-->
+        <scene sceneID="1PR-QV-6am">
+            <objects>
+                <viewController storyboardIdentifier="MainRoutingViewController" id="5wH-ZQ-ZIR" customClass="MainRoutingViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="guV-mT-TrE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UF-Ef-Zpy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypo-ii-qct">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="oQC-kU-Qzg"/>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eib-wv-H0u">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="kaI-UZ-yx6"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ypo-ii-qct" firstAttribute="leading" secondItem="guV-mT-TrE" secondAttribute="leading" id="7OK-2G-hv6"/>
+                            <constraint firstAttribute="bottom" secondItem="4UF-Ef-Zpy" secondAttribute="bottom" id="Ff7-fk-6YI"/>
+                            <constraint firstAttribute="trailing" secondItem="ypo-ii-qct" secondAttribute="trailing" id="GfC-mV-fv5"/>
+                            <constraint firstItem="4UF-Ef-Zpy" firstAttribute="leading" secondItem="guV-mT-TrE" secondAttribute="leading" id="HOf-kB-qaI"/>
+                            <constraint firstAttribute="bottom" secondItem="eib-wv-H0u" secondAttribute="bottom" id="PIF-qh-3Wy"/>
+                            <constraint firstItem="4UF-Ef-Zpy" firstAttribute="top" secondItem="guV-mT-TrE" secondAttribute="top" id="Rb5-qm-cQh"/>
+                            <constraint firstItem="eib-wv-H0u" firstAttribute="leading" secondItem="guV-mT-TrE" secondAttribute="leading" id="Rbl-Qy-UAJ"/>
+                            <constraint firstItem="ypo-ii-qct" firstAttribute="top" secondItem="guV-mT-TrE" secondAttribute="top" id="SKy-Tk-M5Z"/>
+                            <constraint firstAttribute="trailing" secondItem="eib-wv-H0u" secondAttribute="trailing" id="a9H-oZ-zWY"/>
+                            <constraint firstAttribute="trailing" secondItem="4UF-Ef-Zpy" secondAttribute="trailing" id="n6J-IP-wOh"/>
+                            <constraint firstAttribute="bottom" secondItem="ypo-ii-qct" secondAttribute="bottom" id="rYh-OA-3KC"/>
+                            <constraint firstItem="eib-wv-H0u" firstAttribute="top" secondItem="guV-mT-TrE" secondAttribute="top" id="wQu-gf-3rl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JLO-Ib-sMw"/>
+                    </view>
+                    <connections>
+                        <outlet property="flowLevelContainer" destination="4UF-Ef-Zpy" id="cie-Jq-frp"/>
+                        <outlet property="frontLevelContainer" destination="eib-wv-H0u" id="HKb-Hk-b0c"/>
+                        <outlet property="modalLevelContainer" destination="ypo-ii-qct" id="Sla-eu-01m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZU-Qy-7TZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="150"/>
+        </scene>
+    </scenes>
+</document>

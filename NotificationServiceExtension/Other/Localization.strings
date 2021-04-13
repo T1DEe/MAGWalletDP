@@ -1,0 +1,10 @@
+/* 
+  Localization.strings
+  MAGWallet
+
+  Created by rlxone on 17.06.2020.
+  Copyright © 2021. All rights reserved.
+*/
+
+"notification.transaction.incoming.title" = "Incoming transaction";
+"notification.transaction.outgoing.title" = "Outgoing transaction";

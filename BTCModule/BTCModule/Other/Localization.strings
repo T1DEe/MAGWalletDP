@@ -1,0 +1,175 @@
+/* 
+  Localization.strings
+  BTCModule
+
+  Created by Artemy Markovsky on 08/04/2021..
+  Copyright © 2021. All rights reserved.
+*/
+
+// Auth
+
+"auth.flow.selection.title" = "You don't have Bitcoin address yet";
+"auth.flow.selection.subtitle" = "Create new one or import your Brainkey";
+"auth.flow.selection.import" = "Import Brainkey";
+"auth.flow.selection.create.new" = "Create New Address";
+
+// Auth Import
+
+"auth.flow.import.title" = "Import your Bitcoin Brainkey";
+"auth.flow.import.subtitle" = "Import your Brainkey to start working with your funds";
+"auth.flow.import.import" = "Import Brainkey";
+"auth.flow.import.placeholder" = "Enter your Brainkey";
+"auth.flow.import.loading" = "Importing...";
+"auth.flow.import.error" = "Incorrect Brainkey";
+"auth.flow.import.already.exist.error" = "Brainkey already exist";
+"auth.flow.import.save.wallet.error" = "Error while saving Brainkey";
+
+// Main
+
+"main.flow.send.button" = "Send";
+"main.flow.receive.button" = "Request";
+"main.flow.wallet.title" = "Total Balance";
+
+// History
+
+"main.flow.history.title" = "Transaction History";
+"main.flow.history.no.tx.title" = "You don't have any transactions";
+"main.flow.history.no.tx.subtitle" = "Create the first one!";
+"main.flow.history.loading.title" = "Transaction history is loading";
+"history.list.screen.send" = "Sent";
+"history.list.screen.received" = "Received";
+
+// Receive
+
+"receive.flow.title" = "Request";
+
+// QRCode
+
+"qrcode.screen.title" = "Scan QR-Code";
+"qrcode.screen.camera.denied.title" = "Permission for using camera is denied";
+"qrcode.screen.camera.denied.message" = "Please, go to application settings for allowing camera permission";
+"qrcode.screen.camera.denied.go.to.settings.button" = "Settings";
+"qrcode.scan.error.title" = "Scaning error";
+
+// Buttons titles
+"error.cancel.button.title" = "Cancel";
+"error.try.again.button.title" = "Try again";
+"error.ok.button.title" = "Ok";
+
+// Errors
+// Titles
+"import.error.title" = "Can't import wallet";
+"create.account.error.title" = "Can't create wallet";
+
+// Messages
+"something.wrong.message" = "Something went wrong. Please try again";
+"save.sensitive.data.error" = "Failed to save sensitive data";
+
+// Auth copy BrainKey
+
+"auth.copy.title" = "Please save your Brainkey";
+"auth.copy.subtitle" = "Do not lose it! It cannot be recovered if you lose it";
+"auth.copy.copy.button.title" = "Copy Brainkey";
+"auth.copy.continue.button.title" = "Continue";
+"auth.copy.copy.message" = "Copied";
+
+// Accounts
+
+"accounts.screen.subtitle" = "Bitcoin Addresses";
+"accounts.screen.delete.snackbar.title" = "Are you sure to delete address?";
+"accounts.screen.delete.last.snackbar.title" = "You are about to exit your wallet?";
+"accounts.screen.delete.snackbar.message" = "This process cannot be undone.";
+"accounts.screen.delete.snackbar.left.button" = "Cancel";
+"accounts.screen.delete.snackbar.right.button" = "Yes, delete";
+"accounts.screen.switch.snackbar.title" = "Are you sure to switch address?";
+"accounts.screen.switch.snackbar.message" = "This process cannot be undone.";
+"accounts.screen.switch.snackbar.left.button" = "Cancel";
+"accounts.screen.switch.snackbar.right.button" = "Switch";
+"accounts.screen.switch.or.delete.error.title" = "Error handled";
+"accounts.screen.switch.error.message" = "Can't select account";
+"accounts.screen.delete.error.message" = "Can't delete account";
+
+"blockTime.seconds" = "%@ seconds";
+"blockTime.minute" = "%@ minute";
+"blockTime.minutes" = "%@ minutes";
+"blockTime.no.block" = "Don't block";
+
+// Settings
+
+"settings.flow.title" = "Settings";
+"settings.flow.change.pin" = "Change PIN";
+"settings.flow.backup" = "Backup";
+"settings.flow.autoblock" = "Autoblock";
+"settings.flow.changeNetwork" = "Change Network";
+"settings.flow.notifications" = "Push Notifications";
+"settings.flow.networks" = "Networks";
+"settings.flow.logout" = "Logout";
+"settings.flow.touch.id" = "Touch ID";
+"settings.flow.face.id" = "Face ID";
+"settings.flow.logout.screen.cancel.button" = "Cancel";
+"settings.flow.logout.screen.confirm.button" = "Remove from wallet";
+"settings.flow.logout.screen.info.title" = "We strongly recommend to backup your Brainkey.";
+"settings.flow.logout.screen.info.title.1" = "We strongly recommend";
+"settings.flow.logout.screen.info.title.2" = "to backup";
+"settings.flow.logout.screen.info.title.3" = "your Brainkey.";
+"settings.flow.logout.screen.info.subtitle" = "Please confirm if you want to remove Ethereum address from your wallet.";
+"settings.flow.autoblock.screen.info.title" = "Please choose autoblock period";
+"settings.flow.changeNetwork.screen.info.title" = "Please choose network";
+"settings.flow.accounts.title" = "Accounts";
+"settings.changeNetwork.mainnet" = "mainnet";
+"settings.changeNetwork.testnet" = "testnet";
+"settings.flow.notifications.permission.title" = "Notifications disabled";
+"settings.flow.notifications.permission.message" = "Open settings to enable notifications";
+"settings.flow.notifications.permission.open" = "Open";
+"settings.flow.notifications.permission.cancel" = "Cancel";
+"settings.flow.notifications.internet.title" = "Please, enable internet connection";
+"settings.flow.notifications.internet.button" = "OK";
+
+// ExportWif
+
+"exportWif.screen.copy.button.title" = "Copy";
+"exportWif.save.brainkey.title" = "Save your Brainkey to backup your wallet";
+
+// Send
+
+"send.flow.title" = "Send";
+"send.flow.address.text.field.title" = "Send To";
+"send.flow.address.text.field.placeholder" = "Bitcoin address";
+"send.flow.amount.text.field.title" = "Amount";
+"send.flow.amount.text.field.title.without.currency" = "Amount";
+"send.flow.amount.text.field.placeholder" = "0.0";
+"send.flow.amount.currency.text.field" = "Amount, USD";
+"send.flow.amount.currency.text.field.placeholder" = "0";
+"send.flow.amount.currency.text.field.additional" = "USD";
+"send.flow.fee.text.field.title" = "Fee";
+"send.flow.fee.text.field.placeholder" = "0.00001";
+"send.flow.send.button.text" = "Send";
+"send.flow.send.button.loading.text" = "Sending...";
+"send.flow.send.all.button.text" = "Send All";
+"send.flow.error.no.from" = "You have no address";
+"send.flow.error.no.to" = "Enter address to complete";
+"send.flow.error.no.currency.and.fee" = "Select currency and fee to complete";
+"send.flow.error.no.amount" = "Wrong amount";
+"send.flow.error.amount.error" = "Insufficient balance";
+"send.flow.error.to.address.not.found" = "Invalid address";
+"send.flow.error.cant.load.fee" = "Can not estimate fee";
+"send.flow.error.to.account.not.found" = "Invalid address";
+"send.flow.error.amount.error" = "Insufficient balance";
+
+"send.flow.error.transaction.send" = "Transaction was not sent";
+"send.flow.success.transaction.send" = "Successfully sent";
+"send.flow.currency.popup.title" = "Choose currency";
+
+// History Details
+
+"history.details.explorer.button" = "Open in explorer";
+"history.details.title" = "Transfer";
+"history.details.confirmed" = "Confirmed";
+"history.details.confirmation" = "Waiting for confirmation...";
+"history.details.fee" = "Fee";
+"history.details.from" = "From";
+"history.details.to" = "To";
+"history.details.block" = "Block";
+
+// Network
+"network.group.title" = "BTC Networks";

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SplashViewController-->
+        <scene sceneID="dLB-F6-dEk">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" title="SplashViewController" id="tQy-dS-wo5" customClass="SplashViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vS-I4-YfS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPk-b0-N0Y">
+                                <rect key="frame" x="0.0" y="94.5" width="375" height="244.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" tag="-4" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-mM-B69">
+                                <rect key="frame" x="30" y="415" width="315" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Echo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhU-DZ-NiL">
+                                        <rect key="frame" x="71" y="0.0" width="173" height="26"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Universal Protocol for Decentralized Applications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-4T-PaL">
+                                        <rect key="frame" x="43.5" y="39" width="228" height="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic" translatesAutoresizingMaskIntoConstraints="NO" id="IBz-vb-NGC">
+                                <rect key="frame" x="65" y="94.5" width="245" height="244.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IBz-vb-NGC" secondAttribute="height" id="gY3-32-EQC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="gray2"/>
+                        <color key="tintColor" name="gray2"/>
+                        <constraints>
+                            <constraint firstItem="WPk-b0-N0Y" firstAttribute="top" secondItem="IBz-vb-NGC" secondAttribute="top" id="BkB-bd-tY1"/>
+                            <constraint firstItem="IBz-vb-NGC" firstAttribute="centerY" secondItem="5vS-I4-YfS" secondAttribute="centerY" multiplier="0.65" id="Dqm-pK-NeT"/>
+                            <constraint firstItem="BB9-mM-B69" firstAttribute="centerX" secondItem="5vS-I4-YfS" secondAttribute="centerX" id="L91-i0-ffd"/>
+                            <constraint firstItem="WPk-b0-N0Y" firstAttribute="leading" secondItem="5vS-I4-YfS" secondAttribute="leading" id="OlT-eO-7xb"/>
+                            <constraint firstItem="BB9-mM-B69" firstAttribute="centerX" secondItem="5vS-I4-YfS" secondAttribute="centerX" id="PIO-bu-Ujz"/>
+                            <constraint firstItem="IBz-vb-NGC" firstAttribute="centerX" secondItem="5vS-I4-YfS" secondAttribute="centerX" id="bDh-0U-a4t"/>
+                            <constraint firstItem="BfK-U4-M4e" firstAttribute="trailing" secondItem="WPk-b0-N0Y" secondAttribute="trailing" id="pMB-rX-n3z"/>
+                            <constraint firstItem="IBz-vb-NGC" firstAttribute="width" secondItem="WPk-b0-N0Y" secondAttribute="width" multiplier="270:414" id="qeX-nI-fD9"/>
+                            <constraint firstItem="BB9-mM-B69" firstAttribute="top" secondItem="IBz-vb-NGC" secondAttribute="bottom" constant="76" id="s5Y-Hl-zDd"/>
+                            <constraint firstItem="WPk-b0-N0Y" firstAttribute="bottom" secondItem="IBz-vb-NGC" secondAttribute="bottom" id="tbx-A1-nxa"/>
+                            <constraint firstItem="BB9-mM-B69" firstAttribute="leading" secondItem="BfK-U4-M4e" secondAttribute="leading" constant="30" id="zDy-t1-Kop"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BfK-U4-M4e"/>
+                    </view>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="2Cu-4T-PaL" id="o3v-7s-aeF"/>
+                        <outlet property="titleLabel" destination="DhU-DZ-NiL" id="A1z-aa-F73"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jp-NF-PXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802.39999999999998" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic" width="270" height="269.5"/>
+        <namedColor name="gray2">
+            <color red="0.91764705882352937" green="0.94117647058823528" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

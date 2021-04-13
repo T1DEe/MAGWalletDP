@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Snack Bar Root View Controller-->
+        <scene sceneID="qDK-uV-abv">
+            <objects>
+                <viewController storyboardIdentifier="SnackBarRootViewController" id="a3X-iJ-DJn" customClass="SnackBarRootViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCA-mQ-jkd" customClass="SnackBarTouchableView" customModule="CryptoWalletTemplate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isa-kA-7Wd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yne-XP-FSu">
+                                <rect key="frame" x="20" y="1012" width="374" height="10"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="yEi-e3-AWJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YVz-Pu-9F7" firstAttribute="trailing" secondItem="yne-XP-FSu" secondAttribute="trailing" constant="20" id="9db-PB-zcq"/>
+                            <constraint firstItem="YVz-Pu-9F7" firstAttribute="bottom" secondItem="yne-XP-FSu" secondAttribute="top" constant="-150" id="CFc-M3-7x0"/>
+                            <constraint firstItem="yne-XP-FSu" firstAttribute="leading" secondItem="YVz-Pu-9F7" secondAttribute="leading" constant="20" id="Phk-rA-832"/>
+                            <constraint firstAttribute="bottom" secondItem="isa-kA-7Wd" secondAttribute="bottom" id="TWM-x6-1if"/>
+                            <constraint firstItem="YVz-Pu-9F7" firstAttribute="trailing" secondItem="isa-kA-7Wd" secondAttribute="trailing" id="WE2-zC-9m8"/>
+                            <constraint firstItem="isa-kA-7Wd" firstAttribute="top" secondItem="PCA-mQ-jkd" secondAttribute="top" id="XQw-4A-6B9"/>
+                            <constraint firstItem="isa-kA-7Wd" firstAttribute="leading" secondItem="YVz-Pu-9F7" secondAttribute="leading" id="bCo-lo-wub"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YVz-Pu-9F7"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="isa-kA-7Wd" id="gfC-Sa-sG3"/>
+                        <outlet property="snackBarBottomConstraint" destination="CFc-M3-7x0" id="qoy-0u-I5H"/>
+                        <outlet property="snackBarContainerView" destination="yne-XP-FSu" id="0dd-DM-HYh"/>
+                        <outlet property="snackBarHeightConstraint" destination="yEi-e3-AWJ" id="NhY-ox-oEt"/>
+                        <outlet property="snackBarView" destination="PCA-mQ-jkd" id="V91-TW-ybA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mA-32-r9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="142"/>
+        </scene>
+    </scenes>
+</document>
