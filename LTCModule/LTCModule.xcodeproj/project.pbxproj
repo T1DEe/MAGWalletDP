@@ -1042,13 +1042,13 @@
 		F3AEC8F2248E0E190081CF0D /* AuthCreateAndCopy */ = {
 			isa = PBXGroup;
 			children = (
-				F3AEC8F3248E0E190081CF0D /* Assembly */,
-				F3AEC8F5248E0E190081CF0D /* Presenter */,
 				F3AEC8F7248E0E190081CF0D /* View */,
-				F3AEC8F9248E0E190081CF0D /* Configurator */,
-				F3AEC8FB248E0E190081CF0D /* Protocols */,
+				F3AEC8F5248E0E190081CF0D /* Presenter */,
 				F3AEC8FD248E0E190081CF0D /* Interactor */,
 				F3AEC8FF248E0E190081CF0D /* Router */,
+				F3AEC8F3248E0E190081CF0D /* Assembly */,
+				F3AEC8F9248E0E190081CF0D /* Configurator */,
+				F3AEC8FB248E0E190081CF0D /* Protocols */,
 			);
 			path = AuthCreateAndCopy;
 			sourceTree = "<group>";

@@ -71,7 +71,6 @@
 		B33AE57E21ECAD210016966A /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE55D21ECAD210016966A /* RootPresenter.swift */; };
 		B33AE57F21ECAD210016966A /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33AE55E21ECAD210016966A /* Root.storyboard */; };
 		B33AE58021ECAD210016966A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56021ECAD210016966A /* RootViewController.swift */; };
-		B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56221ECAD210016966A /* RootConfigurator.swift */; };
 		B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56421ECAD210016966A /* RootProtocols.swift */; };
 		B33AE58321ECAD210016966A /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56621ECAD210016966A /* RootInteractor.swift */; };
 		B33AE58421ECAD210016966A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE56821ECAD210016966A /* RootRouter.swift */; };
@@ -167,6 +166,7 @@
 		C4EC2BF174F49C0A4F1C92F7 /* ForgotPinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381252F89A7530F6EC7FE468 /* ForgotPinProtocols.swift */; };
 		C93447EF4518811AFDB8756F /* ForgotPinAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAF35BF05D018D00F0E4F4 /* ForgotPinAssembler.swift */; };
 		C957A7E81E65537C33B7B958 /* ButtonSnackBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E46C8632EA7D95B2162EED /* ButtonSnackBarProtocols.swift */; };
+		CE251B612625D9A80075449B /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE251B602625D9A80075449B /* RootConfigurator.swift */; };
 		CE37A625262090BF005349A4 /* CryptoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE92F7E6261F462900DABB00 /* CryptoAPI.framework */; };
 		CE37A626262090BF005349A4 /* CryptoAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE92F7E6261F462900DABB00 /* CryptoAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D044FC0023E842030012C2BA /* BTCModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044FBFF23E842030012C2BA /* BTCModule.framework */; };
@@ -356,7 +356,6 @@
 		B33AE55D21ECAD210016966A /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		B33AE55E21ECAD210016966A /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		B33AE56021ECAD210016966A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		B33AE56221ECAD210016966A /* RootConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootConfigurator.swift; sourceTree = "<group>"; };
 		B33AE56421ECAD210016966A /* RootProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
 		B33AE56621ECAD210016966A /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		B33AE56821ECAD210016966A /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -450,6 +449,7 @@
 		BC6D2D335329D9E1534D10CF /* MainRoutingConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingConfigurator.swift; sourceTree = "<group>"; };
 		BDB6211CE747EA116D973792 /* MainRoutingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRoutingViewController.swift; sourceTree = "<group>"; };
 		C282360B964D79E2DE5022E6 /* ForgotPinPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgotPinPresenter.swift; sourceTree = "<group>"; };
+		CE251B602625D9A80075449B /* RootConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootConfigurator.swift; sourceTree = "<group>"; };
 		CE92F7E6261F462900DABB00 /* CryptoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D044FBFF23E842030012C2BA /* BTCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BTCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04DBD5123216F1000ADEF2F /* ETHModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ETHModule.framework; path = "../../../Library/Developer/Xcode/DerivedData/CryptoWalletTemplate-ejirsyedirnvahbmvxvhmlngeuqi/Build/Products/Debug-iphoneos/ETHModule.framework"; sourceTree = "<group>"; };
@@ -581,13 +581,15 @@
 			isa = PBXGroup;
 			children = (
 				D0CB0F21236C27DA00A7184F /* AllCurrencies.storyboard */,
-				42B8177A342B0E8D84A7D4F8 /* View */,
-				7A464FC0BEA86DDBEA1696DC /* Presenter */,
-				EECA5DC0739241E304223AFA /* Interactor */,
-				9405878FD02BF6B8E9196227 /* Router */,
-				6F2D7783F571EFA280C97919 /* Configurator */,
-				C464808456921AE7AF12E04A /* Assembly */,
-				956136C806EF01F9A983E3DF /* Protocols */,
+				A3D210AA23C078A5E1921383 /* AllCurrenciesViewController.swift */,
+				FD8B51D19760548D02526ACD /* AllCurrenciesPresenter.swift */,
+				610D8D1CC87C0AF1AB95D67C /* AllCurrenciesInteractor.swift */,
+				DAEF6EC9F747403C9215AEA8 /* AllCurrenciesRouter.swift */,
+				09DF1AFA028EBA9AED6E9325 /* AllCurrenciesConfigurator.swift */,
+				433903FE74BA30C59D468F20 /* AllCurrenciesAssembler.swift */,
+				DBBCC523B906781F234A668A /* AllCurrenciesProtocols.swift */,
+				42B8177A342B0E8D84A7D4F8 /* Views */,
+				D0CB0F30236C574800A7184F /* Models */,
 			);
 			path = AllCurrencies;
 			sourceTree = "<group>";
@@ -653,14 +655,12 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		42B8177A342B0E8D84A7D4F8 /* View */ = {
+		42B8177A342B0E8D84A7D4F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D0CB0F30236C574800A7184F /* Model */,
 				D0CB0F23236C372700A7184F /* Cells */,
-				A3D210AA23C078A5E1921383 /* AllCurrenciesViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		45841B210DB61FE857B8C1A2 /* View */ = {
@@ -731,22 +731,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		6F2D7783F571EFA280C97919 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				09DF1AFA028EBA9AED6E9325 /* AllCurrenciesConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		7A464FC0BEA86DDBEA1696DC /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				FD8B51D19760548D02526ACD /* AllCurrenciesPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		7C7A0D0BF11351C687063535 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,22 +761,6 @@
 				EDFE36942306B6EE78930480 /* MultiAccountsInteractor.swift */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		9405878FD02BF6B8E9196227 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				DAEF6EC9F747403C9215AEA8 /* AllCurrenciesRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		956136C806EF01F9A983E3DF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				DBBCC523B906781F234A668A /* AllCurrenciesProtocols.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		996E0C9888D043D3F2758A85 /* Protocols */ = {
@@ -1225,72 +1193,16 @@
 		B33AE55921ECAD210016966A /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE55A21ECAD210016966A /* Assembly */,
-				B33AE55C21ECAD210016966A /* Presenter */,
 				B33AE55E21ECAD210016966A /* Root.storyboard */,
-				B33AE55F21ECAD210016966A /* View */,
-				B33AE56121ECAD210016966A /* Configurator */,
-				B33AE56321ECAD210016966A /* Protocols */,
-				B33AE56521ECAD210016966A /* Interactor */,
-				B33AE56721ECAD210016966A /* Router */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		B33AE55A21ECAD210016966A /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE55B21ECAD210016966A /* RootAssembler.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		B33AE55C21ECAD210016966A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE55D21ECAD210016966A /* RootPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		B33AE55F21ECAD210016966A /* View */ = {
-			isa = PBXGroup;
-			children = (
 				B33AE56021ECAD210016966A /* RootViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B33AE56121ECAD210016966A /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE56221ECAD210016966A /* RootConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		B33AE56321ECAD210016966A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
+				B33AE55D21ECAD210016966A /* RootPresenter.swift */,
+				B33AE56621ECAD210016966A /* RootInteractor.swift */,
+				B33AE56821ECAD210016966A /* RootRouter.swift */,
+				CE251B602625D9A80075449B /* RootConfigurator.swift */,
+				B33AE55B21ECAD210016966A /* RootAssembler.swift */,
 				B33AE56421ECAD210016966A /* RootProtocols.swift */,
 			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		B33AE56521ECAD210016966A /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE56621ECAD210016966A /* RootInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		B33AE56721ECAD210016966A /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE56821ECAD210016966A /* RootRouter.swift */,
-			);
-			path = Router;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		B346D0C02327AA0700559245 /* Splash */ = {
@@ -1944,14 +1856,6 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		C464808456921AE7AF12E04A /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				433903FE74BA30C59D468F20 /* AllCurrenciesAssembler.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		CED8970826245704006E32E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -2024,13 +1928,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D0CB0F30236C574800A7184F /* Model */ = {
+		D0CB0F30236C574800A7184F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D0CB0F31236C577100A7184F /* AllCurrenciesScreenModel.swift */,
 				F35B029224769B8B0024061C /* AllCurrenciesModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D653C3ADE47FC635B809E2CD /* Configurator */ = {
@@ -2069,14 +1973,6 @@
 				927A40D3E5E00930465641B1 /* ForgotPinConfigurator.swift */,
 			);
 			path = Configurator;
-			sourceTree = "<group>";
-		};
-		EECA5DC0739241E304223AFA /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				610D8D1CC87C0AF1AB95D67C /* AllCurrenciesInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		F2D115AE2383D2250045793B /* Cell */ = {
@@ -2613,7 +2509,6 @@
 				B346D0D42327AA0700559245 /* SplashConfigurator.swift in Sources */,
 				D0A9B2D123323CAF008342F1 /* SnackBarRootPresenter.swift in Sources */,
 				B3D5317C2332524F00132A40 /* UnlockPinViewController.swift in Sources */,
-				B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */,
 				F2E6FB1B23853F440026CB21 /* ButtonSnackBarModel.swift in Sources */,
 				B346D0D62327AA0700559245 /* SplashInteractor.swift in Sources */,
 				B301535C232A303A0004AAD9 /* ChangePinAssembler.swift in Sources */,
@@ -2702,6 +2597,7 @@
 				43C795F27668C81247243F38 /* MainRoutingAssembler.swift in Sources */,
 				D0A9B2D823323CAF008342F1 /* SnackBarRootRouter.swift in Sources */,
 				F36525EE24927CF500DB518B /* OneButtonSnackBarInteractor.swift in Sources */,
+				CE251B612625D9A80075449B /* RootConfigurator.swift in Sources */,
 				D0CB0F26236C39DF00A7184F /* AllCurrenciesSingleTableViewCell.swift in Sources */,
 				F3EA90EA2481078F001B988A /* ChangeNetworkTableViewCell.swift in Sources */,
 				D0A9B2D423323CAF008342F1 /* SnackBarRootViewController.swift in Sources */,
