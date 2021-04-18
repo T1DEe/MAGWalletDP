@@ -9,9 +9,8 @@
 import Foundation
 
 enum Constants {
-    static let bundleIdentifier = "com.pixelplex.ETHModule"
-    static let ethNetworkUrl = "https://697-crypto-api.pixelplexlabs.com/api"
-
+    static let bundleIdentifier = "mag.magwallet.ETHModule"
+    
     enum LottieConstants {
         static let lightLoader = "loaderLight"
         static let grayLoader = "loaderGray"

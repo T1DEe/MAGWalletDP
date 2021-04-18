@@ -1,6 +1,3 @@
-Rambafile
-Templates
-swifty_viper_pixelplex
 xcuserdata
 Pods
 Podfile.lock
@@ -11,8 +8,6 @@ report.xml
 build
 CryptoWalletTemplate.ipa
 CryptoWalletTemplate.app.dSYM.zip
-
-GoogleService-Info.plist
 
 vendor
 .env

@@ -39,12 +39,6 @@ final public class Settings {
             
         case .testnet:
             return Constants.testnetUrl
-            
-        case .stage:
-            return Constants.stageUrl
-            
-        case .dev:
-            return Constants.devUrl
         }
     }
 }

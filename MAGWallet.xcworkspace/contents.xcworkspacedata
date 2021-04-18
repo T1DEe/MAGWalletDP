@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MAGWallet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BTCModule/BTCModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ETHModule/ETHModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LTCModule/LTCModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SharedFilesModule/SharedFilesModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SharedUIModule/SharedUIModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CryptoAPI/CryptoAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

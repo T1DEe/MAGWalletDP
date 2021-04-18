@@ -9,7 +9,7 @@
 import Foundation
 
 enum Constants {
-    static let bundleIdentifier = "com.pixelplex.LTCModule"
+    static let bundleIdentifier = "mag.magwallet.LTCModule"
 
     enum LottieConstants {
         static let lightLoader = "loaderLight"

@@ -9,6 +9,4 @@
 public enum NetworkType {
     case mainnet
     case testnet
-    case stage
-    case dev
 }

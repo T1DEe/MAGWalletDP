@@ -294,8 +294,8 @@
 				B3BD0BF8237FF78D00EF0600 /* Settings.swift */,
 				B3BD0BF2237FE9C500EF0600 /* Configurator.swift */,
 				D0479D3E23FD623E00B00E52 /* NetworkType.swift */,
-				B3BD0BE8237FE11000EF0600 /* Info.plist */,
 				D03890FE23966A2B005DE0B4 /* Constants.swift */,
+				B3BD0BE8237FE11000EF0600 /* Info.plist */,
 			);
 			path = CryptoAPI;
 			sourceTree = "<group>";
