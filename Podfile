@@ -16,7 +16,7 @@ end
 
 
 def main_pods
-   pod 'CryptoSwift', '1.0.0'
+   pod 'CryptoSwift', '1.4.0'
 end
 
 def eth_pods

@@ -7,6 +7,7 @@
 //
 
 import Firebase
+import FirebaseMessaging
 import Foundation
 import SharedFilesModule
 
