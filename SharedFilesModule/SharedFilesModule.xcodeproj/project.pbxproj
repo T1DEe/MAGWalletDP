@@ -270,15 +270,15 @@
 		B30CDEFF2322BF41000EFB91 /* BuisnessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B30CDF192322BF42000EFB91 /* Services */,
+				B30CDF002322BF41000EFB91 /* Core */,
 				B3088B442343AAC8004B02D9 /* Models */,
 				D0354017232B802A0029FE13 /* Helpers */,
-				B346CF4A2326AC7700559245 /* Extensions */,
-				B346CF2F232699BC00559245 /* Errors */,
 				B346CF0A232697F200559245 /* Protocols */,
-				B30CDF002322BF41000EFB91 /* Core */,
-				B30CDF0F2322BF42000EFB91 /* Assembler */,
+				B346CF2F232699BC00559245 /* Errors */,
 				B30CDF142322BF42000EFB91 /* Event Proxy */,
-				B30CDF192322BF42000EFB91 /* Services */,
+				B346CF4A2326AC7700559245 /* Extensions */,
+				B30CDF0F2322BF42000EFB91 /* Assembler */,
 				B39117F62334DA10007B9DF6 /* Constants.swift */,
 			);
 			path = BuisnessLayer;
@@ -488,13 +488,13 @@
 				F3C5E626247E528900D40CC7 /* Network */,
 				B3088B452343ABAF004B02D9 /* Configuration */,
 				B3B9C34A2333D17500EF1A9F /* ChangePin */,
-				B346D0A82326D52800559245 /* Clearable.swift */,
 				D0A9B2DB23323D7D008342F1 /* SnackBars */,
 				D0A9B29D233223CC008342F1 /* SecureData */,
 				B346CF0B232697F200559245 /* Settings */,
 				B346CF0F232697F200559245 /* CurrencyInfo */,
 				B346CF15232697F200559245 /* ModuleFlows */,
 				B346CF1B232697F200559245 /* AccountInfo */,
+				B346D0A82326D52800559245 /* Clearable.swift */,
 				B3015367232A78AA0004AAD9 /* ModularSubflow.swift */,
 			);
 			path = Protocols;
