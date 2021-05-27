@@ -1409,8 +1409,8 @@
 		B30CDEA3232276F5000EFB91 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				D044FBF223E8407F0012C2BA /* ApplicationModule */,
 				B30CDEA6232276F5000EFB91 /* LaunchScreen.storyboard */,
+				D044FBF223E8407F0012C2BA /* ApplicationModule */,
 				B30CDEA4232276F5000EFB91 /* Assembler */,
 				B30CDEA8232276F5000EFB91 /* Modules */,
 			);
@@ -1443,8 +1443,8 @@
 			children = (
 				2E4283E223F5663900D5DEDB /* SharedViews */,
 				2E4283E323F5665700D5DEDB /* Extensions */,
-				B30CDEBA232276F5000EFB91 /* Constants.swift */,
 				2E4283E423F5666100D5DEDB /* Protocols */,
+				B30CDEBA232276F5000EFB91 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1464,8 +1464,8 @@
 			isa = PBXGroup;
 			children = (
 				B3BCCE25235CCA57005EED3D /* SharedColors.xcassets */,
-				B32CDBB22355AF1F00149E50 /* Animation */,
 				B30CDEC4232276F5000EFB91 /* Assets.xcassets */,
+				B32CDBB22355AF1F00149E50 /* Animation */,
 				B33550C82354C19300995D9F /* Fonts */,
 			);
 			path = Resources;
@@ -1898,14 +1898,14 @@
 		CE52123523E97B330041ECE4 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				CE52128123E97B6F0041ECE4 /* Scan.storyboard */,
+				CE52123A23E97B330041ECE4 /* View */,
 				CE52123623E97B330041ECE4 /* Assembly */,
 				CE52123C23E97B330041ECE4 /* Configurator */,
-				CE52123A23E97B330041ECE4 /* View */,
 				CE52123823E97B330041ECE4 /* Presenter */,
 				CE52124023E97B330041ECE4 /* Interactor */,
 				CE52124223E97B330041ECE4 /* Router */,
 				CE52123E23E97B330041ECE4 /* Protocols */,
-				CE52128123E97B6F0041ECE4 /* Scan.storyboard */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -1970,11 +1970,11 @@
 		CE52124423E97B330041ECE4 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
+				CE5212F723E984BA0041ECE4 /* Auth.storyboard */,
+				CE52128923E9847B0041ECE4 /* AuthRoot */,
+				CE7AC23D23EAB8BC00ACF6F5 /* AuthFlowSelection */,
 				CE2ED94F23EBFF3D0069C63C /* AuthCreateAndCopy */,
 				CE2ED93923EB0E380069C63C /* AuthImportBrainkey */,
-				CE7AC23D23EAB8BC00ACF6F5 /* AuthFlowSelection */,
-				CE52128923E9847B0041ECE4 /* AuthRoot */,
-				CE5212F723E984BA0041ECE4 /* Auth.storyboard */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";

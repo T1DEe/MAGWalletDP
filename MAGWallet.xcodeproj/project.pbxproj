@@ -1161,9 +1161,9 @@
 		B33AE55321ECAD210016966A /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE55421ECAD210016966A /* Assembler */,
 				B33AE55621ECAD210016966A /* LaunchScreen.storyboard */,
 				B33AE55821ECAD210016966A /* Modules */,
+				B33AE55421ECAD210016966A /* Assembler */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
