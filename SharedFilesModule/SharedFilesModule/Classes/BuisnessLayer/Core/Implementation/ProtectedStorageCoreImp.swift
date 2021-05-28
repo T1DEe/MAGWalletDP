@@ -13,7 +13,6 @@ public final class ProtectedStorage: KeyValueStoring {
     // swiftlint:disable force_unwrapping
     let keychain = Keychain(service: Bundle.main.bundleIdentifier!).accessibility(.whenUnlockedThisDeviceOnly)
     // swiftlint:enable force_unwrapping
-    
     // MARK: - KeyValueStoring
     public func getData(key: String) -> Data? {
         do {
@@ -24,7 +23,6 @@ public final class ProtectedStorage: KeyValueStoring {
             return nil
         }
     }
-    
     public func set(key: String, value: Data) {
         do {
             try keychain.set(value, key: key)
@@ -32,7 +30,6 @@ public final class ProtectedStorage: KeyValueStoring {
             print("error: \(error)")
         }
     }
-    
     public func get(key: String) -> String? {
         do {
             let value = try keychain.get(key)
@@ -42,7 +39,6 @@ public final class ProtectedStorage: KeyValueStoring {
             return nil
         }
     }
-    
     public func set(key: String, value: String) {
         do {
             try keychain.set(value, key: key)
@@ -50,7 +46,6 @@ public final class ProtectedStorage: KeyValueStoring {
             print("error: \(error)")
         }
     }
-    
     public func remove(key: String) {
         do {
             try keychain.remove(key)

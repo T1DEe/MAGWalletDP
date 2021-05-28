@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol ReachabilityEventDelegate: class {
+protocol ReachabilityEventDelegate: AnyObject {
     func reachabilityChanged(newConnection: ReachabilityConnection)
 }
 
-protocol ReachabilityEventDelegateHandler: class {
+protocol ReachabilityEventDelegateHandler: AnyObject {
     var delegate: ReachabilityEventDelegate? { get set }
 }
 
