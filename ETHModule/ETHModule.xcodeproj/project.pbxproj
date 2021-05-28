@@ -1024,10 +1024,10 @@
 			children = (
 				B33A7CF8235D984E00053BE3 /* SendFlow */,
 				B3297A2723588ED200867014 /* SettingsFlow */,
-				B35B5CFB2357059B004A45FD /* Scan */,
 				B35B5C7523570270004A45FD /* MainFlow */,
-				B33550602354AA6B00995D9F /* SnackBars */,
 				B3354FE42354774D00995D9F /* AuthFlow */,
+				B35B5CFB2357059B004A45FD /* Scan */,
+				B33550602354AA6B00995D9F /* SnackBars */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1474,11 +1474,11 @@
 		B3354FE42354774D00995D9F /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
-				B35B5C5F23561DA3004A45FD /* AuthCreateAndCopy */,
-				B3354FF82354774D00995D9F /* AuthFlowSelection */,
-				B33550072354774D00995D9F /* AuthImportBrainkey */,
 				B33550162354774D00995D9F /* AuthValid.storyboard */,
 				B33550172354774D00995D9F /* AuthRoot */,
+				B3354FF82354774D00995D9F /* AuthFlowSelection */,
+				B35B5C5F23561DA3004A45FD /* AuthCreateAndCopy */,
+				B33550072354774D00995D9F /* AuthImportBrainkey */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";

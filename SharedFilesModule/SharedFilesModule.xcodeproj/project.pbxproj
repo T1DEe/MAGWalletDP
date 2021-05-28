@@ -108,10 +108,6 @@
 		B3015367232A78AA0004AAD9 /* ModularSubflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularSubflow.swift; sourceTree = "<group>"; };
 		B3088B422343AA41004B02D9 /* SettingsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfiguration.swift; sourceTree = "<group>"; };
 		B3088B462343ABF9004B02D9 /* SettingConfiguratable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingConfiguratable.swift; sourceTree = "<group>"; };
-		B30CDF032322BF41000EFB91 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		B30CDF062322BF41000EFB91 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		B30CDF082322BF42000EFB91 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		B30CDF0A2322BF42000EFB91 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		B30CDF0E2322BF42000EFB91 /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		B30CDF102322BF42000EFB91 /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		B30CDF112322BF42000EFB91 /* CoreComponentAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreComponentAssembly.swift; sourceTree = "<group>"; };
@@ -287,62 +283,10 @@
 		B30CDF002322BF41000EFB91 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B30CDF012322BF41000EFB91 /* Network */,
 				B30CDF0B2322BF42000EFB91 /* Implementation */,
 				B30CDF0D2322BF42000EFB91 /* Protocols */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		B30CDF012322BF41000EFB91 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF022322BF41000EFB91 /* Implementation */,
-				B30CDF042322BF41000EFB91 /* Mappers */,
-				B30CDF092322BF42000EFB91 /* Protocols */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		B30CDF022322BF41000EFB91 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF032322BF41000EFB91 /* .gitkeep */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B30CDF042322BF41000EFB91 /* Mappers */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF052322BF41000EFB91 /* Implementation */,
-				B30CDF072322BF41000EFB91 /* Protocols */,
-			);
-			path = Mappers;
-			sourceTree = "<group>";
-		};
-		B30CDF052322BF41000EFB91 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF062322BF41000EFB91 /* .gitkeep */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B30CDF072322BF41000EFB91 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF082322BF42000EFB91 /* .gitkeep */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		B30CDF092322BF42000EFB91 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				B30CDF0A2322BF42000EFB91 /* .gitkeep */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B30CDF0B2322BF42000EFB91 /* Implementation */ = {
