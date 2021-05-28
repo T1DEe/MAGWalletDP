@@ -975,11 +975,11 @@
 		B33AE53321ECAD210016966A /* BuisnessLayer */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53421ECAD210016966A /* Core */,
-				B33AE54021ECAD210016966A /* Assembler */,
-				B33AE54521ECAD210016966A /* Event Proxy */,
 				B33AE54821ECAD210016966A /* Services */,
+				B33AE53421ECAD210016966A /* Core */,
+				B33AE54521ECAD210016966A /* Event Proxy */,
 				F352560D249417330032B139 /* Facades */,
+				B33AE54021ECAD210016966A /* Assembler */,
 			);
 			path = BuisnessLayer;
 			sourceTree = "<group>";
@@ -987,58 +987,10 @@
 		B33AE53421ECAD210016966A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53521ECAD210016966A /* Network */,
 				B33AE53C21ECAD210016966A /* Implementation */,
 				B33AE53E21ECAD210016966A /* Protocols */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		B33AE53521ECAD210016966A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE53621ECAD210016966A /* Implementation */,
-				B33AE53721ECAD210016966A /* Mappers */,
-				B33AE53A21ECAD210016966A /* Protocols */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		B33AE53621ECAD210016966A /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B33AE53721ECAD210016966A /* Mappers */ = {
-			isa = PBXGroup;
-			children = (
-				B33AE53821ECAD210016966A /* Implementation */,
-				B33AE53921ECAD210016966A /* Protocols */,
-			);
-			path = Mappers;
-			sourceTree = "<group>";
-		};
-		B33AE53821ECAD210016966A /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B33AE53921ECAD210016966A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		B33AE53A21ECAD210016966A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B33AE53C21ECAD210016966A /* Implementation */ = {
@@ -1180,11 +1132,11 @@
 			isa = PBXGroup;
 			children = (
 				B3542F68237146E300F914C6 /* SettingsFlow */,
-				D0A9B2BE23323CAF008342F1 /* SnackBars */,
 				B346D0D82327AAA800559245 /* PinFlow */,
 				B346D0C02327AA0700559245 /* Splash */,
 				B33AE55921ECAD210016966A /* Root */,
 				06D56BA245B0B4E4074C9FE5 /* MainRouting */,
+				D0A9B2BE23323CAF008342F1 /* SnackBars */,
 				0B99EAB1C7CF7ACE01AB7651 /* AllCurrencies */,
 			);
 			path = Modules;
@@ -1208,9 +1160,9 @@
 		B346D0C02327AA0700559245 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				B346D0C52327AA0700559245 /* Splash.storyboard */,
 				B346D0C12327AA0700559245 /* Assembly */,
 				B346D0C32327AA0700559245 /* Presenter */,
-				B346D0C52327AA0700559245 /* Splash.storyboard */,
 				B346D0C62327AA0700559245 /* View */,
 				B346D0C82327AA0700559245 /* Configurator */,
 				B346D0CA2327AA0700559245 /* Protocols */,

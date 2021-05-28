@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,12 +21,12 @@
         <!--Create Pin View Controller-->
         <scene sceneID="DrQ-7G-vOj">
             <objects>
-                <viewController storyboardIdentifier="CreatePinViewController" extendedLayoutIncludesOpaqueBars="YES" id="avS-wP-nfL" customClass="CreatePinViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePinViewController" extendedLayoutIncludesOpaqueBars="YES" id="avS-wP-nfL" customClass="CreatePinViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MgY-Xl-1qe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTE-wH-q0T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTE-wH-q0T">
                                 <rect key="frame" x="54" y="706" width="267" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -42,13 +43,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-F2-cgA">
-                                <rect key="frame" x="160.66666666666666" y="88.666666666666671" width="54" height="25.666666666666671"/>
+                                <rect key="frame" x="158.33333333333334" y="86" width="58.333333333333343" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yY-IL-y0b">
-                                <rect key="frame" x="63" y="119.33333333333333" width="249" height="18.666666666666671"/>
+                                <rect key="frame" x="63" y="122.00000000000001" width="249" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -62,6 +63,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZPR-yi-s3z"/>
                         <color key="backgroundColor" name="gray2"/>
                         <constraints>
                             <constraint firstItem="ZPR-yi-s3z" firstAttribute="bottom" secondItem="wTE-wH-q0T" secondAttribute="bottom" constant="20" id="JPs-Dv-Qb8"/>
@@ -74,7 +76,6 @@
                             <constraint firstItem="wTE-wH-q0T" firstAttribute="centerX" secondItem="MgY-Xl-1qe" secondAttribute="centerX" id="dv3-Y5-WeH"/>
                             <constraint firstItem="Rrl-3Y-Ncs" firstAttribute="top" secondItem="ZPR-yi-s3z" secondAttribute="top" constant="2" id="tSE-YN-9jc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZPR-yi-s3z"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Rrl-3Y-Ncs" id="boL-bq-Au8"/>
@@ -90,12 +91,12 @@
         <!--Pin Verification View Controller-->
         <scene sceneID="X6e-sw-Ayy">
             <objects>
-                <viewController storyboardIdentifier="PinVerificationViewController" extendedLayoutIncludesOpaqueBars="YES" id="8Z5-mP-H5E" customClass="PinVerificationViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinVerificationViewController" extendedLayoutIncludesOpaqueBars="YES" id="8Z5-mP-H5E" customClass="PinVerificationViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZW-A6-2i0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfA-lq-z26">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfA-lq-z26">
                                 <rect key="frame" x="54" y="706" width="267" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -112,13 +113,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRt-aK-Mcx">
-                                <rect key="frame" x="160.66666666666666" y="88.666666666666671" width="54" height="25.666666666666671"/>
+                                <rect key="frame" x="158.33333333333334" y="86" width="58.333333333333343" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GV-GD-VXE">
-                                <rect key="frame" x="63" y="119.33333333333333" width="249" height="18.666666666666671"/>
+                                <rect key="frame" x="63" y="122.00000000000001" width="249" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -131,7 +132,7 @@
                                     <constraint firstAttribute="height" constant="40" id="iqj-GO-jsU"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYk-o9-mAm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYk-o9-mAm">
                                 <rect key="frame" x="280" y="46" width="90" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -148,6 +149,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="8hY-HK-scV"/>
                         <color key="backgroundColor" name="gray2"/>
                         <constraints>
                             <constraint firstItem="7GV-GD-VXE" firstAttribute="leading" secondItem="8hY-HK-scV" secondAttribute="leading" constant="63" id="AOg-kA-gzD"/>
@@ -162,7 +164,6 @@
                             <constraint firstItem="MRt-aK-Mcx" firstAttribute="centerY" secondItem="qZW-A6-2i0" secondAttribute="centerY" multiplier="0.25" id="pFA-e8-eWM"/>
                             <constraint firstItem="7GV-GD-VXE" firstAttribute="top" secondItem="MRt-aK-Mcx" secondAttribute="bottom" constant="5" id="uXC-IY-czT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8hY-HK-scV"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="VKd-H4-jeW" id="bCl-0a-OPR"/>
@@ -179,12 +180,12 @@
         <!--Change Pin View Controller-->
         <scene sceneID="gNF-xV-pXD">
             <objects>
-                <viewController storyboardIdentifier="ChangePinViewController" extendedLayoutIncludesOpaqueBars="YES" id="K5q-Be-1qj" customClass="ChangePinViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangePinViewController" extendedLayoutIncludesOpaqueBars="YES" id="K5q-Be-1qj" customClass="ChangePinViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F0y-0Q-4By">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enp-qU-fbJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enp-qU-fbJ">
                                 <rect key="frame" x="54" y="706" width="267" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -201,13 +202,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-WC-v5z">
-                                <rect key="frame" x="63" y="119.33333333333333" width="249" height="18.666666666666671"/>
+                                <rect key="frame" x="63" y="122.00000000000001" width="249" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXC-SB-dvu">
-                                <rect key="frame" x="160.66666666666666" y="88.666666666666671" width="54" height="25.666666666666671"/>
+                                <rect key="frame" x="158.33333333333334" y="86" width="58.333333333333343" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -221,6 +222,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ES-oa-C8w"/>
                         <color key="backgroundColor" name="gray2"/>
                         <constraints>
                             <constraint firstItem="PAz-WC-v5z" firstAttribute="top" secondItem="nXC-SB-dvu" secondAttribute="bottom" constant="5" id="1U5-FA-NF2"/>
@@ -233,7 +235,6 @@
                             <constraint firstItem="enp-qU-fbJ" firstAttribute="centerX" secondItem="F0y-0Q-4By" secondAttribute="centerX" id="yXd-0C-rHS"/>
                             <constraint firstItem="nXC-SB-dvu" firstAttribute="centerX" secondItem="F0y-0Q-4By" secondAttribute="centerX" id="yZJ-GM-laC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="1ES-oa-C8w"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="tqf-o5-OUO" id="1jz-nE-i1N"/>
@@ -249,12 +250,12 @@
         <!--Unlock Pin View Controller-->
         <scene sceneID="TOw-gW-uhH">
             <objects>
-                <viewController storyboardIdentifier="UnlockPinViewController" extendedLayoutIncludesOpaqueBars="YES" id="3Ou-NW-CX0" customClass="UnlockPinViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UnlockPinViewController" extendedLayoutIncludesOpaqueBars="YES" id="3Ou-NW-CX0" customClass="UnlockPinViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPu-Lm-Cqv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5St-6i-Fyp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5St-6i-Fyp">
                                 <rect key="frame" x="54" y="706" width="267" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -271,13 +272,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-v8-83z">
-                                <rect key="frame" x="160.66666666666666" y="88.666666666666671" width="54" height="25.666666666666671"/>
+                                <rect key="frame" x="158.33333333333334" y="86" width="58.333333333333343" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-yf-xwq">
-                                <rect key="frame" x="63" y="119.33333333333333" width="249" height="18.666666666666671"/>
+                                <rect key="frame" x="63" y="122.00000000000001" width="249" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -291,6 +292,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="4j5-mH-igH"/>
                         <color key="backgroundColor" name="gray2"/>
                         <constraints>
                             <constraint firstItem="5St-6i-Fyp" firstAttribute="centerX" secondItem="PPu-Lm-Cqv" secondAttribute="centerX" id="5rg-Hs-vY6"/>
@@ -303,7 +305,6 @@
                             <constraint firstItem="S7L-yf-xwq" firstAttribute="top" secondItem="ewP-v8-83z" secondAttribute="bottom" constant="5" id="t62-HJ-r2R"/>
                             <constraint firstItem="lZS-Ed-8Ob" firstAttribute="top" secondItem="4j5-mH-igH" secondAttribute="top" constant="2" id="v5N-LU-bnv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4j5-mH-igH"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="lZS-Ed-8Ob" id="2qQ-hs-vjn"/>
@@ -319,12 +320,12 @@
         <!--Session Verification View Controller-->
         <scene sceneID="ZVR-cJ-Eye">
             <objects>
-                <viewController storyboardIdentifier="SessionVerificationViewController" extendedLayoutIncludesOpaqueBars="YES" id="1HH-HY-2xj" customClass="SessionVerificationViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SessionVerificationViewController" extendedLayoutIncludesOpaqueBars="YES" id="1HH-HY-2xj" customClass="SessionVerificationViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="blf-6c-dtA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7l-eG-oi4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7l-eG-oi4">
                                 <rect key="frame" x="54" y="706" width="267" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -341,13 +342,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15w-zs-ezR">
-                                <rect key="frame" x="160.66666666666666" y="88.666666666666671" width="54" height="25.666666666666671"/>
+                                <rect key="frame" x="158.33333333333334" y="86" width="58.333333333333343" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-ne-p5c">
-                                <rect key="frame" x="63" y="119.33333333333333" width="249" height="18.666666666666671"/>
+                                <rect key="frame" x="63" y="122.00000000000001" width="249" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -360,7 +361,7 @@
                                     <constraint firstAttribute="width" constant="40" id="xJg-1x-q51"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-KT-2Iw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-KT-2Iw">
                                 <rect key="frame" x="280" y="46" width="90" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -377,6 +378,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="u4q-lM-vf7"/>
                         <color key="backgroundColor" name="gray2"/>
                         <constraints>
                             <constraint firstItem="u4q-lM-vf7" firstAttribute="trailing" secondItem="ebm-KT-2Iw" secondAttribute="trailing" constant="5" id="0f9-Sg-CUU"/>
@@ -391,7 +393,6 @@
                             <constraint firstItem="m7l-eG-oi4" firstAttribute="centerX" secondItem="blf-6c-dtA" secondAttribute="centerX" id="pEt-Vw-wPL"/>
                             <constraint firstItem="zd7-ne-p5c" firstAttribute="centerX" secondItem="blf-6c-dtA" secondAttribute="centerX" id="sBO-Hq-ypB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="u4q-lM-vf7"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="EcW-0j-Bv0" id="s9m-R9-YX6"/>
@@ -408,7 +409,7 @@
         <!--Forgot Pin View Controller-->
         <scene sceneID="gf1-3b-3hc">
             <objects>
-                <viewController storyboardIdentifier="ForgotPinViewController" id="MTU-oy-OIW" customClass="ForgotPinViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPinViewController" id="MTU-oy-OIW" customClass="ForgotPinViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q0N-Cz-DgS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -424,7 +425,7 @@
                                 <rect key="frame" x="30" y="265.66666666666669" width="315" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7j-mr-rQS">
-                                        <rect key="frame" x="136.66666666666666" y="0.0" width="41.666666666666657" height="20.333333333333332"/>
+                                        <rect key="frame" x="137" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -458,7 +459,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xUA-HT-djZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xUA-HT-djZ" firstAttribute="trailing" secondItem="oFx-Ss-dk3" secondAttribute="trailing" constant="30" id="0SN-tp-XFB"/>
                             <constraint firstItem="JVb-ga-qsl" firstAttribute="leading" secondItem="xUA-HT-djZ" secondAttribute="leading" constant="5" id="2JT-bb-61H"/>
@@ -469,7 +471,6 @@
                             <constraint firstItem="oFx-Ss-dk3" firstAttribute="centerY" secondItem="q0N-Cz-DgS" secondAttribute="centerY" constant="-100" id="hel-QN-bNl"/>
                             <constraint firstItem="xUA-HT-djZ" firstAttribute="bottom" secondItem="12h-F6-4J3" secondAttribute="bottom" constant="20" id="rwy-ce-f6Z"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xUA-HT-djZ"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="JVb-ga-qsl" id="Q4H-5z-rzY"/>
@@ -488,5 +489,8 @@
         <namedColor name="gray2">
             <color red="0.91764705882352937" green="0.94117647058823528" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

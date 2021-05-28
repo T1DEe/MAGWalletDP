@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
         <!--SplashViewController-->
         <scene sceneID="dLB-F6-dEk">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" title="SplashViewController" id="tQy-dS-wo5" customClass="SplashViewController" customModule="CryptoWalletTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" title="SplashViewController" id="tQy-dS-wo5" customClass="SplashViewController" customModule="MAGWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vS-I4-YfS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,6 +53,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="BfK-U4-M4e"/>
                         <color key="backgroundColor" name="gray2"/>
                         <color key="tintColor" name="gray2"/>
                         <constraints>
@@ -68,7 +69,6 @@
                             <constraint firstItem="WPk-b0-N0Y" firstAttribute="bottom" secondItem="IBz-vb-NGC" secondAttribute="bottom" id="tbx-A1-nxa"/>
                             <constraint firstItem="BB9-mM-B69" firstAttribute="leading" secondItem="BfK-U4-M4e" secondAttribute="leading" constant="30" id="zDy-t1-Kop"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BfK-U4-M4e"/>
                     </view>
                     <connections>
                         <outlet property="subtitleLabel" destination="2Cu-4T-PaL" id="o3v-7s-aeF"/>
