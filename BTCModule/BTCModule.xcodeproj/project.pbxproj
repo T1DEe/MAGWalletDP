@@ -1732,13 +1732,13 @@
 		CE2ED94F23EBFF3D0069C63C /* AuthCreateAndCopy */ = {
 			isa = PBXGroup;
 			children = (
-				CE2ED95023EBFF3D0069C63C /* Assembly */,
-				CE2ED95223EBFF3D0069C63C /* Presenter */,
 				CE2ED95423EBFF3D0069C63C /* View */,
-				CE2ED95623EBFF3D0069C63C /* Configurator */,
-				CE2ED95823EBFF3D0069C63C /* Protocols */,
+				CE2ED95223EBFF3D0069C63C /* Presenter */,
 				CE2ED95A23EBFF3D0069C63C /* Interactor */,
+				CE2ED95823EBFF3D0069C63C /* Protocols */,
 				CE2ED95C23EBFF3D0069C63C /* Router */,
+				CE2ED95023EBFF3D0069C63C /* Assembly */,
+				CE2ED95623EBFF3D0069C63C /* Configurator */,
 			);
 			path = AuthCreateAndCopy;
 			sourceTree = "<group>";
